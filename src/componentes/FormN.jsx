@@ -3,13 +3,12 @@ import { useForm } from 'react-hook-form';
 
 function FormN({ setRes, setBoton }) {
   const { register, handleSubmit } = useForm();
-  /*const [data, setData] = useState('');*/
   const [datos, setDatos] = useState({});
 
   const onSubmit = (data) => {
     setDatos(JSON.stringify(data));
 
-    if (data.unnombre === 'Israel') {
+    if (datos.unnombre === 'Israel') {
       setRes(true);
     } else {
       setRes(false);
