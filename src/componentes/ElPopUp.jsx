@@ -23,11 +23,6 @@ function ElPopUp(props) {
       });
     };
     laPeticion();
-    /*if (props.respuestaBack) {
-      setNumero(0);
-    } else {
-      setNumero(1);
-    }*/
   }, []);
 
   useEffect(() => {
@@ -41,7 +36,6 @@ function ElPopUp(props) {
     eleccion();
     console.log('el array: ', otroArray1);
   }, [props.respuestaBack]);
-  console.log('dirimags: ', props, props.respuestaBack);
 
   return (
     <div>
