@@ -1,28 +1,20 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-function FormN({ setRes ,setBoton}) {
+function FormN({ setRes, setBoton }) {
   const { register, handleSubmit } = useForm();
   /*const [data, setData] = useState('');*/
   const [datos, setDatos] = useState({});
 
   const onSubmit = (data) => {
-    /*setData(JSON.stringify(data));*/
-    console.log('datos de entrada : ', data, JSON.stringify(data));
     setDatos(JSON.stringify(data));
-    console.log(
-      'los datos de nombre y apellidos: ',
-      datos,
-      datos.unnombre,
-      datos.unprimerApellido
-    );
+
     if (data.unnombre === 'Israel') {
       setRes(true);
-      setBoton(true)
     } else {
       setRes(false);
-      setBoton(false);
     }
+    setBoton(true);
   };
 
   return (

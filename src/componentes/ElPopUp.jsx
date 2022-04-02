@@ -5,7 +5,7 @@ import Boton from './Boton.jsx';
 function ElPopUp(props) {
   const [dirImgs, setDirImg] = useState(getDirVistoError());
   const [otroArray1, setOtroArray1] = useState([]);
-  const [imagen1, setImagen1] = useState([]);
+  const [imagen1, setImagen1] = useState();
   const [numero, setNumero] = useState(0);
   useEffect(() => {
     const laPeticion = () => {
