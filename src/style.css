@@ -1,0 +1,53 @@
+h1,
+p {
+  font-family: Lato;
+}
+.divFlex {
+  display: flex;
+}
+.enlinea {
+  display: inline;
+}
+.anchura {
+  width: -webkit-fill-available;
+}
+.margen {
+  margin: 3px;
+}
+.border {
+  border: 1px solid black;
+}
+.justifyContentCenter {
+  justify-content: center;
+}
+.justifyContentSpaceAround {
+  justify-content: space-around;
+}
+.flexDirectionColumn {
+  flex-direction: column;
+}
+.alignCenter {
+  text-align: center;
+}
+.fondoNaranja {
+  background-color: orange;
+}
+.fondoVerde {
+  background-color: green;
+}
+.ocultarDatos {
+  display: none;
+}
+
+.elImgPopUp {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 600px) {
+  .ocultarTitulos {
+    display: none;
+  }
+  .ocultarDatos {
+    display: block;
+  }
+}
