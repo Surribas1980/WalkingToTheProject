@@ -52,17 +52,30 @@ p {
 .abigheightpx {
   height: 600px;
 }
+.vh50 {
+  height: 50vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+/* place-self-sibilings*/
+.vh50 > * {
+  display: grid;
+  place-self: center;
+  /*padding: 20px;
+      background-color: blueviolet;*/
+}
+
 .vh100 {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
 /* place-self-sibilings*/
-.vh100 > * {
+.vh100 > div {
   display: grid;
   place-self: center;
   /*padding: 20px;
-  background-color: blueviolet;*/
+      background-color: blueviolet;*/
 }
 /* Posiciones */
 
@@ -74,6 +87,9 @@ p {
 }
 .topNegativeToTest {
   top: -100px;
+}
+.topPositiveToTest {
+  top: 100px;
 }
 .zIndexTest1 {
   z-index: 1;

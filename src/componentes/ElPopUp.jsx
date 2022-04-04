@@ -7,6 +7,7 @@ function ElPopUp(props) {
   const [otroArray1, setOtroArray1] = useState([]);
   const [imagen1, setImagen1] = useState();
   const [numero, setNumero] = useState(0);
+  const [message, setMessage] = useState('');
   useEffect(() => {
     const laPeticion = () => {
       dirImgs?.map((item) => {
@@ -29,8 +30,10 @@ function ElPopUp(props) {
     const eleccion = () => {
       if (props.respuestaBack) {
         setNumero(0); /**true */
+        setMessage('You have registed correctly');
       } else {
         setNumero(1); /**false */
+        setMessage('You have not registed correctly');
       }
     };
     eleccion();
@@ -38,12 +41,10 @@ function ElPopUp(props) {
   }, [props.respuestaBack]);
 
   return (
-    <div>
-      <div className="testlenght vh100 posicionRelativa fondoNaranja topNegativeToTest zIndexTest1">
+    <div className="vh100  posicionRelativa topNegativeToTest zIndexTest1 fondoVerde">
+      <div className="testlenght vh50 abigwidhtpx  fondoNaranja posicionAbsoluta topPositiveToTest zIndexTest1">
         {<img src={otroArray1[numero]} width="100" height="100" />}
-        <div>
-          You've registed correctly..<span>...Correcto/ Incorrecto...</span>..
-        </div>
+        <div>{message}</div>
 
         <Boton elEstado={props.elEstado} />
       </div>
