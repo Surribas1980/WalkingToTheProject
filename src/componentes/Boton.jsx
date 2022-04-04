@@ -10,9 +10,9 @@ function Boton(props) {
   return (
     <button
       onClick={laFuncion}
-      className=" buttonGeneric fondoAzulete px20 theSlabRoboto rounding10"
+      className="divFlex flexDirectionRow justifyContentCenter alignWithFlexItemCenter buttonGeneric fondoAzulete px20 theSlabRoboto rounding10"
     >
-      Cerrar Boton
+      <div>Cerrar</div>
     </button>
   );
 }

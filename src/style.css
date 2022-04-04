@@ -38,6 +38,12 @@ p {
 .margen {
   margin: 3px;
 }
+.margin10{
+  margin: 10px;
+}
+.padding10{
+  padding: 10px;
+}
 .border {
   border: 1px solid black;
 }
@@ -50,8 +56,14 @@ p {
 .flexDirectionColumn {
   flex-direction: column;
 }
+.flexDirectionRow{
+  flex-direction: row;
+}
 .alignCenter {
   text-align: center;
+}
+.alignWithFlexItemCenter{
+  align-items: center;
 }
 .fondoAzulete {
   background-color: rgba(143, 136, 185, 0.842);
