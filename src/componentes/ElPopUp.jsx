@@ -39,8 +39,11 @@ function ElPopUp(props) {
 
   return (
     <div>
-      <div>
+      <div className="testlenght vh100 posicionRelativa fondoNaranja topNegativeToTest zIndexTest1">
         {<img src={otroArray1[numero]} width="100" height="100" />}
+        <div>
+          You've registed correctly..<span>...Correcto/ Incorrecto...</span>..
+        </div>
 
         <Boton elEstado={props.elEstado} />
       </div>

@@ -43,6 +43,44 @@ p {
   width: 100px;
   height: 100px;
 }
+/* Pop uP*/
+
+/* Dimensiones */
+.abigwidhtpx {
+  width: 600px;
+}
+.abigheightpx {
+  height: 600px;
+}
+.vh100 {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+/* place-self-sibilings*/
+.vh100 > * {
+  display: grid;
+  place-self: center;
+  /*padding: 20px;
+  background-color: blueviolet;*/
+}
+/* Posiciones */
+
+.posicionRelativa {
+  position: relative;
+}
+.posicionAbsoluta {
+  position: absolute;
+}
+.topNegativeToTest {
+  top: -100px;
+}
+.zIndexTest1 {
+  z-index: 1;
+}
+.zIndexTest2 {
+  z-index: 2;
+}
 @media (max-width: 600px) {
   .ocultarTitulos {
     display: none;
