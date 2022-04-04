@@ -97,6 +97,9 @@ p {
 .alignWithFlexItemCenter {
   align-items: center;
 }
+.fondoBlack {
+  background-color: black;
+}
 .fondoAzulete {
   background-color: rgba(143, 136, 185, 0.842);
 }
@@ -179,7 +182,10 @@ p {
   width: 150px;
   height: 40px;
 }
-
+/* Colores de letra */
+.colorWhite {
+  color: white;
+}
 @media (max-width: 600px) {
   .ocultarTitulos {
     display: none;

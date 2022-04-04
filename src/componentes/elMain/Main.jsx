@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getDireccionesImagenes } from '../../data.js';
+import DosSeccion from '../lasSecciones/DosSeccion.jsx';
+import TresSeccion from '../lasSecciones/TresSeccion.jsx';
+import UnaSeccion from '../lasSecciones/UnaSeccion.jsx';
 export default function Main() {
   const [imagen, setImagen] = useState([]);
   let [contador, setContador] = useState(0);
@@ -39,5 +42,13 @@ export default function Main() {
     return () => clearInterval(interval);
   }, [contador]);
 
-  return <>{<img width="200" height="200" src={otroArray[contador]} />}</>;
+  return (
+    <div>
+      <UnaSeccion>
+        {<img width="200" height="200" src={otroArray[contador]} />}
+      </UnaSeccion>
+      <DosSeccion></DosSeccion>
+      <TresSeccion></TresSeccion>
+    </div>
+  );
 }
