@@ -4,6 +4,28 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif;
 */
+/* Links */
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+/*---------*/
+/* Navs */
+.borderColorBottom {
+  /*border-bottom-size: 1px;*/
+  border-bottom-style: solid;
+  border-bottom-color: rgb(187, 49, 49);
+}
+.separateLogo{
+  margin-left: auto;
+}
+/*--------*/
 /*-------Style words---------*/
 .theRoboto {
   font-family: 'Roboto', sans-serif;
@@ -38,10 +60,10 @@ p {
 .margen {
   margin: 3px;
 }
-.margin10{
+.margin10 {
   margin: 10px;
 }
-.padding10{
+.padding10 {
   padding: 10px;
 }
 .border {
@@ -56,13 +78,13 @@ p {
 .flexDirectionColumn {
   flex-direction: column;
 }
-.flexDirectionRow{
+.flexDirectionRow {
   flex-direction: row;
 }
 .alignCenter {
   text-align: center;
 }
-.alignWithFlexItemCenter{
+.alignWithFlexItemCenter {
   align-items: center;
 }
 .fondoAzulete {
