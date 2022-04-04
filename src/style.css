@@ -12,10 +12,10 @@ font-family: 'Roboto Slab', serif;
   font-family: 'Roboto Slab', serif;
 }
 
-  /* Size */
-  .px20 {
-    font-size: 20px;
-  }
+/* Size */
+.px20 {
+  font-size: 20px;
+}
 /*----------------*/
 * {
   padding: 0;
@@ -53,6 +53,9 @@ p {
 .alignCenter {
   text-align: center;
 }
+.fondoAzulete {
+  background-color: rgba(143, 136, 185, 0.842);
+}
 .fondoNaranja {
   background-color: orange;
 }
@@ -68,9 +71,7 @@ p {
   height: 100px;
 }
 /* Border border-radius*/
-/*.roundig{
-  border: 1px solid black;
-}*/
+
 .rounding10 {
   border: 1px solid black;
   border-radius: 20px;
@@ -128,6 +129,13 @@ p {
 .zIndexTest2 {
   z-index: 2;
 }
+
+/* Buttons */
+.buttonGeneric {
+  width: 150px;
+  height: 40px;
+}
+
 @media (max-width: 600px) {
   .ocultarTitulos {
     display: none;

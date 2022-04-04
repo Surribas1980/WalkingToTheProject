@@ -7,7 +7,14 @@ function Boton(props) {
     console.log('en el boton: ', laPropFuncion);
   };
 
-  return <button onClick={laFuncion}>Cerrar Boton</button>;
+  return (
+    <button
+      onClick={laFuncion}
+      className=" buttonGeneric fondoAzulete px20 theSlabRoboto rounding10"
+    >
+      Cerrar Boton
+    </button>
+  );
 }
 
 export default Boton;
