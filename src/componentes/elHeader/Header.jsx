@@ -6,7 +6,7 @@ import Main from '../elMain/Main';
 export default function Header({ children }) {
   return (
     <>
-      <nav className="divFlex borderColorBottom">
+      <nav className="divFlex borderColorBottom theRoboto">
         <div>
           <Link className="margin10" to="/">
             Logo
