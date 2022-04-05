@@ -3,6 +3,7 @@ import { getDireccionesImagenes } from '../../data.js';
 import DosSeccion from '../lasSecciones/DosSeccion.jsx';
 import TresSeccion from '../lasSecciones/TresSeccion.jsx';
 import UnaSeccion from '../lasSecciones/UnaSeccion.jsx';
+import {Element} from 'react-scroll';
 export default function Main() {
   const [imagen, setImagen] = useState([]);
   let [contador, setContador] = useState(0);
@@ -44,11 +45,21 @@ export default function Main() {
 
   return (
     <div>
-      <UnaSeccion>
-        {<img width="200" height="200" src={otroArray[contador]} />}
-      </UnaSeccion>
-      <DosSeccion></DosSeccion>
-      <TresSeccion></TresSeccion>
+
+      <Element name="seccion1">
+
+        <UnaSeccion>
+          {<img className='img-portada' src={otroArray[contador]} />}
+        </UnaSeccion>
+      </Element>
+      <Element name="seccion2">
+        <DosSeccion></DosSeccion>
+
+      </Element>
+      <Element name="seccion3">
+
+        <TresSeccion></TresSeccion>
+      </Element>
     </div>
   );
 }
