@@ -12,14 +12,17 @@ export default function Login() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register('mail')} placeholder="Introduce mail" />
-      <input
-        {...register('pwd')}
-        placeholder="Introduce password"
-        type="password"
-      />
-      <input type="submit" />
-    </form>
+    <div className="vh50 fondoAzulete">
+
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input {...register('mail')} placeholder="Introduce mail" />
+        <input
+          {...register('pwd')}
+          placeholder="Introduce password"
+          type="password"
+        />
+        <input type="submit" />
+      </form>
+    </div>
   );
 }
