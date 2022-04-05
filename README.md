@@ -10,8 +10,9 @@ I'm using diferents dependencies:
 - React-dom 17.0.2
 - React-router-dom 6.2.2
 - React-hook-form 7.27.1
+- React-scroll 1.8.6
 
-Surely, it will be changing to future.
+The first time that I began this project, this one was on StackBlitz. But along of the time, I've had several problems in that platform, so I've decided to start form home.
 
 ## Short remarks
 
