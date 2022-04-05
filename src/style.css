@@ -56,7 +56,10 @@ p {
 .enlinea {
   display: inline;
 }
-
+/*---- li ---*/
+li{
+  list-style:none;
+}
 /* Anchuras responsive */
 .width50vw {
   width: 50vw;
@@ -69,6 +72,7 @@ p {
 .anchura {
   width: -webkit-fill-available;
 }
+/*-------Margin Padding-------*/
 .margen {
   margin: 3px;
 }
@@ -81,24 +85,31 @@ p {
 .border {
   border: 1px solid black;
 }
+/*----Justify----*/
 .justifyContentCenter {
   justify-content: center;
 }
 .justifyContentSpaceAround {
   justify-content: space-around;
 }
+
+/*--- Flex Direction ---*/
 .flexDirectionColumn {
   flex-direction: column;
 }
 .flexDirectionRow {
   flex-direction: row;
 }
+
+/*----- Align ------*/
 .alignCenter {
   text-align: center;
 }
 .alignWithFlexItemCenter {
   align-items: center;
 }
+
+/*-----background-color-----*/
 .fondoBlack {
   background-color: black;
 }
@@ -119,6 +130,7 @@ p {
   width: 100px;
   height: 100px;
 }
+
 /* Border border-radius*/
 
 .rounding10 {
@@ -132,6 +144,7 @@ p {
 .abigheightpx {
   height: 600px;
 }
+/*---- vh ----*/
 .vh50 {
   height: 50vh;
   display: grid;
@@ -150,6 +163,7 @@ p {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
+
 /* place-self-sibilings*/
 .vh100 > div {
   display: grid;
@@ -157,7 +171,14 @@ p {
   /*padding: 20px;
       background-color: blueviolet;*/
 }
-
+.vh50-Sin-Grid{
+  height: 50vh;
+}
+/*---------------------------------*/
+/*----Imagenes----*/
+.img-portada{
+  height: 50vh;
+}
 /* Positions and z-index */
 
 .posicionRelativa {
