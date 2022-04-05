@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Login from '../../pages/Login';
 import Register from '../../pages/Register';
 import Main from '../elMain/Main';
+import NavBar from '../elNavBar/NavBar';
 export default function Header({ children }) {
   return (
     <>
@@ -12,6 +13,7 @@ export default function Header({ children }) {
             Logo
           </Link>
         </div>
+        <NavBar />
         <div className="separateLogo">
           <Link className="margin10" to="/login">
             Login
