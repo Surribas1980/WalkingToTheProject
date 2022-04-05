@@ -3,7 +3,7 @@ import {Link} from 'react-scroll';
 
 function NavBar() {
   return (
-    <nav>
+    <nav className='justifyContentCenter'>
       <ul className="nav-items divFlex">
         <li className="nav-item">
         <Link activeClass="active"
