@@ -13,21 +13,27 @@ export default function Header({ children }) {
             Logo
           </Link>
         </div>
+        <div className='justifyContentCenter'>
+
         <NavBar />
-        <div className="separateLogo">
-          <Link className="margin10" to="/login">
-            Login
-          </Link>
         </div>
-        <div>
-          <Link className="margin10" to="/register">
-            Register
-          </Link>
-        </div>
-        <div>
-          <Link className="margin10" to="/">
-            Main
-          </Link>
+        <div className='divFlex'>
+
+          <div className="">
+            <Link className="margin10" to="/login">
+              Login
+            </Link>
+          </div>
+          <div>
+            <Link className="margin10" to="/register">
+              Register
+            </Link>
+          </div>
+          <div>
+            <Link className="margin10" to="/">
+              Main
+            </Link>
+          </div>
         </div>
       </nav>
       <Routes>
