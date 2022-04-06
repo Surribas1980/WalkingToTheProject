@@ -3,13 +3,17 @@ import { getDireccionesImagenes } from '../../data.js';
 import DosSeccion from '../lasSecciones/DosSeccion.jsx';
 import TresSeccion from '../lasSecciones/TresSeccion.jsx';
 import UnaSeccion from '../lasSecciones/UnaSeccion.jsx';
-import {Element} from 'react-scroll';
+import {Element , animateScroll as scroll} from 'react-scroll';
+import GenericBoton from '../GenericBoton.jsx';
 export default function Main() {
   const [imagen, setImagen] = useState([]);
   let [contador, setContador] = useState(0);
   const [arrayImagenes, setArrayImagenes] = useState(getDireccionesImagenes());
   const [otroArray, setOtroArray] = useState([]);
 
+  const Up = ()=>{
+    scroll.scrollToTop();
+  }
   useEffect(() => {
     const imagen = () => {
       arrayImagenes?.map((item) => {
@@ -43,6 +47,8 @@ export default function Main() {
     return () => clearInterval(interval);
   }, [contador]);
 
+  //let styleButtom = "borderNone width5vw-change7 fondoAzulete toBottom0 posicionAbsoluta zIndexTest2";
+
   return (
     <div>
 
@@ -58,7 +64,10 @@ export default function Main() {
       </Element>
       <Element name="seccion3">
 
-        <TresSeccion></TresSeccion>
+        <TresSeccion>
+
+        </TresSeccion>
+      {/*<GenericBoton newFunction={Up} estilo={styleButtom} newForm={'boton from Main'}></GenericBoton>*/}
       </Element>
     </div>
   );
