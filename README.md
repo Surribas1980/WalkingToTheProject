@@ -35,7 +35,7 @@ In this context, it uses it to register me and it's selected a different route
 I'm trying to write it of the as follows:
 
 ```
-[action] [file's name] - [ on ] - [short description about  what have done it] - [file's path]
+[action] - [file's name] - [ on ] - [short description about  what have done it] - [file's path]
 ```
 I have several acctions:
 
@@ -43,5 +43,7 @@ I have several acctions:
 - Add
 - Without changes
 - New Component
+
+When I didn't know about anything, could write with 'x' or [... lines ...] and if it wasn't anything diferent also.
 
 With the file README is something different, because only it will changes on the future or that is it I think now , jejeje
