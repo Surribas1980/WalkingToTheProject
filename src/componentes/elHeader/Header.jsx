@@ -7,7 +7,7 @@ import NavBar from '../elNavBar/NavBar';
 export default function Header({ children }) {
   return (
     <>
-      <nav className="divFlex borderColorBottom theRoboto padding10">
+      <nav className="divFlex borderColorBottom theRoboto padding10 justifyContentSpaceBetween">
         <div>
           <Link className="margin10" to="/">
             Logo
