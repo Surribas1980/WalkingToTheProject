@@ -9,8 +9,11 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState('ocultarTitulos');
   let navigate = useNavigate();
   let sigIn = (mail, pwd) => {
-    setUser('logeado');
-    navigate('/usuarios');
+    
+    if(mail == 'logeado'){
+      setUser('logeado');
+      navigate('/usuarios');
+    }
   };
 
   const logOut = () => {
