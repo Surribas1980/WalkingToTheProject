@@ -110,7 +110,9 @@ li{
 .justifyContentSpaceAround {
   justify-content: space-around;
 }
-
+.justifyContentSpaceBetween{
+  justify-content: space-between;
+}
 /*--- Flex Direction ---*/
 .flexDirectionColumn {
   flex-direction: column;
