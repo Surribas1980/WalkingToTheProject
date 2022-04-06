@@ -7,8 +7,8 @@ export default function Login() {
   const { sigIn } = useAuth();
   const onSubmit = (data) => {
     setData(JSON.stringify(data));
-    sigIn(data.pwd, data.mail);
-    console.log('data,data.pwd, data.mail', data, data.pwd, data.mail);
+    sigIn( data.mail, data.pwd);
+    //console.log('data,data.pwd, data.mail', data, data.pwd, data.mail);
   };
 
   return (
