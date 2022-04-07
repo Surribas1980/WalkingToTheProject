@@ -40,6 +40,10 @@ a:visited {
 .px20 {
   font-size: 20px;
 }
+/* Weight's letter */
+.weight-letter-bold{
+  font-weight: bold;
+}
 /*----------------*/
 * {
   padding: 0;
@@ -195,9 +199,14 @@ li{
   height: 50vh;
 }
 /*---------------------------------*/
+.the-body{
+  height: auto;
+  width: 100vw;
+}
 /*----Imagenes----*/
 .img-portada{
   height: 50vh;
+  width: 75vw;
 }
 /* Positions and z-index */
 
