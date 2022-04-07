@@ -13,10 +13,10 @@ export default function App() {
   const Up = ()=>{
     scroll.scrollToTop();
   }
-  let styleButtom = "borderNone width5vw-change7 fondoAzulete  alignCenter";
+  let styleButtom = "borderNone width5vw-change7 fondoAzulete  alignCenter theRoboto weight-letter-bold";
   let styleDiv = "divFlex alignCenter justifyContentCenter"
   return (
-    <div>
+    <div className='fondoVerde'>
       <AuthProvider>
         <UtilizoHook>
           <Header />
