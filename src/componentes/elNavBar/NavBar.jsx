@@ -8,7 +8,7 @@ function NavBar() {
         <li className="nav-item">
         <Link activeClass="active"
                     
-                    to="seccion1"
+                    to="seccion-1"
                     spy={true}
                    
                     smooth={true}
@@ -20,7 +20,7 @@ function NavBar() {
         <li className="nav-item">
           <Link activeClass="active"
                     
-                    to="seccion2"
+                    to="seccion-2"
                     spy={true}
                     
                     smooth={true}
@@ -32,7 +32,7 @@ function NavBar() {
         <li className="nav-item">
           <Link activeClass="active"
                    
-                    to="seccion3"
+                    to="seccion-3"
                     spy={true}
                    
                     smooth={true}
