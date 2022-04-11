@@ -2,7 +2,7 @@ import React from 'react';
 
 function UnaSeccion({ children }) {
   return (
-    <div className="fondoVerde vh50-Sin-Grid divFlex alignCenter justifyContentCenter">
+    <div className="fondoVerde divFlex alignCenter justifyContentCenter">
       
       {children}
     </div>
