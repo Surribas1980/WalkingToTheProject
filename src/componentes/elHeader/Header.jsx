@@ -7,30 +7,30 @@ import NavBar from '../elNavBar/NavBar';
 export default function Header({ children }) {
   return (
     <>
-      <nav className="divFlex borderColorBottom theRoboto padding10 justifyContentSpaceBetween">
+      <nav id='navegation-default' className="borderColorBottom theRoboto ">
         <div>
-          <Link className="margin10" to="/">
+          <Link to="/">
             Logo
           </Link>
         </div>
-        <div className='justifyContentCenter'>
+        <div>
 
-        <NavBar />
+          <NavBar />
         </div>
-        <div className='divFlex'>
+        <div id='navegation-default' >
 
-          <div className="">
-            <Link className="margin10" to="/login">
+          <div >
+            <Link className="" to="/login">
               Login
             </Link>
           </div>
           <div>
-            <Link className="margin10" to="/register">
+            <Link  to="/register">
               Register
             </Link>
           </div>
           <div>
-            <Link className="margin10" to="/">
+            <Link  to="/">
               Main
             </Link>
           </div>
