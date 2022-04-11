@@ -16,11 +16,12 @@ export default function App() {
   let styleButtom = "borderNone width5vw-change7 fondoAzulete  alignCenter theRoboto weight-letter-bold";
   let styleDiv = "divFlex alignCenter justifyContentCenter"
   return (
-    <div className='fondoVerde'>
+    <div className=''>
       <AuthProvider>
         <UtilizoHook>
+        <div className='' id='body-default'>
           <Header />
-
+        </div>
           <Footer />
         </UtilizoHook>
       </AuthProvider>
