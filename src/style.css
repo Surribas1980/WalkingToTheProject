@@ -7,6 +7,41 @@ font-family: 'Roboto Slab', serif;
 /*-----------------------------*/
 /**----/
 /* Links */
+:root{
+  --padding-section-default: 20px;
+  --height-section-default:50vh;
+  --padding-nav-default:10px;
+}
+/*-- FRONT PAGE --*/
+/*-BODY-*/
+#body-default{
+  display: grid;
+  grid-template-rows: 0.1fr 4fr;
+  background-color: bisque;
+}
+#body-default > div{
+    justify-self: center;
+  }
+/*-SECCTION-*/
+div[name |= "seccion"]{
+  padding: var(--padding-section-default);
+  height: var(--height-section-default);
+}
+
+/**------------**/
+
+/*--- NAVEGATION ---*/
+#navegation-default{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-nav-default);
+}
+#navegation-default > div{
+  padding: inherit;
+}
+
+/*--------*/
 a {
   text-decoration: none;
 }
@@ -250,6 +285,8 @@ li{
 .colorWhite {
   color: white;
 }
+
+
 @media (max-width: 600px) {
   .ocultarTitulos {
     display: none;
