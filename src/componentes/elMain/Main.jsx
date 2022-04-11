@@ -52,17 +52,17 @@ export default function Main() {
   return (
     <div>
 
-      <Element name="seccion1">
+      <Element name="seccion-1">
 
         <UnaSeccion>
           {<img className='img-portada' src={otroArray[contador]} />}
         </UnaSeccion>
       </Element>
-      <Element name="seccion2">
+      <Element name="seccion-2">
         <DosSeccion></DosSeccion>
 
       </Element>
-      <Element name="seccion3">
+      <Element name="seccion-3">
 
         <TresSeccion>
 
