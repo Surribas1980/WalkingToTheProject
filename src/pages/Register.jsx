@@ -6,13 +6,13 @@ export default function Register() {
   const [boton, setBoton] = useState(false);
 
   return (
-    <div>
+    <>
       <FormN setRes={setRes} setBoton={setBoton} />
       {boton === true ? (
         <ElPopUp respuestaBack={res} elEstado={setBoton} />
       ) : (
         ' '
       )}
-    </div>
+    </>
   );
 }
