@@ -17,7 +17,7 @@ function FormN({ setRes, setBoton }) {
   };
 
   return (
-    <div className="vh50 fondoAzulete">
+    <div className="vh50">
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register('unnombre')} placeholder="Introduce un Nombre" />
         <input
