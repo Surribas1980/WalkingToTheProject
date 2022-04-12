@@ -11,15 +11,26 @@ font-family: 'Roboto Slab', serif;
   --padding-section-default: 20px;
   --height-section-default:50vh;
   --padding-nav-default:10px;
+  --grid-template-rows-default: 0.1fr 4fr;
+  --grid-template-rows-form:0.1fr 10fr;
 }
 /*-- FRONT PAGE --*/
 /*-BODY-*/
 #body-default{
   display: grid;
-  grid-template-rows: 0.1fr 4fr;
+  grid-template-rows: var(--grid-template-rows-default);
   background-color: bisque;
 }
 #body-default > div{
+    justify-self: center;
+  }
+
+  #body-form-default{
+    display: grid;
+    grid-template-rows: var(--grid-template-rows-form);
+    background-color: bisque;
+  }
+  #body-form-default > div{
     justify-self: center;
   }
 /*-SECCTION-*/
@@ -207,7 +218,7 @@ li{
 .vh50 {
   height: 50vh;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+ 
 }
 /* place-self-sibilings*/
 .vh50 > * {
