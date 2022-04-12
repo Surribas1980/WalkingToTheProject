@@ -8,11 +8,11 @@ export default function Login() {
   const onSubmit = (data) => {
     setData(JSON.stringify(data));
     sigIn( data.mail, data.pwd);
-    //console.log('data,data.pwd, data.mail', data, data.pwd, data.mail);
+    
   };
 
   return (
-    <div className="vh50 fondoAzulete">
+    <div className="vh50 ">
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <input {...register('mail')} placeholder="Introduce mail" />
