@@ -4,12 +4,16 @@ import Login from '../../pages/Login';
 import Register from '../../pages/Register';
 import Main from '../elMain/Main';
 import NavBar from '../elNavBar/NavBar';
-export default function Header({ children }) {
+export default function Header( props ,{children}) {
+
+
+  
+
   return (
     <>
       <nav id='navegation-default' className="borderColorBottom theRoboto ">
         <div>
-          <Link to="/">
+          <Link onClick={()=>{props.funChangeStyle('body-default')}} to="/">
             Logo
           </Link>
         </div>
@@ -20,17 +24,17 @@ export default function Header({ children }) {
         <div id='navegation-default' >
 
           <div >
-            <Link className="" to="/login">
+            <Link onClick={()=>{props.funChangeStyle('body-form-default')}} className="" to="/login">
               Login
             </Link>
           </div>
           <div>
-            <Link  to="/register">
+            <Link onClick={()=>{props.funChangeStyle('body-form-default')}} to="/register">
               Register
             </Link>
           </div>
           <div>
-            <Link  to="/">
+            <Link onClick={()=>{props.funChangeStyle('body-default')}} to="/">
               Main
             </Link>
           </div>
