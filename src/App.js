@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {animateScroll as scroll} from 'react-scroll';
 import UtilizoHook from './componentes/conHooks/UtilizoHook';
 import Header from './componentes/elHeader/Header';
@@ -10,6 +10,7 @@ import './style.css';
 import GenericBoton from './componentes/GenericBoton';
 
 export default function App() {
+const [styleBody, setStyleBody] = useState('body-default')
   const Up = ()=>{
     scroll.scrollToTop();
   }
@@ -19,10 +20,11 @@ export default function App() {
     <div className=''>
       <AuthProvider>
         <UtilizoHook>
-        <div className='' id='body-default'>
-          <Header />
-        </div>
+        <div className='' id={styleBody}>
+          <Header funChangeStyle={setStyleBody} />
           <Footer />
+        </div>
+          {/*<Footer />*/}
         </UtilizoHook>
       </AuthProvider>
       <div className='toBottom0 positionStyke zIndexTest2'>
