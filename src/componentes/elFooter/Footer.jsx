@@ -9,7 +9,14 @@ function Footer() {
   let styleDiv = "divFlex alignCenter justifyContentCenter toBottom0 positionStyke zIndexTest2 colorWhite fondoVerde";
   return (
  
-    <>El footer
+    <><div>
+        <h1>
+         El footer
+        </h1>
+        <div>
+          dentro de otro div
+        </div>
+      </div>
     
     <GenericBoton styleDiv={styleDiv} newFunction={Up} estilo={styleButtom} newForm={'boton from App'}/>
     
