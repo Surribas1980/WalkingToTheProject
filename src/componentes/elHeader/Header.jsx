@@ -22,26 +22,29 @@ export default function Header( props ,{children}) {
           </Link>
         </div>
         <div>
+            <div>
 
-          { toogleNavBar === true ? <NavBar /> : ''}
-        </div>
-        <div id='navegation-default' >
+              { toogleNavBar === true ? <NavBar /> : ''}
+            </div>
+            <div id='navegation-default' >
 
-          <div >
-            <Link onClick={()=>{bodyStyle('body-form-default') }} className="" to="/login">
-              Login
-            </Link>
-          </div>
-          <div>
-            <Link onClick={()=>{bodyStyle('body-form-default')}} to="/register">
-              Register
-            </Link>
-          </div>
-          <div>
-            <Link onClick={()=>{bodyStyle('body-default')}} to="/">
-              Main
-            </Link>
-          </div>
+              <div >
+                <Link onClick={()=>{bodyStyle('body-form-default') }} className="" to="/login">
+                  Login
+                </Link>
+              </div>
+              <div>
+                <Link onClick={()=>{bodyStyle('body-form-default')}} to="/register">
+                  Register
+                </Link>
+              </div>
+              <div>
+                <Link onClick={()=>{bodyStyle('body-default')}} to="/">
+                  Main
+                </Link>
+              </div>
+            </div>
+
         </div>
       </nav>
       <Routes>

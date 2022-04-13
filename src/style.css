@@ -323,5 +323,7 @@ li{
   .ocultarDatos {
     display: block;
   }
-  
+  #navegation-default{
+    display: grid;
+  }
 }
