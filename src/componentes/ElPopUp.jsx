@@ -41,16 +41,16 @@ function ElPopUp(props) {
   }, [props.respuestaBack]);
 
   return (
-    <div className="vh100  posicionRelativa topNegativeToTest zIndexTest1 fondoVerde">
-      <div className="testlenght vh50 width50vw  fondoNaranja posicionAbsoluta topPositiveToTest zIndexTest1 rounding10">
+    <div className="testlenght vh50 width50vw  fondoNaranja posicionAbsoluta topPositiveToTest zIndexTest1 rounding10">
+        
         {<img src={otroArray1[numero]} width="50rem" height="50rem" />}
         <div className="theSlabRoboto alignCenter padding10 px20">
           {message}
         </div>
 
         <Boton elEstado={props.elEstado} />
+        
       </div>
-    </div>
   );
 }
 
