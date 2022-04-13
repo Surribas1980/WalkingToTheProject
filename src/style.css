@@ -64,6 +64,9 @@ div[name |= "seccion"]{
   color:red;
   background-color: blue;
 }
+.div-click-default{
+  display: none;
+}
 /*--------*/
 a {
   text-decoration: none;
@@ -232,7 +235,7 @@ li{
 .vh50 {
   height: 50vh;
   display: grid;
- 
+
 }
 /* place-self-sibilings*/
 .vh50 > * {
@@ -318,12 +321,25 @@ li{
 @media (max-width: 600px) {
   .ocultarTitulos {
     display: none;
-    
+
   }
   .ocultarDatos {
     display: block;
   }
   #navegation-default{
     display: grid;
+  }
+
+  .div-click-default{
+    display: block;
+    height: 5vh;
+    width: 5vw;
+    background-color: blue;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+  }
+  .div-click-default:hover{
+    background-color: black;
   }
 }
