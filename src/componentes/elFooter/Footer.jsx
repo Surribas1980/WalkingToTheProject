@@ -5,8 +5,9 @@ function Footer() {
   const Up = ()=>{
     scroll.scrollToTop();
   }
-  let styleButtom = "borderNone width5vw-change7 fondoAzulete  alignCenter theRoboto weight-letter-bold";
+  let styleButtom = "fondoAzulete  alignCenter theRoboto weight-letter-bold";
   let styleDiv = "divFlex alignCenter justifyContentCenter toBottom0 positionStyke zIndexTest2 colorWhite fondoVerde";
+  let idStyleButton = "button-default";
   return (
  
     <><div>
@@ -16,9 +17,12 @@ function Footer() {
         <div>
           dentro de otro div
         </div>
+        <div>
+          tercero de otro div
+        </div>
       </div>
     
-    <GenericBoton styleDiv={styleDiv} newFunction={Up} estilo={styleButtom} newForm={'boton from App'}/>
+    <GenericBoton id={idStyleButton} styleDiv={styleDiv} newFunction={Up} estilo={styleButtom} newForm={'boton from App'}/>
     
     </>
     

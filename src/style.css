@@ -51,7 +51,19 @@ div[name |= "seccion"]{
 #navegation-default > div{
   padding: inherit;
 }
-
+/*----BUTTONs ---*/
+#button-default{
+  border: none;
+  width: 5vw;
+  color: white;
+}
+#button-default:hover{
+  transition-property: all;
+  transition-duration: 1s;
+  width: 7vw;
+  color:red;
+  background-color: blue;
+}
 /*--------*/
 a {
   text-decoration: none;
@@ -189,9 +201,11 @@ li{
 .fondoNaranja {
   background-color: orange;
 }
+
 .fondoVerde {
   background-color: green;
 }
+
 .ocultarDatos {
   display: none;
 }
@@ -296,13 +310,18 @@ li{
 .colorWhite {
   color: white;
 }
-
+/*.ocultarTitulos {
+  display: block;
+  color: orange
+}*/
 
 @media (max-width: 600px) {
   .ocultarTitulos {
     display: none;
+    
   }
   .ocultarDatos {
     display: block;
   }
+  
 }
