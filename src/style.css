@@ -44,28 +44,54 @@ div[name |= "seccion"]{
 /*--- NAVEGATION ---*/
 #navegation-default{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  /*justify-content: space-between;
+  align-items: center;*/
   padding: var(--padding-nav-default);
 }
-#navegation-default > div{
+#navegation-default > li{
+  padding: inherit;
+  text-align: center;
+}
+/*#navegation-default > li:nth-child(3){
+
+  margin-left: auto;
+}*/
+#navegation-default > li:nth-child(4){
+
+  margin-left: auto;
+}
+/*#navegation-default > div{
   padding: inherit;
 }
+
+#navegation-default > div:nth-child(3){
+  background-color: orange
+}
+#navegation-default > div:nth-child(1){
+  background-color: white
+}
+
+#navegation-default > div:nth-child(2){
+  background-color: green
+}*/
 /*----BUTTONs ---*/
 #button-default{
   border: none;
   width: 5vw;
   color: white;
+  background-color: orange;
 }
 #button-default:hover{
   transition-property: all;
   transition-duration: 1s;
   width: 7vw;
-  color:red;
-  background-color: blue;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
 .div-click-default{
   display: none;
+
 }
 /*--------*/
 a {
@@ -77,6 +103,15 @@ a:link {
 
 a:visited {
   color: black;
+}
+a:hover{
+  transform: transition all 1s;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: grey;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 3px;
 }
 /*---------*/
 /* Navs */
@@ -327,7 +362,13 @@ li{
     display: block;
   }
   #navegation-default{
-    display: grid;
+    flex-direction: column;
+    align-items: unset;
+    /*padding: inherit;*/
+  }
+  #navegation-default > li:nth-child(4){
+
+    margin-left: unset;
   }
 
   .div-click-default{
@@ -338,8 +379,10 @@ li{
     border: 1px solid transparent;
     border-radius: 5px;
     color: white;
+      cursor: pointer;
   }
   .div-click-default:hover{
     background-color: black;
   }
+
 }
