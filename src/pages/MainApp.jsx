@@ -4,12 +4,19 @@ import Usuarios from './Usuarios';
 import UnaSeccion from '../componentes/lasSecciones/UnaSeccion';
 import DosSeccion from '../componentes/lasSecciones/DosSeccion';
 import TresSeccion from '../componentes/lasSecciones/TresSeccion';
+import HeaderApp from '../componentes/HeaderApp';
+import Notices from '../componentes/losAvisos/Notices';
 
 function MainApp(){
 
 
   return (
-    <>Estoy en MainApp
+    <>
+    <HeaderApp>
+      <Notices />
+
+    </HeaderApp>
+    Estoy en MainApp
     <UnaSeccion>
       el children desde MainApp en UnaSeccion
     </UnaSeccion>
@@ -18,8 +25,9 @@ function MainApp(){
     </DosSeccion>
     <TresSeccion>
       el children desde MainApp en TresSeccion
+      <Usuarios />
     </TresSeccion>
-    <Usuarios />
+
     </>);
 
 }
