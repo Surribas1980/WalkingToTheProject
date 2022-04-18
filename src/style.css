@@ -11,6 +11,7 @@ font-family: 'Roboto Slab', serif;
   --padding-section-default: 20px;
   --height-section-default:50vh;
   --padding-nav-default:10px;
+  --padding-img-default: 3px;
   --grid-template-rows-default: 0.1fr 4fr;
   --grid-template-rows-form:0.1fr 10fr;
 }
@@ -53,27 +54,63 @@ div[name |= "seccion"]{
   padding: inherit;
   text-align: center;
 }
-/*#navegation-default > li:nth-child(3){
 
-  margin-left: auto;
-}*/
 #navegation-default > li:nth-child(4){
 
   margin-left: auto;
 }
-/*#navegation-default > div{
-  padding: inherit;
+
+#navegation-main-app{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-nav-default);
+  background-color:  #a2d9ce;
+}
+#navegation-main-app > div{
+  display: inherit;
+
+}
+/*---HeaderApp---*/
+#img-header-default{
+  position: relative;
+  width: 3vw;
+  margin-left: 5px;
+
+}
+#img-header-default:hover{
+  background-color: white;
+
+  cursor: pointer;
+  padding: var(--padding-img-default);
+}
+#number-notice{
+  font-size: 10px;
+  color:white;
+
 }
 
-#navegation-default > div:nth-child(3){
-  background-color: orange
-}
-#navegation-default > div:nth-child(1){
-  background-color: white
-}
+/*---------------*/
 
-#navegation-default > div:nth-child(2){
-  background-color: green
+/*---Notices--*/
+#img-header-default > .positionAbsolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: red;
+}
+#img-header-default > .tamanio{
+  width: 25px;
+  margin-left: 0px;
+}
+/*------------*/
+/*.imagen{
+  margin: 3px;
+  background-color: grey;
+
 }*/
 /*----BUTTONs ---*/
 #button-default{
@@ -88,11 +125,24 @@ div[name |= "seccion"]{
   width: 7vw;
   border: 1px solid transparent;
   border-radius: 5px;
+
 }
 .div-click-default{
   display: none;
 
 }
+/*---buton---*/
+button{
+  border: none;
+  width: 5vw;
+  height: 5vh;
+  background-color:  #58d68d ;
+}
+button:hover{
+  background-color: black;
+  color:white;
+}
+/*-----------*/
 /*--------*/
 a {
   text-decoration: none;
@@ -370,7 +420,11 @@ li{
 
     margin-left: unset;
   }
+  #img-header-default{
+  
+    margin-left: 15px;
 
+  }
   .div-click-default{
     display: block;
     height: 5vh;
