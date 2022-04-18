@@ -6,19 +6,19 @@ import DosSeccion from '../componentes/lasSecciones/DosSeccion';
 import TresSeccion from '../componentes/lasSecciones/TresSeccion';
 import HeaderApp from '../componentes/HeaderApp';
 import Notices from '../componentes/losAvisos/Notices';
-
+import Info from '../componentes/lasSecciones/infoUnaSecion/Info';
 function MainApp(){
 
 
   return (
-    <>
+    <>{console.time('loop')}
     <HeaderApp>
       <Notices />
-
     </HeaderApp>
-    Estoy en MainApp
+
     <UnaSeccion>
-      el children desde MainApp en UnaSeccion
+
+      <Info />
     </UnaSeccion>
     <DosSeccion>
       el children desde MainApp en DosSeccion
@@ -27,7 +27,7 @@ function MainApp(){
       el children desde MainApp en TresSeccion
       <Usuarios />
     </TresSeccion>
-
+{console.timeEnd('loop')}
     </>);
 
 }
