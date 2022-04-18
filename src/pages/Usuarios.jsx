@@ -1,7 +1,7 @@
 import React from 'react';
 import Contenido from '../componentes/Contenido';
 import Titulo from '../componentes/Titulo';
-import HeaderApp from '../componentes/HeaderApp';
+
 function Usuarios() {
   const usus = [
     {
@@ -29,7 +29,7 @@ function Usuarios() {
 
   return (
     <>
-      <HeaderApp />
+
       <div className="divFlex flexDirectionColumn">
         <div className="ocultarTitulos divFlex border alignCenter">
           <Titulo listanombre={usus} />
