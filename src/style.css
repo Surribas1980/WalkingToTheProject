@@ -107,6 +107,37 @@ div[name |= "seccion"]{
   margin-left: 0px;
 }
 /*------------*/
+/*--Info--*/
+#info{
+  background-color: gray;
+  /*width: 15vw;*/
+  /*height: 15vh;*/
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin: 5px;
+
+}
+#info > img{
+  padding: 5px;
+  width: 10vw;
+  height: 10vh;
+}
+#info > img:hover{
+  padding: 5px;
+  width: 12vw;
+  height: 12vh;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+#info > span{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+/*--------*/
 /*.imagen{
   margin: 3px;
   background-color: grey;
@@ -421,7 +452,7 @@ li{
     margin-left: unset;
   }
   #img-header-default{
-  
+
     margin-left: 15px;
 
   }
@@ -438,5 +469,7 @@ li{
   .div-click-default:hover{
     background-color: black;
   }
-
+  .divFlex{
+    flex-direction: column;
+  }
 }
