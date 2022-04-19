@@ -108,14 +108,37 @@ div[name |= "seccion"]{
 }
 /*------------*/
 /*--Info--*/
+#info-position-relative{
+  position:relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 #info{
   background-color: gray;
-  /*width: 15vw;*/
-  /*height: 15vh;*/
   border: 1px solid transparent;
   border-radius: 5px;
-  margin: 5px;
+ 
+  cursor: pointer;
+  
+  margin: 3px;
+  flex: 1;
+}
 
+#info:hover{
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  /*left: 0;*/
+  -webkit-box-shadow: 2px 4px 14px -1px #2F26FF; 
+  box-shadow: 2px 4px 14px -1px #2F26FF;
 }
 #info > img{
   padding: 5px;
@@ -126,7 +149,7 @@ div[name |= "seccion"]{
   padding: 5px;
   width: 12vw;
   height: 12vh;
-  background-color: white;
+  /*background-color: white;*/
   border: 1px solid transparent;
   border-radius: 5px;
 }
@@ -138,11 +161,7 @@ div[name |= "seccion"]{
   font-family: 'Roboto', sans-serif;
 }
 /*--------*/
-/*.imagen{
-  margin: 3px;
-  background-color: grey;
 
-}*/
 /*----BUTTONs ---*/
 #button-default{
   border: none;
@@ -456,6 +475,16 @@ li{
     margin-left: 15px;
 
   }
+  #info{
+    width: 100%;
+  }
+  #info:hover{
+    position: unset;
+
+  /*left: 0;*/
+  -webkit-box-shadow: unset; 
+  box-shadow:unset;
+  }
   .div-click-default{
     display: block;
     height: 5vh;
@@ -472,4 +501,5 @@ li{
   .divFlex{
     flex-direction: column;
   }
+ 
 }
