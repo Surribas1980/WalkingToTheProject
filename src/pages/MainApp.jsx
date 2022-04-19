@@ -7,6 +7,7 @@ import TresSeccion from '../componentes/lasSecciones/TresSeccion';
 import HeaderApp from '../componentes/HeaderApp';
 import Notices from '../componentes/losAvisos/Notices';
 import Info from '../componentes/lasSecciones/infoUnaSecion/Info';
+import ChartRanking from '../componentes/lasSecciones/infoDosSeccion/ChartRanking';
 function MainApp(){
 
 
@@ -21,7 +22,7 @@ function MainApp(){
       <Info />
     </UnaSeccion>
     <DosSeccion>
-      el children desde MainApp en DosSeccion
+     <ChartRanking />
     </DosSeccion>
     <TresSeccion>
       el children desde MainApp en TresSeccion
