@@ -8,6 +8,9 @@ import HeaderApp from '../componentes/HeaderApp';
 import Notices from '../componentes/losAvisos/Notices';
 import Info from '../componentes/lasSecciones/infoUnaSecion/Info';
 import ChartRanking from '../componentes/lasSecciones/infoDosSeccion/ChartRanking';
+import FooterApp from '../componentes/elFooter/FooterApp';
+import RoutesFooterApp from '../componentes/elFooter/RoutesFooterApp';
+import LinksFooterApp from '../componentes/elFooter/LinksFooterApp';
 function MainApp(){
 
 
@@ -28,6 +31,10 @@ function MainApp(){
       el children desde MainApp en TresSeccion
       <Usuarios />
     </TresSeccion>
+    <FooterApp>
+      {/*<LinksFooterApp />*/}
+      <RoutesFooterApp />
+    </FooterApp>
 {console.timeEnd('loop')}
     </>);
 
