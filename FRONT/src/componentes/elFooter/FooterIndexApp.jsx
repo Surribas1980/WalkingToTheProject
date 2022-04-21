@@ -1,11 +1,11 @@
 import React from "react";
 import FooterApp from "./FooterApp";
-import RoutesFooterApp from "./RoutesFooterApp";
+import LinksFooterApp from "./LinksFooterApp";
 
 function FooterIndexApp(){
     return(
         <FooterApp>
-            <RoutesFooterApp />
+            <LinksFooterApp />
         </FooterApp>
     )
 }
