@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import Icono from "../Icono";
-
+import Delete from '../../images/tasklist/bote-de-basura.png';
 function PaintList(props){
     
     const eliminar = (event,valor)=>{
@@ -10,7 +10,7 @@ function PaintList(props){
         return (
         <div className="tasklist">
             <div className="tasklist-element" >{item}</div>
-            <Icono eliminarFun={eliminar} elkey={index} imagen={props.imgEliminar}/>
+            <Icono eliminarFun={eliminar} elkey={index} imagen={Delete}/>
         </div>)
     })
 
