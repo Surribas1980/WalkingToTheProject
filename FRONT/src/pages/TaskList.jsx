@@ -22,7 +22,7 @@ function TaskList(){
    
 
     return(<>
-    <h1>Lista de tareas</h1>
+    <div name="titulo-lista-tareas">Lista de tareas</div>
     <PaintList list={lista} />
     <InsertList>
         <WritingList laref={valueInput} laFun={SaveList}/>
