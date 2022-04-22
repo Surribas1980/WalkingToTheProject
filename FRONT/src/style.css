@@ -18,6 +18,7 @@ font-family: 'Roboto Slab', serif;
   --grid-template-rows-form:0.1fr 10fr;
   --font-family-default: 'Roboto', sans-serif;;
 }
+
 /*-- FRONT PAGE --*/
 /*-BODY-*/
 #body-default{
@@ -126,7 +127,12 @@ div[name |= "seccion"]{
   border-radius: 5px;
   margin: 3px;
 }
-#icono:hover{
+#icono[name="ok"]{
+  width: 5vw;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+#icono[name="delete"]:hover{
   background-color: red;
 }
 /*------------*/
@@ -135,19 +141,45 @@ div[name |= "seccion"]{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  /*align-items: center;*/
 }
 .tasklist > .tasklist-element{
   border: 1px solid black;
   padding: var(--padding-list-default);
   flex:1;
   margin: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
-.tasklist > .tasklist-element::before{
+/*.tasklist > .tasklist-element::before{
   content: '> ';
+}*/
+.tasklist-element-statuss-change{
+  background-color: rgb(118, 219, 118);
+  
+}
+.tasklist-element-statuss-change > .span-tarea{
+  display: block;
+}
+
+.span-tarea{
+  display:none;
 }
 .totaltasklist{
   border: 1px solid black;
   padding: 3px;
+  margin: 5px;
+  font-family: var(--font-family-default);
+}
+[name="titulo-lista-tareas"]{
+  font-family: var(--font-family-default);
+  text-align: center;
+  padding: var(--padding-default);
+  font-size: x-large;
+  margin: 5px;
+  border-bottom: 5px solid rgb(134, 158, 123);
+  
 }
 /*-----*/
 
