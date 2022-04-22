@@ -9,7 +9,7 @@ function SendList(){
 
     return (
     <>    
-        <GenericBoton styleDiv='' id='send-data' newFunction={onSend} estilo='send-data'/>
+        <GenericBoton styleDiv='send-data-div' id='send-data' newFunction={onSend} estilo='send-data'/>
     </>
     )
 }
