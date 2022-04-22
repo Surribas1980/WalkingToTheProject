@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import Icono from "../Icono";
 import Delete from '../../images/tasklist/bote-de-basura.png';
 function PaintList(props){
