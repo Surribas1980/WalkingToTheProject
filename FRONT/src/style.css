@@ -13,8 +13,10 @@ font-family: 'Roboto Slab', serif;
   --padding-nav-default:10px;
   --padding-img-default: 3px;
   --padding-list-default: 5px;
+  --padding-default: 4px;
   --grid-template-rows-default: 0.1fr 4fr;
   --grid-template-rows-form:0.1fr 10fr;
+  --font-family-default: 'Roboto', sans-serif;;
 }
 /*-- FRONT PAGE --*/
 /*-BODY-*/
@@ -203,7 +205,20 @@ div[name |= "seccion"]{
   font-family: 'Roboto', sans-serif;
 }
 /*--------*/
-
+/*--- WritingList ---*/
+#writinglist{
+  background-color: orange;
+  margin: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#writinglist > span{
+  font-family: var(--font-family-default);
+  padding: var(--padding-default);
+}
+/*-----*/
 /*----BUTTONs ---*/
 #button-default{
   border: none;
@@ -228,25 +243,43 @@ div[name |= "seccion"]{
   width: 20px;
   height: 20px;
 }
+.save-data-default{
+  background-color: black;
+  border: 1px solid transparent;
+  
+  margin: 10px;
+  width: 5em;
+  height: 3em;
+  color: white;
+}
+.save-data-default:hover{
+  background-color: #58d68d;
+  color:red;
+}
+.send-data-div{
+  display: flex;
+  justify-content: center;
+}
 .send-data{
   
   background-color: black;
   border: 1px solid transparent;
-  border-radius: 10px;
-  margin: 10px;
+  
+  margin: 0px;
   width: 10em;
 height: 3em;
 
 }
+
 .send-data::after{
   content: 'Enviar datos';
   color:orange;
   
 }
 .send-data:hover{
-  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
-  box-shadow: 5px 5px 15px 5px #000000;
-  border-radius: 10px;
+  /*-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;*/
+  background-color: #58d68d;
   border: 1px solid transparent;
   cursor: pointer;
 }
