@@ -1,4 +1,5 @@
-import React, {useState,useRef,useEffect, useCallback} from "react";
+import React, {useState,useRef, useCallback} from "react";
+
 import InsertList from "../componentes/laTaskList/InsertList";
 import PaintList from "../componentes/laTaskList/PaintList";
 import SendList from "../componentes/laTaskList/SendList";
@@ -43,16 +44,25 @@ function TaskList(){
         lista.push(novoObj);
     },[titleListTask]);
 
+    const DeleteTaskLis = useCallback((index)=>{
+        setLista(()=>{
+            lista.splice(index,1);
+            return [...lista]
+        })
+        
+        
+    },[lista]);
+
     return(<>
    
     
     <TitleList title={titleListTask}/>
-    <PaintList list={lista} />
+    <PaintList laFun={DeleteTaskLis} list={lista} />
     <InsertList>
-       
         <WritenTitleOrList elspan="Tarea" inputref={valueInput}  laFun={SaveList} elplace="Introduce tarea ..."/>
         <WritenTitleOrList elspan="Cambio de titulo?" inputref={valueTitle} laFun={SaveTitleList} elplace="Introduce titulo de tarea ..."/>
     </InsertList>
+
     <SendList list={lista} />
     </>)
 }
