@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{memo,useState} from "react";
 import Icono from "../Icono";
 import Delete from '../../images/tasklist/bote-de-basura.png';
 import TareaRealizada from '../../images/tasklist/ok-marca.png';
@@ -8,7 +8,10 @@ function PaintList(props){
 
 
     const eliminar = (event,valor)=>{
-        console.log('event: ', event,valor)
+        if(valor === 1 || valor === 0){
+
+            console.log('event: ', event,valor)
+        }
     }
 
    
@@ -17,8 +20,9 @@ function PaintList(props){
         color.push("tasklist-element");
         return 1
     })
-   
-    const salida = props?.list.map((item,index)=>{
+   console.log('las props list: ',props?.list)
+    const salida = props?.list.map(
+        (item,index)=>{
         
         const paintGreen = (cambiarAotroEstilo,elemmento,elEstiloDelDiv) =>{
             let cambia;
@@ -27,12 +31,15 @@ function PaintList(props){
                 let nuevoStilo = ' tasklist-element-statuss-change';
                 cambia = `tasklist-element${nuevoStilo}`;
                 color[elemmento] = cambia;
+                props.list[elemmento].done = 'done';
                 setCam(cambiarAotroEstilo)
+                console.log('elemento: ', props.list[elemmento])
             }else{
                 
                 color[elemmento] = "tasklist-element";
-                setCam(cambiarAotroEstilo)
-                
+                setCam(cambiarAotroEstilo);
+                props.list[elemmento].done = 'not done';
+                console.log('elemento: ', props.list[elemmento])
             }
             
             
@@ -42,7 +49,7 @@ function PaintList(props){
         return (
         <div className="tasklist">
             <div className={color[index]} onClick={()=>{paintGreen(!cambiaStyle,index,color[index])}}>
-                <span className="span-tarea"><Icono elname={"ok"} eliminarFun={eliminar} elkey={index} imagen={TareaRealizada}/></span>{item}
+                <span className="span-tarea"><Icono elname={"ok"} eliminarFun={eliminar} elkey={null} imagen={TareaRealizada}/></span>{item.task}
             </div>
             <Icono elname={"delete"} eliminarFun={eliminar} elkey={index} imagen={Delete}/>
         </div>
@@ -55,4 +62,4 @@ function PaintList(props){
     return(<div className="totaltasklist">{salida}</div>)
 }
 
-export default  PaintList;
+export default  memo(PaintList);
