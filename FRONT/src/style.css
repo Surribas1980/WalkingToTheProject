@@ -16,7 +16,7 @@ font-family: 'Roboto Slab', serif;
   --padding-default: 4px;
   --grid-template-rows-default: 0.1fr 4fr;
   --grid-template-rows-form:0.1fr 10fr;
-  --font-family-default: 'Roboto', sans-serif;;
+  --font-family-default: 'Roboto', sans-serif;
 }
 
 /*-- FRONT PAGE --*/
@@ -241,28 +241,45 @@ div[name |= "seccion"]{
 
 /*--- total-services ---*/
 #total-services{
-  height: 300px;
+  height: auto;
+  position: relative;
 }
-#total-services span[name="service-titulo"]{
+#total-services > .etiquetas{
+display: none;
+}
+#total-services a span[name="service-titulo"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 15px;
   font-weight: bold;
+  padding: var(--padding-default);
 }
-#total-services span[name="service-description"]{
+#total-services a span[name="service-description"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 10px;
+  padding: var(--padding-default);
 }
-#total-services > .services-not-solutionados{
+#total-services a span[name="service-usuario"]{
+  display: block;
+  font-family: var(--font-family-default);
+  font-size: 12px;
+  border-bottom: 1px solid red;
+  padding: var(--padding-default);
+}
+#total-services a > .services-not-solutionados{
   background-color: rgb(236, 107, 63);
   border: 1px solid transparent;
   border-radius: 5px;
+  margin: 10px;
+  padding: var(--padding-default);
 }
-#total-services > .services-solutionados{
+#total-services a > .services-solutionados{
   background-color: rgb(176, 233, 122);
   border: 1px solid transparent;
   border-radius: 5px;
+  margin: 10px;
+  padding: var(--padding-default);
 }
 /*--- WritingList ---*/
 #writinglist{
@@ -386,7 +403,16 @@ a[name="info"]:link {
 a[name="info"]:visited {
   color: black;
 }
-
+a[name="service-defalut"]{
+  margin: 10px;
+  text-decoration: none;
+}
+a[name="service-defalut"]:link{
+  color: black;
+}
+a[name="service-defalut"]:visited{
+  color:black;
+}
 /*---------*/
 /* Navs */
 .borderColorBottom {
@@ -628,6 +654,7 @@ li{
 }*/
 
 @media (max-width: 600px) {
+
   .ocultarTitulos {
     display: none;
 
@@ -655,7 +682,32 @@ li{
     -webkit-box-shadow: 2px 4px 14px -1px #2F26FF;
     box-shadow: 2px 4px 14px -1px #2F26FF;
   }
+  #total-services > .etiquetas{
+    display: block;
+    position: sticky;
+    z-index: 20;
+    top: 60px;
+    background-color: transparent;
+  }
+  .etiquetas-colores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-default);
+    text-align: center;
+  }
+  .etiquetas-colores > .etiquetas-colores-red{
+    flex:1;
+    margin: 2px;
+    background-color: #ec6b3f;
 
+  }
+  .etiquetas-colores > .etiquetas-colores-green{
+    flex:1;
+    margin: 2px;
+    background-color: #b0e97a;
+
+  }
   .div-click-default{
     display: block;
     height: 5vh;
