@@ -19,3 +19,70 @@ let dirVistoError = [
 export function getDirVistoError() {
   return dirVistoError;
 }
+
+let servicios = [
+  {
+    titulo:"titulo 1",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"juan",
+    solutioned:true,
+  },
+  {
+    titulo:"titulo 2",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"pepe",
+    solutioned:true,
+  },
+  {
+    titulo:"titulo 3",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"mariano",
+    solutioned:false,
+  },
+  {
+    titulo:"titulo 4",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"alex",
+    solutioned:true,
+  },
+  {
+    titulo:"titulo 5",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"maria",
+    solutioned:false,
+  },
+  {
+    titulo:"titulo 6",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"jacinta",
+    solutioned:false,
+  },
+  {
+    titulo:"titulo 7",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"laura",
+    solutioned:false,
+  },
+  {
+    titulo:"titulo 8",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"marisa",
+    solutioned:false,
+  },
+  {
+    titulo:"titulo 9",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"juanita",
+    solutioned:true,
+  },
+  {
+    titulo:"titulo 10",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"alejandra",
+    solutioned:true,
+  }
+];
+
+export function getAllServices(){
+  return servicios;
+}
