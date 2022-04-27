@@ -43,7 +43,7 @@ export default function Header( props ,{children}) {
         <ul id='navegation-default'>
             <li className="div-click-default" onClick={()=>{bodyStyle('body-default',botonMobile)}}>&nbsp;</li>
             <li>
-              <Link onClick={()=>{
+              <Link name="iconos" onClick={()=>{
               bodyStyle('body-default',true)
               isMore_600(screen.width,'Logo')
 
@@ -62,7 +62,7 @@ export default function Header( props ,{children}) {
 
                   </li>
                   <li>
-                          <Link onClick={()=>{
+                          <Link name="iconos" onClick={()=>{
                             bodyStyle('body-form-default',true);
                             isMore_600(screen.width,'Login');
 
@@ -71,7 +71,7 @@ export default function Header( props ,{children}) {
                           </Link>
                   </li>
                   <li>
-                          <Link onClick={()=>{
+                          <Link name="iconos" onClick={()=>{
                             bodyStyle('body-form-default',true);
                             isMore_600(screen.width,'Register')
 
@@ -80,7 +80,7 @@ export default function Header( props ,{children}) {
                           </Link>
                   </li>
                   <li>
-                          <Link onClick={()=>{
+                          <Link name="iconos" onClick={()=>{
                             bodyStyle('body-default',true)
                             isMore_600(screen.width,'Main')
 
