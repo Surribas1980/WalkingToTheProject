@@ -4,7 +4,7 @@ import DosSeccion from '../lasSecciones/DosSeccion.jsx';
 import TresSeccion from '../lasSecciones/TresSeccion.jsx';
 import UnaSeccion from '../lasSecciones/UnaSeccion.jsx';
 import {Element , animateScroll as scroll} from 'react-scroll';
-import GenericBoton from '../GenericBoton.jsx';
+
 export default function Main() {
   const [imagen, setImagen] = useState([]);
   let [contador, setContador] = useState(0);

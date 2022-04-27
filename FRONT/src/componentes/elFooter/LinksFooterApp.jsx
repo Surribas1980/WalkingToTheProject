@@ -9,10 +9,10 @@ function LinksFooterApp(){
 
     return(
         <div id="navegation-footer-app" className="ocultarDatos">
-        <Link to="/myservices"><img className="img-nav-footer-app" src={Usuario} alt="enlace user"/></Link>
-        <Link to="/services"><img className="img-nav-footer-app" src={Usuarios} alt="usuarios"/></Link>
-        <Link to="/mainapp"><img className="img-nav-footer-app" src={Home} alt="Home"/></Link>
-        <Link to="/tasklist"><img className="img-nav-footer-app" src={Lista} alt="Home"/></Link>
+        <Link name="iconos" to="/myservices"><img className="img-nav-footer-app" src={Usuario} alt="enlace user"/></Link>
+        <Link name="iconos" to="/services"><img className="img-nav-footer-app" src={Usuarios} alt="usuarios"/></Link>
+        <Link name="iconos" to="/mainapp"><img className="img-nav-footer-app" src={Home} alt="Home"/></Link>
+        <Link name="iconos" to="/tasklist"><img className="img-nav-footer-app" src={Lista} alt="Home"/></Link>
     
     </div>)
 }
