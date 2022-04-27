@@ -1,3 +1,4 @@
+/** */
 import React, { useState } from 'react';
 import ContenidoElemento from './ContenidoElemento';
 import ContenidoElementoClick from './ContenidoElementoClick';
