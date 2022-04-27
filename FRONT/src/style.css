@@ -194,7 +194,7 @@ div[name |= "seccion"]{
 }
 
 #info{
-  background-color: gray;
+  background-color: #EFEFFB;
   border: 1px solid transparent;
   border-radius: 5px;
  
@@ -205,14 +205,15 @@ div[name |= "seccion"]{
 }
 
 #info:hover{
-  position: absolute;
+  /*position: absolute;
   background-color: white;
   z-index: 1;
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 90%;*/
   /*left: 0;*/
+  background-color: white;
   -webkit-box-shadow: 2px 4px 14px -1px #2F26FF; 
   box-shadow: 2px 4px 14px -1px #2F26FF;
 }
@@ -328,17 +329,17 @@ button:hover{
 }
 /*-----------*/
 /*--------*/
-a {
+a[name="iconos"] {
   text-decoration: none;
 }
-a:link {
+a[name="iconos"]:link {
   color: black;
 }
 
-a:visited {
+a[name="iconos"]:visited {
   color: black;
 }
-a:hover{
+a[name="iconos"]:hover{
   transform: transition all 1s;
   font-weight: bold;
   font-size: 20px;
@@ -346,6 +347,16 @@ a:hover{
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 3px;
+}
+a[name="info"]{
+  text-decoration: none;
+}
+a[name="info"]:link {
+  color: black;
+}
+
+a[name="info"]:visited {
+  color: black;
 }
 /*---------*/
 /* Navs */
@@ -609,16 +620,17 @@ li{
     margin-left: 15px;
 
   }
-  #info{
+  #info {
     width: 100%;
+    background-color: #EFEFFB;
+    -webkit-box-shadow: 2px 4px 14px -1px #2F26FF; 
+    box-shadow: 2px 4px 14px -1px #2F26FF;
   }
-  #info:hover{
+  /*#info:hover {
     position: unset;
-
-  /*left: 0;*/
   -webkit-box-shadow: unset; 
   box-shadow:unset;
-  }
+  }*/
   .div-click-default{
     display: block;
     height: 5vh;
