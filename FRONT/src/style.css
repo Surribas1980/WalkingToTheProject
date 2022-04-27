@@ -213,12 +213,8 @@ div[name |= "seccion"]{
   align-items: center;
   width: 90%;*/
   /*left: 0;*/
-<<<<<<< HEAD
-  -webkit-box-shadow: 2px 4px 14px -1px #2F26FF;
-=======
   background-color: white;
-  -webkit-box-shadow: 2px 4px 14px -1px #2F26FF; 
->>>>>>> 9dd0831d9fa938ca6609e7fa0c6299bc5902953b
+  -webkit-box-shadow: 2px 4px 14px -1px #2F26FF;
   box-shadow: 2px 4px 14px -1px #2F26FF;
 }
 #info > img{
@@ -368,7 +364,7 @@ a[name="iconos"]:link {
 
 a[name="iconos"]:visited {
   color: black;
- 
+
 }
 a[name="iconos"]:hover{
   transform: transition all 1s;
@@ -379,16 +375,7 @@ a[name="iconos"]:hover{
   border-radius: 5px;
   padding: 3px;
 }
-<<<<<<< HEAD
-/*a[name="infor"]:hover{
-  transform: unset;
-  font-weight: unset;
-  font-size: unset;
-  border-radius: unset;
-  padding: unset;
-  border: unset;
-}*/
-=======
+
 a[name="info"]{
   text-decoration: none;
 }
@@ -399,7 +386,7 @@ a[name="info"]:link {
 a[name="info"]:visited {
   color: black;
 }
->>>>>>> 9dd0831d9fa938ca6609e7fa0c6299bc5902953b
+
 /*---------*/
 /* Navs */
 .borderColorBottom {
@@ -665,20 +652,10 @@ li{
   #info {
     width: 100%;
     background-color: #EFEFFB;
-    -webkit-box-shadow: 2px 4px 14px -1px #2F26FF; 
+    -webkit-box-shadow: 2px 4px 14px -1px #2F26FF;
     box-shadow: 2px 4px 14px -1px #2F26FF;
   }
-  /*#info:hover {
-    position: unset;
-<<<<<<< HEAD
 
-  /*left: 0;*/
-  -webkit-box-shadow: unset;
-=======
-  -webkit-box-shadow: unset; 
->>>>>>> 9dd0831d9fa938ca6609e7fa0c6299bc5902953b
-  box-shadow:unset;
-  }*/
   .div-click-default{
     display: block;
     height: 5vh;
