@@ -238,6 +238,32 @@ div[name |= "seccion"]{
   font-family: 'Roboto', sans-serif;
 }
 /*--------*/
+
+/*--- total-services ---*/
+#total-services{
+  height: 300px;
+}
+#total-services span[name="service-titulo"]{
+  display: block;
+  font-family: var(--font-family-default);
+  font-size: 15px;
+  font-weight: bold;
+}
+#total-services span[name="service-description"]{
+  display: block;
+  font-family: var(--font-family-default);
+  font-size: 10px;
+}
+#total-services > .services-not-solutionados{
+  background-color: rgb(236, 107, 63);
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+#total-services > .services-solutionados{
+  background-color: rgb(176, 233, 122);
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
 /*--- WritingList ---*/
 #writinglist{
   background-color: orange;
@@ -338,6 +364,7 @@ a[name="iconos"]:link {
 
 a[name="iconos"]:visited {
   color: black;
+ 
 }
 a[name="iconos"]:hover{
   transform: transition all 1s;
