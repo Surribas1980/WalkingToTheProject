@@ -157,7 +157,7 @@ div[name |= "seccion"]{
 }*/
 .tasklist-element-statuss-change{
   background-color: rgb(118, 219, 118);
-  
+
 }
 .tasklist-element-statuss-change > .span-tarea{
   display: block;
@@ -179,7 +179,7 @@ div[name |= "seccion"]{
   font-size: x-large;
   margin: 5px;
   border-bottom: 5px solid rgb(134, 158, 123);
-  
+
 }
 /*-----*/
 
@@ -190,16 +190,16 @@ div[name |= "seccion"]{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 #info{
   background-color: gray;
   border: 1px solid transparent;
   border-radius: 5px;
- 
+
   cursor: pointer;
-  
+
   margin: 3px;
   flex: 1;
 }
@@ -213,7 +213,7 @@ div[name |= "seccion"]{
   align-items: center;
   width: 90%;
   /*left: 0;*/
-  -webkit-box-shadow: 2px 4px 14px -1px #2F26FF; 
+  -webkit-box-shadow: 2px 4px 14px -1px #2F26FF;
   box-shadow: 2px 4px 14px -1px #2F26FF;
 }
 #info > img{
@@ -278,7 +278,7 @@ div[name |= "seccion"]{
 .save-data-default{
   background-color: black;
   border: 1px solid transparent;
-  
+
   margin: 10px;
   width: 5em;
   height: 3em;
@@ -293,10 +293,10 @@ div[name |= "seccion"]{
   justify-content: center;
 }
 .send-data{
-  
+
   background-color: black;
   border: 1px solid transparent;
-  
+
   margin: 0px;
   width: 10em;
 height: 3em;
@@ -306,10 +306,10 @@ height: 3em;
 .send-data::after{
   content: 'Enviar datos';
   color:orange;
-  
+
 }
 .send-data:hover{
-  /*-webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  /*-webkit-box-shadow: 5px 5px 15px 5px #000000;
   box-shadow: 5px 5px 15px 5px #000000;*/
   background-color: #58d68d;
   border: 1px solid transparent;
@@ -342,11 +342,19 @@ a:hover{
   transform: transition all 1s;
   font-weight: bold;
   font-size: 20px;
-  /*background-color: grey;*/
+
   border: 1px solid transparent;
   border-radius: 5px;
   padding: 3px;
 }
+/*a[name="infor"]:hover{
+  transform: unset;
+  font-weight: unset;
+  font-size: unset;
+  border-radius: unset;
+  padding: unset;
+  border: unset;
+}*/
 /*---------*/
 /* Navs */
 .borderColorBottom {
@@ -616,7 +624,7 @@ li{
     position: unset;
 
   /*left: 0;*/
-  -webkit-box-shadow: unset; 
+  -webkit-box-shadow: unset;
   box-shadow:unset;
   }
   .div-click-default{
@@ -644,7 +652,7 @@ li{
   flex-direction: row;
   padding: var(--padding-nav-default);
   background-color:  #a2d9ce;
-  
+
 }
 #navegation-footer-app .img-nav-footer-app{
 width: 30px;
