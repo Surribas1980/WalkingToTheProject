@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import ListMessages from "./ListMessages";
 import AllServices from "./AllServices";
+import ShowServices from "./ShowServices";
 import { getAllServices } from "../../data.js";
 function Services(){
     const [services,setServices] = useState(getAllServices());
@@ -12,10 +13,10 @@ function Services(){
         elemento.titulo = item.solutioned;
         return (elemento)
     })
-    let solu = services.filter((item)=>{
+    let solu = services?.filter((item)=>{
         return (item.solutioned === true);
     })
-    let nosolu = services.filter((item)=>{
+    let nosolu = services?.filter((item)=>{
         return (item.solutioned === false);
     })
 console.log('services', elvector,solu,nosolu)
@@ -25,7 +26,8 @@ console.log('services', elvector,solu,nosolu)
     </ListMessages>
     <div id="total-services">
         <AllServices>
-            
+          <ShowServices styleShowServices="services-solutionados" servicios={solu}/>
+          <ShowServices styleShowServices="services-not-solutionados" servicios={nosolu}/>
         </AllServices>
     </div>
     </>)
