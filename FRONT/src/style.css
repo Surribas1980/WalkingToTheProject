@@ -247,24 +247,24 @@ div[name |= "seccion"]{
 #total-services > .etiquetas{
 display: none;
 }
-#total-services a span[name="service-titulo"]{
+#total-services a ,span[name="service-titulo"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 15px;
   font-weight: bold;
   padding: var(--padding-default);
 }
-#total-services a span[name="service-description"]{
+#total-services a ,span[name="service-description"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 10px;
   padding: var(--padding-default);
 }
-#total-services a span[name="service-usuario"]{
+#total-services a ,span[name="service-usuario"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 12px;
-  border-bottom: 1px solid red;
+  /*border-bottom: 1px solid red;*/
   padding: var(--padding-default);
 }
 #total-services a > .services-not-solutionados{
@@ -281,6 +281,20 @@ display: none;
   margin: 10px;
   padding: var(--padding-default);
 }
+/*--- Services-Task-List ---*/
+#services-task-id{
+  margin: 10px;
+  border: 1px solid black;
+  padding: var(--padding-default);
+  background-color: #F8F6ED;
+}
+#services-task-id span[name="task"]{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  color: #18C8EB;
+}
+
+/*--------------------------*/
 /*--- WritingList ---*/
 #writinglist{
   background-color: orange;
