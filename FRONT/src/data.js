@@ -27,6 +27,10 @@ let servicios = [
     usuario:"juan",
     solutioned:true,
     id:0,
+    tasks:{
+      task1 : "Primera tarea",
+      task : "Segunda tarea"
+    }
   },
   {
     titulo:"titulo 2",
@@ -34,6 +38,15 @@ let servicios = [
     usuario:"pepe",
     solutioned:true,
     id:1,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
+      
+    
   },
   {
     titulo:"titulo 3",
@@ -41,6 +54,13 @@ let servicios = [
     usuario:"mariano",
     solutioned:false,
     id:2,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   },
   {
     titulo:"titulo 4",
@@ -48,6 +68,13 @@ let servicios = [
     usuario:"alex",
     solutioned:true,
     id:3,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   },
   {
     titulo:"titulo 5",
@@ -55,6 +82,13 @@ let servicios = [
     usuario:"maria",
     solutioned:false,
     id:4,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   },
   {
     titulo:"titulo 6",
@@ -62,6 +96,13 @@ let servicios = [
     usuario:"jacinta",
     solutioned:false,
     id:5,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   },
   {
     titulo:"titulo 7",
@@ -69,6 +110,13 @@ let servicios = [
     usuario:"laura",
     solutioned:false,
     id:6,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   },
   {
     titulo:"titulo 8",
@@ -76,6 +124,13 @@ let servicios = [
     usuario:"marisa",
     solutioned:false,
     id:7,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   },
   {
     titulo:"titulo 9",
@@ -83,6 +138,13 @@ let servicios = [
     usuario:"juanita",
     solutioned:true,
     id:8,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   },
   {
     titulo:"titulo 10",
@@ -90,6 +152,13 @@ let servicios = [
     usuario:"alejandra",
     solutioned:true,
     id:9,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea" 
+    }
   }
 ];
 
