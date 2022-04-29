@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import ServicesTasksTaskId from "./ServicesTasksTaskId";
 
 function ServicesTasksId(props){
     let ele = props.taskId;
@@ -8,16 +9,17 @@ function ServicesTasksId(props){
 
         return(
         <>
-            <div name="service-titulo">{item.titulo}</div>
-            <div name="service-description">{item.descripcion}</div>
-            <div name="service-usuario">{item.usuario}</div>
+            <span name="service-titulo">Título: {item.titulo}</span>
+            <span name="service-description">Descripción: {item.descripcion}</span>
+            <span name="service-usuario">Usuario: {item.usuario}</span>
          
         </>)
     })
-    console.log('estoy en ServicesTasksId salida:',salida,ele.tasks)
+    
     return (
-    <div id="services-tasks-id">
+    <div id="services-task-id">
         {salida}
+        <ServicesTasksTaskId task={props.taskId[0].tasks}/>
     </div>);
 }
 
