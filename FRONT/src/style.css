@@ -289,9 +289,15 @@ display: none;
   background-color: #F8F6ED;
 }
 #services-task-id span[name="task"]{
+  display: block;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: medium;
-  color: #18C8EB;
+  color: #15191a;
+  background-color: #adc0b5;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin: 3px;
+  padding: var(--padding-default);
 }
 
 /*--------------------------*/
