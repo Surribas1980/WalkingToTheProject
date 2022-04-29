@@ -2,19 +2,21 @@ import React,{useState} from "react";
 
 function ServicesTasksId(props){
     let ele = props.taskId;
-
+    let salida2 = ele.map((item,index)=>{
+      return(<>{item.titulo} {item.descripcion} {item.usuario} {item.tasks}</>)
+    })
     let salida = ele.map((item,index)=>{
-        
+
 
         return(
         <>
             <div name="service-titulo">{item.titulo}</div>
             <div name="service-description">{item.descripcion}</div>
             <div name="service-usuario">{item.usuario}</div>
-         
+
         </>)
     })
-    console.log('estoy en ServicesTasksId salida:',salida,ele.tasks)
+    console.log('estoy en ServicesTasksId salida:',salida,ele.tasks,'- salida2:',salida2)
     return (
     <div id="services-tasks-id">
         {salida}
