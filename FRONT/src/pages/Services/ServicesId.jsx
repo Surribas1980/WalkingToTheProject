@@ -6,18 +6,13 @@ import {getAllServices} from '../../data.js';
 
 function ServicesId(){
   let params = useParams();
-  /*const [salida,setSalida] = useState([])*/
+  
   let salida = getAllServices()?.filter((item)=>{
-    let dato;
-    if(item.id == params.id){
-       dato = item;
-    }
-    return (dato);
+        return (item.id == params.id);
   })
   console.log('estoy en ServiciosId: ',salida)
   return (
   <div>
-    <h1>Estoy en servicios id: {params.id}</h1>
       <ServicesTasksId taskId={salida} />
     </div>)
 }
