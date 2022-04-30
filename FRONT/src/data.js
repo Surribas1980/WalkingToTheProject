@@ -30,7 +30,8 @@ let servicios = [
     tasks:{
       task1 : "Primera tarea",
       task : "Segunda tarea"
-    }
+    },
+    files:{}
   },
   {
     titulo:"titulo 2",
@@ -43,10 +44,11 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx"
     }
-      
-    
   },
   {
     titulo:"titulo 3",
@@ -59,7 +61,12 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
     }
   },
   {
@@ -73,8 +80,9 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
-    }
+      task5: "Quinta tarea"
+    },
+    files:{}
   },
   {
     titulo:"titulo 5",
@@ -87,7 +95,11 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx"
     }
   },
   {
@@ -101,7 +113,11 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
+      task5: "Quinta tarea"
+    },
+    files:{
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
     }
   },
   {
@@ -115,7 +131,11 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      pptx: "documento0.pptx"
     }
   },
   {
@@ -129,8 +149,9 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
-    }
+      task5: "Quinta tarea"
+    },
+    files:{}
   },
   {
     titulo:"titulo 9",
@@ -143,7 +164,12 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
     }
   },
   {
@@ -157,8 +183,9 @@ let servicios = [
       task2: "Segunda tarea",
       task3: "Tercera tarea",
       task4: "Cuarta tarea",
-      task5: "Quinta tarea" 
-    }
+      task5: "Quinta tarea"
+    },
+    files:{}
   }
 ];
 
