@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import ListMessages from "./ListMessages";
 import AllServices from "./AllServices";
 import ShowServices from "./ShowServices";
 import { getAllServices } from "../../data.js";
@@ -21,13 +20,14 @@ function Services(){
     })
 console.log('services', elvector,solu,nosolu)
     return(<>
-    <ListMessages>
-        Esto es desde Services a ListMessages
-    </ListMessages>
     <div id="total-services">
         <AllServices>
-          <ShowServices styleShowServices="services-solutionados" servicios={solu}/>
-          <ShowServices styleShowServices="services-not-solutionados" servicios={nosolu}/>
+          <div className="show-services">
+            <ShowServices styleShowServices="services-solutionados" servicios={solu}/>
+          </div>
+          <div className="show-services">
+            <ShowServices styleShowServices="services-not-solutionados" servicios={nosolu}/>
+          </div>
         </AllServices>
     </div>
     </>)
