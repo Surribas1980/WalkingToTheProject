@@ -17,6 +17,7 @@ font-family: 'Roboto Slab', serif;
   --grid-template-rows-default: 0.1fr 4fr;
   --grid-template-rows-form:0.1fr 10fr;
   --font-family-default: 'Roboto', sans-serif;
+  --margin-defalut: 10px;
 }
 
 /*-- FRONT PAGE --*/
@@ -240,41 +241,59 @@ div[name |= "seccion"]{
 /*--------*/
 
 /*--- total-services ---*/
+.etiquetas-colores-red,.etiquetas-colores-green{
+  display: none;
+}
+.show-services{
+  border: 1px solid black;
+  margin: var(--margin-defalut);
+  width: 600px;
+}
 #total-services{
+  display: flex;
+  justify-content: center;
+align-content: center;
+}
+#total-services .show-services{
   height: auto;
   position: relative;
+  /*width: 600px;*/
+  border: 1px solid black;
+  border-radius: 5px;
+  /*margin: var(--margin-defalut);*/
+
 }
-#total-services > .etiquetas{
+#total-services .show-services > .etiquetas{
 display: none;
 }
-#total-services a ,span[name="service-titulo"]{
+#total-services .show-services a ,span[name="service-titulo"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 15px;
   font-weight: bold;
   padding: var(--padding-default);
 }
-#total-services a ,span[name="service-description"]{
+#total-services .show-services a ,span[name="service-description"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 10px;
   padding: var(--padding-default);
 }
-#total-services a ,span[name="service-usuario"]{
+#total-services .show-services a ,span[name="service-usuario"]{
   display: block;
   font-family: var(--font-family-default);
   font-size: 12px;
   /*border-bottom: 1px solid red;*/
   padding: var(--padding-default);
 }
-#total-services a > .services-not-solutionados{
+#total-services .show-services a > .services-not-solutionados{
   background-color: rgb(236, 107, 63);
   border: 1px solid transparent;
   border-radius: 5px;
   margin: 10px;
   padding: var(--padding-default);
 }
-#total-services a > .services-solutionados{
+#total-services .show-services a > .services-solutionados{
   background-color: rgb(176, 233, 122);
   border: 1px solid transparent;
   border-radius: 5px;
@@ -702,7 +721,16 @@ li{
     -webkit-box-shadow: 2px 4px 14px -1px #2F26FF;
     box-shadow: 2px 4px 14px -1px #2F26FF;
   }
-  #total-services > .etiquetas{
+  #total-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-content: center;
+  }
+  #total-services .show-services{
+    width: auto;
+  }
+  #total-services .show-services > .etiquetas{
     display: block;
     position: sticky;
     z-index: 20;
@@ -715,6 +743,9 @@ li{
     align-items: center;
     font-family: var(--font-family-default);
     text-align: center;
+  }
+  .etiquetas-colores-red,.etiquetas-colores-green{
+    display: block;
   }
   .etiquetas-colores > .etiquetas-colores-red{
     flex:1;
