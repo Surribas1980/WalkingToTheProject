@@ -94,9 +94,9 @@ export default function Header( props ,{children}) {
         </ul>
       </nav>
       <Routes>
-        <Route path={'/login'} element={<Login />}></Route>
-        <Route path={'/register'} element={<Register />}></Route>
-        <Route path={'/'} element={<Main />}></Route>
+          <Route path={'/login'} element={<Login />}></Route>
+          <Route path={'/register'} element={<Register />}></Route>
+          <Route path={"/"}  element={<Main />}></Route>
       </Routes>
     </>
   );
