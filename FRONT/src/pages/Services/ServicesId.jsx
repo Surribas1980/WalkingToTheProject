@@ -6,14 +6,14 @@ import {getAllServices} from '../../data.js';
 
 function ServicesId(){
   let params = useParams();
-  
-  let salida = getAllServices()?.filter((item)=>{
+
+  let theTask = getAllServices()?.filter((item)=>{
         return (item.id == params.id);
   })
-  console.log('estoy en ServiciosId: ',salida)
+  
   return (
   <div>
-      <ServicesTasksId taskId={salida} />
+      <ServicesTasksId taskId={theTask} />
     </div>)
 }
 
