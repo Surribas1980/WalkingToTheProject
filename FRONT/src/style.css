@@ -363,7 +363,17 @@ span[name="service-description-initial"]{
   margin: 3px;
   padding: var(--padding-default);
 }
-
+#services-task-id .services-task-id-file-and-img{
+  display: flex;
+  flex-direction: row;
+  justify-items:center;
+}
+#services-task-id .services-task-id-file-and-img .son{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex:1;
+}
 /*--------------------------*/
 /*--- WritingList ---*/
 #writinglist{
