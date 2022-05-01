@@ -363,6 +363,10 @@ span[name="service-description-initial"]{
   margin: 3px;
   padding: var(--padding-default);
 }
+#services-task-id span[name="task"]:hover{
+  background-color: #2e86c1;
+  color:white;
+}
 #services-task-id .services-task-id-file-and-img{
   display: flex;
   flex-direction: row;
