@@ -20,6 +20,7 @@ function ServicesTasksId(props){
     return (
     <div id="services-task-id">
         {salida}
+        <div name="titulo-lista-tareas">Tareas</div>
         <ServicesTasksTaskId task={props.taskId[0].tasks}/>
 
         <ServicesFilesTasksId ficheros={props.taskId[0].files}/>
