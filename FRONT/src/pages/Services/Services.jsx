@@ -23,9 +23,11 @@ console.log('services', elvector,solu,nosolu)
     <div id="total-services">
         <AllServices>
           <div className="show-services">
+            <span name="titulo-show-services">Servicios Solucionados</span>
             <ShowServices styleShowServices="services-solutionados" servicios={solu}/>
           </div>
           <div className="show-services">
+            <span name="titulo-show-services">Servicios No Solucionados</span>
             <ShowServices styleShowServices="services-not-solutionados" servicios={nosolu}/>
           </div>
         </AllServices>
