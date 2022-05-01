@@ -18,6 +18,7 @@ font-family: 'Roboto Slab', serif;
   --grid-template-rows-form:0.1fr 10fr;
   --font-family-default: 'Roboto', sans-serif;
   --margin-defalut: 10px;
+  --margin-defalut-min: 3px;
 }
 
 /*-- FRONT PAGE --*/
@@ -128,10 +129,16 @@ div[name |= "seccion"]{
   border-radius: 5px;
   margin: 3px;
 }
+#icono[name="services"]{
+  background-color:transparent;
+  border: unset;
+  width: 10vw;
+  flex: 0.2;
+}
 #icono[name="ok"]{
   width: 5vw;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: unset;
 }
 #icono[name="delete"]:hover{
   background-color: red;
@@ -181,6 +188,16 @@ div[name |= "seccion"]{
   margin: 5px;
   border-bottom: 5px solid rgb(134, 158, 123);
 
+}
+[name="titulo-show-services"]{
+  display: block;
+  font-family: var(--font-family-default);
+  text-align: center;
+  padding: var(--padding-default);
+  font-size: x-large;
+  margin: 5px;
+  border-bottom: 5px solid rgb(134, 158, 123);
+  background-color: white;
 }
 /*-----*/
 
@@ -249,10 +266,14 @@ div[name |= "seccion"]{
   margin: var(--margin-defalut);
   width: 600px;
 }
+/*.show-services:hover{
+  background-color: #82e0aa;
+}*/
 #total-services{
   display: flex;
   justify-content: center;
-align-content: center;
+  align-content: center;
+
 }
 #total-services .show-services{
   height: auto;
@@ -261,6 +282,7 @@ align-content: center;
   border: 1px solid black;
   border-radius: 5px;
   /*margin: var(--margin-defalut);*/
+  background-color: blue;
 
 }
 #total-services .show-services > .etiquetas{
@@ -279,6 +301,14 @@ display: none;
   font-size: 10px;
   padding: var(--padding-default);
 }
+span[name="service-description-initial"]{
+  display: block;
+  font-family: var(--font-family-default);
+  font-size: 10px;
+  font-weight: bolder;
+  font-style:italic;
+  padding: var(--padding-default);
+}
 #total-services .show-services a ,span[name="service-usuario"]{
   display: block;
   font-family: var(--font-family-default);
@@ -287,18 +317,33 @@ display: none;
   padding: var(--padding-default);
 }
 #total-services .show-services a > .services-not-solutionados{
-  background-color: rgb(236, 107, 63);
+
+  background-color: white;
   border: 1px solid transparent;
   border-radius: 5px;
   margin: 10px;
   padding: var(--padding-default);
+  display: flex;
+  flex-direction: row;
+}
+.show-services-list-span{
+  flex: 1
+}
+#total-services .show-services a > .services-not-solutionados:hover{
+  background-color: rgb(236, 107, 63);
 }
 #total-services .show-services a > .services-solutionados{
-  background-color: rgb(176, 233, 122);
+
+  background-color: white;
   border: 1px solid transparent;
   border-radius: 5px;
   margin: 10px;
   padding: var(--padding-default);
+  display: flex;
+  flex-direction: row;
+}
+#total-services .show-services a > .services-solutionados:hover{
+  background-color: rgb(176, 233, 122);
 }
 /*--- Services-Task-List ---*/
 #services-task-id{
@@ -452,6 +497,9 @@ a[name="service-defalut"]:link{
 a[name="service-defalut"]:visited{
   color:black;
 }
+/*a[name="service-defalut"]:hover{
+  background-color:  #f1c40f;
+}*/
 /*---------*/
 /* Navs */
 .borderColorBottom {
@@ -691,7 +739,48 @@ li{
   display: block;
   color: orange
 }*/
+/*---GenericFormTextArea---*/
+#generic-form-text-area{
+  padding:var(--padding-default);
+  margin: var(--margin-defalut-min);
+  border: 3px solid green;
+}
+#generic-form-text-area input{
+  border:none;
+  background-color: black;
+  color:white;
+  width: 5rem;
+  padding:var(--padding-default);
+  margin: var(--margin-defalut-min);
+}
+#generic-form-text-area input:hover{
+  background-color: blue;
+}
+#generic-form-text-area textarea{
+  width: 100%;
+}
+#generic-form-text-area textarea:focus{
+  background-color: orange;
+}
+/*------------------------*/
+/*---GenericImageOnClick.jsx---*/
+#generic-image-on-click{
+  padding:var(--padding-default);
+  margin: var(--margin-defalut-min);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  width: 6vw;
+  cursor: pointer;
+  background-color:  #aed6f1;
+}
+#generic-image-on-click:hover{
+  background-color: #2e86c1;
+}
+#generic-image-on-click > img{
+  width: 5vw;
 
+}
+/*-----------------------*/
 @media (max-width: 600px) {
 
   .ocultarTitulos {
@@ -743,6 +832,8 @@ li{
     align-items: center;
     font-family: var(--font-family-default);
     text-align: center;
+    position: sticky;
+
   }
   .etiquetas-colores-red,.etiquetas-colores-green{
     display: block;
