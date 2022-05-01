@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import ServicesTasksTaskId from "./ServicesTasksTaskId";
 import ServicesFilesTasksId from "./ServicesFilesTasksId";
-
+import SendMessageWithIcon from "../SendMessageWithIcon";
 function ServicesTasksId(props){
     let ele = props.taskId;
 
@@ -24,6 +24,7 @@ function ServicesTasksId(props){
 
         <ServicesFilesTasksId ficheros={props.taskId[0].files}/>
 
+        <SendMessageWithIcon />
     </div>);
 }
 
