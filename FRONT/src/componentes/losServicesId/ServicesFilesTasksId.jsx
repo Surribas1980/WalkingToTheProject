@@ -23,7 +23,7 @@ const [documento,setDocumento] = useState([Object.values(props.ficheros)]);
     let dir = urlstatic + `${item}`;
     let enlazar = dir.slice(14);
     return (
-      <div>
+      <div className="son">
         <img id="icono" src={thePath}/>
         <a href={dir}>
           <span name="task">{item}</span>
@@ -34,12 +34,12 @@ const [documento,setDocumento] = useState([Object.values(props.ficheros)]);
 
     return (<>
       <div id="services-task-id">
-      <span name="service-titulo">Archivos:</span>
-        <div>
-          <div>
+        <span name="service-titulo">Archivos:</span>
+        
+          <div className="services-task-id-file-and-img">
             {salida}
           </div>
-        </div>
+
       </div>
     </>)
 }
