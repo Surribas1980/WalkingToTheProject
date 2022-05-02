@@ -378,6 +378,17 @@ span[name="service-description-initial"]{
   align-items: center;
   flex:1;
 }
+#services-task-id .services-task-id-group{
+  display: flex;
+  flex-direction: row;
+}
+#services-task-id .services-task-id-group .services-button{
+  background-color: #2e86c1;
+  margin:2px;
+  color: white;
+  display: flex;
+  padding: var(--padding-default);
+}
 /*--------------------------*/
 /*--- WritingList ---*/
 #writinglist{
@@ -460,9 +471,8 @@ height: 3em;
 /*---buton---*/
 button{
   border: none;
-  width: 5vw;
-  height: 5vh;
-  background-color:  #58d68d ;
+  color:inherit;
+  background-color:  inherit ;
 }
 button:hover{
   background-color: black;
@@ -758,6 +768,8 @@ li{
   padding:var(--padding-default);
   margin: var(--margin-defalut-min);
   border: 3px solid green;
+  display: block;
+  
 }
 #generic-form-text-area input{
   border:none;
@@ -786,6 +798,14 @@ li{
   width: 6vw;
   cursor: pointer;
   background-color:  #aed6f1;
+}
+/*
+#solution{
+  background-color:  #d2f1ae;
+}*/
+
+#generic-image-on-click > img{
+  width: 5vw;
 }
 #generic-image-on-click:hover{
   background-color: #2e86c1;
