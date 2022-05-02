@@ -4,8 +4,8 @@ import ShowServices from "./ShowServices";
 import { getAllServices } from "../../data.js";
 function Services(){
     const [services,setServices] = useState(getAllServices());
-    const [solucionados,setSolucionados] = useState([]);
-    const [noSolucionados,setNoSolucionados] = useState([]);
+    /*const [solucionados,setSolucionados] = useState([]);
+    const [noSolucionados,setNoSolucionados] = useState([]);*/
 
     let elvector = services?.map((item,index)=>{
         let elemento = {};
