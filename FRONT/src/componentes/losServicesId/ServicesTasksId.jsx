@@ -5,7 +5,7 @@ import SendMessageWithIcon from "../SendMessageWithIcon";
 function ServicesTasksId(props){
     let ele = props.taskId;
 
-    let salida = ele.map((item,index)=>{
+    let salida = props.taskId?.map((item,index)=>{
 
 
         return(
@@ -18,15 +18,24 @@ function ServicesTasksId(props){
     })
 
     return (
-    <div id="services-task-id">
-        {salida}
-        <div name="titulo-lista-tareas">Tareas</div>
-        <ServicesTasksTaskId task={props.taskId[0].tasks}/>
+    
+    <div>
 
-        <ServicesFilesTasksId ficheros={props.taskId[0].files}/>
+        <div id="services-task-id">
+            {salida}
+            <div name="titulo-lista-tareas">Tareas</div>
+            <ServicesTasksTaskId task={props.taskId[0].tasks}/>
 
-        <SendMessageWithIcon />
-    </div>);
+            <ServicesFilesTasksId ficheros={props.taskId[0].files}/>
+            
+                <SendMessageWithIcon />
+           
+        </div>
+        <div>
+
+        </div>
+    </div>
+    );
 }
 
 export default ServicesTasksId;
