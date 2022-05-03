@@ -31,7 +31,8 @@ let servicios = [
       task1 : "Primera tarea",
       task : "Segunda tarea"
     },
-    files:{}
+    files:{},
+    conversation: true,
   },
   {
     titulo:"titulo 2",
@@ -48,7 +49,8 @@ let servicios = [
     },
     files:{
       docx: "documento0.docx"
-    }
+    },
+    conversation: true,
   },
   {
     titulo:"titulo 3",
@@ -67,7 +69,8 @@ let servicios = [
       docx: "documento0.docx",
       xlsx: "documento1.xlsx",
       pptx: "documento0.pptx"
-    }
+    },
+    conversation: false,
   },
   {
     titulo:"titulo 4",
@@ -82,7 +85,8 @@ let servicios = [
       task4: "Cuarta tarea",
       task5: "Quinta tarea"
     },
-    files:{}
+    files:{},
+    conversation: true,
   },
   {
     titulo:"titulo 5",
@@ -100,7 +104,8 @@ let servicios = [
     files:{
       docx: "documento0.docx",
       xlsx: "documento1.xlsx"
-    }
+    },
+    conversation: false,
   },
   {
     titulo:"titulo 6",
@@ -118,7 +123,8 @@ let servicios = [
     files:{
       xlsx: "documento1.xlsx",
       pptx: "documento0.pptx"
-    }
+    },
+    conversation: false,
   },
   {
     titulo:"titulo 7",
@@ -136,7 +142,8 @@ let servicios = [
     files:{
       docx: "documento0.docx",
       pptx: "documento0.pptx"
-    }
+    },
+    conversation: true,
   },
   {
     titulo:"titulo 8",
@@ -151,7 +158,8 @@ let servicios = [
       task4: "Cuarta tarea",
       task5: "Quinta tarea"
     },
-    files:{}
+    files:{},
+    conversation: false,
   },
   {
     titulo:"titulo 9",
@@ -170,7 +178,8 @@ let servicios = [
       docx: "documento0.docx",
       xlsx: "documento1.xlsx",
       pptx: "documento0.pptx"
-    }
+    },
+    conversation: true,
   },
   {
     titulo:"titulo 10",
@@ -185,7 +194,8 @@ let servicios = [
       task4: "Cuarta tarea",
       task5: "Quinta tarea"
     },
-    files:{}
+    files:{},
+    conversation:false,
   }
 ];
 
