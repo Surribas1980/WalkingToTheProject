@@ -42,7 +42,7 @@ function TaskList(){
     const SaveFile = useCallback (()=>{
       /*setFile(valueFile.current.files[1].name);*/
         let valor = valueFile.current.files;
-        
+
 
         for (let i = 0 ; i < valor.length ; i++){
             setFile(valueFile.current.files[i].name);
@@ -79,7 +79,7 @@ function TaskList(){
             lista.splice(index,1);
             return [...lista]
         })
-
+        /*setDescription(false);*/
 
     },[lista]);
 
