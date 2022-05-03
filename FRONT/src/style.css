@@ -473,10 +473,12 @@ button{
   border: none;
   color:inherit;
   background-color:  inherit ;
+  padding: var(--padding-default)
 }
 button:hover{
   background-color: black;
   color:white;
+  font-style: italic;
 }
 /*-----------*/
 /*--------*/
@@ -769,7 +771,7 @@ li{
   margin: var(--margin-defalut-min);
   border: 3px solid green;
   display: block;
-  
+
 }
 #generic-form-text-area input{
   border:none;
