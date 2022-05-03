@@ -8,12 +8,12 @@ import PaintDescription from "./PaintDescription";
 function PaintList(props){
     const [color,setColor] = useState([]);/*"tasklist-element-statuss-change"*/
     const [cambiaStyle,setCam] = useState(false);
-    
 
+    console.log('en PaintList: ',props)
     /*console.log('props?.list[0]: ',props?.list[0],props?.list.length, props?.list[2].fichero)*/
 
 
-    
+
     props?.list.map(()=>{
         color.push("tasklist-element");
         return 1
@@ -21,7 +21,7 @@ function PaintList(props){
    console.log('las props list: ',props?.list)
     const salida = props?.list.map(
         (item,index)=>{
-        
+
         const paintGreen = (cambiarAotroEstilo,elemmento,elEstiloDelDiv) =>{
             let cambia;
             if(elEstiloDelDiv === "tasklist-element"){
@@ -33,14 +33,14 @@ function PaintList(props){
                 setCam(cambiarAotroEstilo)
                 console.log('elemento: ', props.list[elemmento])
             }else{
-                
+
                 color[elemmento] = "tasklist-element";
                 setCam(cambiarAotroEstilo);
                 props.list[elemmento].done = 'not done';
                 console.log('elemento: ', props.list[elemmento])
             }
-            
-            
+
+
         }
 
         let texto;
@@ -55,26 +55,26 @@ function PaintList(props){
                 </div>
                 <Icono elname={"delete"} eliminarFun={props.laFun} elkey={index} imagen={Delete}/>
             </div>
-           
+
         </>;
 
         }
-        
+
         return (
             <>{texto}</>
         )
     })
 
-    
-   
 
-    
+
+
+
 
     return(
     <div className="totaltasklist">
         {salida}
-        { props.thereFiles === true ? <PaintFiles lista={props?.list}/> : ''}
-        { props.thereDescription === true ? <PaintDescription list={props?.list}/> : ''}
+        { props.thereFiles === true ? <PaintFiles laFun={props.laFun} lista={props?.list}/> : ''}
+        { props.thereDescription === true ? <PaintDescription laFun={props.laFun} list={props?.list}/> : ''}
     </div>)
 }
 
