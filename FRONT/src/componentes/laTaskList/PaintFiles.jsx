@@ -5,6 +5,7 @@ import Delete from '../../images/tasklist/bote-de-basura.png';
 import TareaRealizada from '../../images/tasklist/ok-marca.png';
 
 function PaintList(props){
+  console.log('PaintList: ',props)
     const [color,setColor] = useState([]);
     const [cambiaStyle,setCam] = useState(false);
     props?.lista.map(()=>{
@@ -13,7 +14,7 @@ function PaintList(props){
     })
     const salidaFicheros = props?.lista.map(
         (item,index)=>{
-        
+
         const paintGreen = (cambiarAotroEstilo,elemmento,elEstiloDelDiv) =>{
             let cambia;
             if(elEstiloDelDiv === "tasklist-element"){
@@ -25,17 +26,17 @@ function PaintList(props){
                 setCam(cambiarAotroEstilo)
                 console.log('elemento: ', props.list[elemmento])
             }else{
-                
+
                 color[elemmento] = "tasklist-element";
                 setCam(cambiarAotroEstilo);
                 props.list[elemmento].done = 'not done';
                 console.log('elemento: ', props.list[elemmento])
             }
-            
-            
+
+
         }
 
-        
+
         let ficheros;
         if(item.fichero){
             ficheros = <>
@@ -48,7 +49,7 @@ function PaintList(props){
             </div>
             </>;
         }
-        
+
         return (
         <>
 
