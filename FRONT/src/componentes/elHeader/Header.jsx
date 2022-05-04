@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Login from '../../pages/Login';
-import Register from '../../pages/Register';
+import Login from '../../pages/Page-Login';
+import Register from '../../pages/Page-Register';
 import Main from '../elMain/Main';
 import NavBar from '../elNavBar/NavBar';
 
