@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 
-function InsertList({children}){
+function Component_TaskList_InsertList({children}){
     
   
     return (<>{children}
@@ -9,4 +9,4 @@ function InsertList({children}){
     </>)
 }
 
-export default InsertList;
+export default Component_TaskList_InsertList;

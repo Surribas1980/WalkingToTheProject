@@ -2,10 +2,10 @@ import React,{memo,useState} from "react";
 import Icono from "../Icono";
 import Delete from '../../images/tasklist/bote-de-basura.png';
 import TareaRealizada from '../../images/tasklist/ok-marca.png';
-import PaintFiles from "./Component-TaskList-PaintFiles";
-import PaintDescription from "./Component-TaskList-PaintDescription";
+import Component_TaskList_PaintFiles from "./Component-TaskList-PaintFiles";
+import Component_TaskList_PaintDescription from "./Component-TaskList-PaintDescription";
 
-function PaintList(props){
+function Component_TaskList_PaintList(props){
     const [color,setColor] = useState([]);/*"tasklist-element-statuss-change"*/
     const [cambiaStyle,setCam] = useState(false);
 
@@ -73,9 +73,9 @@ function PaintList(props){
     return(
     <div className="totaltasklist">
         {salida}
-        { props.thereFiles === true ? <PaintFiles laFun={props.laFun} lista={props?.list}/> : ''}
-        { props.thereDescription === true ? <PaintDescription laFun={props.laFun} list={props?.list}/> : ''}
+        { props.thereFiles === true ? <Component_TaskList_PaintFiles laFun={props.laFun} lista={props?.list}/> : ''}
+        { props.thereDescription === true ? <Component_TaskList_PaintDescription laFun={props.laFun} list={props?.list}/> : ''}
     </div>)
 }
 
-export default  memo(PaintList);
+export default  memo(Component_TaskList_PaintList);

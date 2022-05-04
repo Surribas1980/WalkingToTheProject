@@ -4,7 +4,7 @@ import Icono from "../Icono";
 import Delete from '../../images/tasklist/bote-de-basura.png';
 import TareaRealizada from '../../images/tasklist/ok-marca.png';
 
-function PaintList(props){
+function Component_TaskList_PaintList(props){
   console.log('PaintList: ',props)
     const [color,setColor] = useState([]);
     const [cambiaStyle,setCam] = useState(false);
@@ -65,4 +65,4 @@ function PaintList(props){
     </>)
 }
 
-export default memo(PaintList);
+export default memo(Component_TaskList_PaintList);

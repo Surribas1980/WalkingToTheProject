@@ -1,7 +1,7 @@
 import React , { useState } from "react";
 import GenericBoton from "../GenericBoton";
 
-function SendList(props){
+function Component_TaskList_SendList(props){
 
     const onSend = () =>{
         console.log('Envio datos: ',JSON.stringify(props.list));
@@ -14,4 +14,4 @@ function SendList(props){
     )
 }
 
-export default SendList;
+export default Component_TaskList_SendList;

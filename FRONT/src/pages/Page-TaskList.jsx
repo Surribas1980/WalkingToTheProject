@@ -1,10 +1,10 @@
 import React, {useState,useRef, useCallback} from "react";
 
-import InsertList from "../componentes/laTaskList/Component-TaskList-InsertList";
-import PaintList from "../componentes/laTaskList/Component-TaskList-PaintList";
-import SendList from "../componentes/laTaskList/Component-TaskList-SendList";
-import TitleList from "../componentes/laTaskList/Component-TaskList-TitleList";
-import WritenTitleOrList from "../componentes/laTaskList/Component-TaskList-WritenTitleOrList";
+import Component_TaskList_InsertList from "../componentes/laTaskList/Component-TaskList-InsertList";
+import Component_TaskList_PaintList from "../componentes/laTaskList/Component-TaskList-PaintList";
+import Component_TaskList_SendList from "../componentes/laTaskList/Component-TaskList-SendList";
+import Componente_TaskList_TitleList from "../componentes/laTaskList/Component-TaskList-TitleList";
+import Component_TaskList_WritenTitleOrList from "../componentes/laTaskList/Component-TaskList-WritenTitleOrList";
 
 
 function TaskList(){
@@ -86,16 +86,16 @@ function TaskList(){
     return(<>
 
 
-    <TitleList title={titleListTask}/>
-    <PaintList thereDescription={thereDescription} thereFiles={thereFiles} laFun={DeleteTaskLis} list={lista} />
-    <InsertList>
-        <WritenTitleOrList eltype = "text" elspan="Tarea" inputref={valueInput}  laFun={SaveList} elplace="Introduce tarea ..."/>
-        <WritenTitleOrList eltype = "text" elspan="Cambio de titulo?" inputref={valueTitle} laFun={SaveTitleList} elplace="Introduce titulo de tarea ..."/>
-        <WritenTitleOrList eltype = "file" elspan="Introduce fichero" inputref={valueFile} laFun={SaveFile} elplace="Introduce titulo de ficheros"/>
-        <WritenTitleOrList eltype = "textarea" elspan="Descripcion" inputref={valueDescription} laFun={SaveDescriptionList} elplace="Introduce Descripcion"/>
-    </InsertList>
+    <Componente_TaskList_TitleList title={titleListTask}/>
+    <Component_TaskList_PaintList thereDescription={thereDescription} thereFiles={thereFiles} laFun={DeleteTaskLis} list={lista} />
+    <Component_TaskList_InsertList>
+        <Component_TaskList_WritenTitleOrList eltype = "text" elspan="Tarea" inputref={valueInput}  laFun={SaveList} elplace="Introduce tarea ..."/>
+        <Component_TaskList_WritenTitleOrList eltype = "text" elspan="Cambio de titulo?" inputref={valueTitle} laFun={SaveTitleList} elplace="Introduce titulo de tarea ..."/>
+        <Component_TaskList_WritenTitleOrList eltype = "file" elspan="Introduce fichero" inputref={valueFile} laFun={SaveFile} elplace="Introduce titulo de ficheros"/>
+        <Component_TaskList_WritenTitleOrList eltype = "textarea" elspan="Descripcion" inputref={valueDescription} laFun={SaveDescriptionList} elplace="Introduce Descripcion"/>
+    </Component_TaskList_InsertList>
 
-    <SendList list={lista} />
+    <Component_TaskList_SendList list={lista} />
     </>)
 }
 

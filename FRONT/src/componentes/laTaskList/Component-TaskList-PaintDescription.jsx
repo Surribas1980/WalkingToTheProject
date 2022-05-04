@@ -3,7 +3,7 @@ import Icono from "../Icono";
 import Delete from '../../images/tasklist/bote-de-basura.png';
 import TareaRealizada from '../../images/tasklist/ok-marca.png';
 
-function PaintDescription(props){
+function Component_TaskList_PaintDescription(props){
     const [color,setColor] = useState([]);/*"tasklist-element-statuss-change"*/
     const [cambiaStyle,setCam] = useState(false);
 
@@ -65,4 +65,4 @@ function PaintDescription(props){
     {salida}</>)
 }
 
-export default memo(PaintDescription);
+export default memo(Component_TaskList_PaintDescription);

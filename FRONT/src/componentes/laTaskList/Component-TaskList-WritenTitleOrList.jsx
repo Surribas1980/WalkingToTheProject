@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-function WritenTitleOrList (props){
+function Component_TaskList_WritenTitleOrList (props){
     
     let salida;
     if(props.eltype == "text"){
@@ -20,4 +20,4 @@ return(
 </div>)
 }
 
-export default memo(WritenTitleOrList);
+export default memo(Component_TaskList_WritenTitleOrList);
