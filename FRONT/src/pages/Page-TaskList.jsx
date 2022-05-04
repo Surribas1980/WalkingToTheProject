@@ -75,6 +75,10 @@ function TaskList(){
     })
 
     const DeleteTaskLis = useCallback((index)=>{
+        if(lista[index].description){
+            setDescription(false);
+        }
+        
         setLista(()=>{
             lista.splice(index,1);
             return [...lista]
