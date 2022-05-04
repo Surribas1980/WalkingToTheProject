@@ -370,6 +370,7 @@ span[name="service-description-initial"]{
 #services-task-id .services-task-id-file-and-img{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-items:center;
 }
 #services-task-id .services-task-id-file-and-img .son{
@@ -402,6 +403,10 @@ span[name="service-description-initial"]{
 #writinglist > span{
   font-family: var(--font-family-default);
   padding: var(--padding-default);
+  flex: 1;
+}
+#writinglist > input {
+  flex:1;
 }
 /*-----*/
 /*----BUTTONs ---*/
@@ -436,6 +441,7 @@ span[name="service-description-initial"]{
   width: 5em;
   height: 3em;
   color: white;
+  flex: 1;
 }
 .save-data-default:hover{
   background-color: #58d68d;
