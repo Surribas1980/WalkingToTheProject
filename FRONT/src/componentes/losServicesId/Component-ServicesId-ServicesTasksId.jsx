@@ -19,7 +19,7 @@ function Component_ServicesId_ServicesTasksTaskId(props){
 
     return (
 
-    <div>
+    <div id="organized-services-task-id">
 
         <div id="services-task-id">
             {salida}
@@ -31,8 +31,9 @@ function Component_ServicesId_ServicesTasksTaskId(props){
             <SendMessageWithIcon solutioned = {ele[0]?.solutioned} conversation = {ele[0]?.conversation} />
 
         </div>
-        <div>
-
+        <div className="services-task-id-solution-conversation">
+            <div className="solution">Solution</div>
+            <div className="conversation">Conversation</div>
         </div>
     </div>
     );
