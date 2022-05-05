@@ -347,6 +347,7 @@ span[name="service-description-initial"]{
 }
 /*--- Services-Task-List ---*/
 #services-task-id{
+  flex: 1;
   margin: 10px;
   border: 1px solid black;
   padding: var(--padding-default);
@@ -822,6 +823,51 @@ li{
   width: 5vw;
 
 }
+
+  /**
+   Utilizado en Component-ServicesId-ServicesTasksId.jsx
+  */
+  #organized-services-task-id{
+    display: flex;
+    flex-direction: row;
+    /*align-items:baseline;*/
+    align-items:stretch;
+    margin: var(--margin-defalut);
+    padding: var(--padding-default);
+    border: 1px solid black;
+  }
+/*#organized-services-task-id > .services-task-id-solution-conversation{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid black;
+    margin: var(--margin-defalut);
+    padding: var(--padding-default);
+    font-family: var(--font-family-default);
+  }*/
+  #organized-services-task-id > .services-task-id-solution-conversation{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid black;
+    margin: var(--margin-defalut);
+    padding: var(--padding-default);
+    font-family: var(--font-family-default);
+  }
+  .solution,.conversation{
+    flex:1;
+    /*height: 350px;*/
+    border: 1px solid black;
+    padding: var(--padding-default);
+    margin: var(--margin-defalut);
+  }
+
+
+
+
+
 /*-----------------------*/
 @media (max-width: 600px) {
 
@@ -909,24 +955,33 @@ li{
     flex-direction: column;
   }
    /*---Navegation-Footer-App---*/
-#navegation-footer-app{
-  position: sticky;
-  bottom: 0;
-  display: flex;
-  justify-content:space-between;
-  flex-direction: row;
-  padding: var(--padding-nav-default);
-  background-color:  #a2d9ce;
+  #navegation-footer-app{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    padding: var(--padding-nav-default);
+    background-color:  #a2d9ce;
 
+  }
+  #navegation-footer-app .img-nav-footer-app{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border: 1px  solid black;
+  border-radius: 50%;
+  }
+  .img-nav-footer-app:hover{
+    background-color: white;
+  }
+
+
+  /**
+   Utilizado en Component-ServicesId-ServicesTasksId.jsx
+  */
+  #organized-services-task-id > .services-task-id-solution-conversation{
+  display: none;
 }
-#navegation-footer-app .img-nav-footer-app{
-width: 30px;
-height: 30px;
-padding: 10px;
-border: 1px  solid black;
-border-radius: 50%;
-}
-.img-nav-footer-app:hover{
-  background-color: white;
-}
+
 }
