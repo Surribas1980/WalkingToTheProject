@@ -7,7 +7,7 @@ import Componente_TaskList_TitleList from "../componentes/laTaskList/Component-T
 import Component_TaskList_WritenTitleOrList from "../componentes/laTaskList/Component-TaskList-WritenTitleOrList";
 
 
-function TaskList(){
+function Page_TaskList(){
 
     const [lista,setLista] = useState([]);
     let [titleListTask , setTitleListTask ] = useState("Lista de tareas")
@@ -78,7 +78,7 @@ function TaskList(){
         if(lista[index].description){
             setDescription(false);
         }
-        
+
         setLista(()=>{
             lista.splice(index,1);
             return [...lista]
@@ -103,4 +103,4 @@ function TaskList(){
     </>)
 }
 
-export default TaskList;
+export default Page_TaskList;
