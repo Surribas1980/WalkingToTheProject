@@ -34,6 +34,7 @@ function Component_ServicesId_ServicesTasksTaskId(props){
         </div>
         <div className="services-task-id-solution-conversation">
             <div className="solution">Solution</div>
+            <div className="solution">Personal Conversations</div>
             <div className="conversation-total"> 
                 
                 <Component_ServicesId_Conversations></Component_ServicesId_Conversations>
