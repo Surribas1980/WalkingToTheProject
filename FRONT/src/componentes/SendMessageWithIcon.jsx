@@ -23,20 +23,25 @@ useEffect(()=>{
 },[screen.width])
   return (
     <>
-    <div className="services-task-id-group">
+      <>
       {
+        ver === false ? 
+                        <div className="services-task-id-group">
+                          {
 
-        props.solutioned === true ? <GenericBoton styleDiv="services-button"  texto="Ver solución"/> : <GenericImageOnClick idDivImg="generic-image-on-click"  srcImg={Solucionado} functionImg={changedVer} />
-      }
+                            props.solutioned === true ? <GenericBoton styleDiv="services-button"  texto="Ver solución"/> : <GenericImageOnClick idDivImg="generic-image-on-click"  srcImg={Solucionado} functionImg={changedVer} />
+                          }
 
-      {
-        anchura === false ?  <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Conversacion} functionImg={changedVer} /> : ''
-      }
-      {
-        (props.conversation === true) ? <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Charla} functionImg={changedVer} /> : ''
-      }
+                          {
+                            anchura === false ?  <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Conversacion} functionImg={changedVer} /> : ''
+                          }
+                          {
+                            (props.conversation === true) ? <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Charla} functionImg={changedVer} /> : ''
+                          }
 
-    </div>
+                        </div> : ''
+      }
+      </>
      <div>
 
       {ver === true ? <GenericFormTextArea idDivForm="generic-form-text-area" /> : ''}
