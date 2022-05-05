@@ -17,7 +17,7 @@ function GenericFormTextArea(props){
   return(
     <div id={props.idDivForm}>
       <form onSubmit={handleSubmit}>
-        <textarea rows="20" onChange={handleChange}/>
+        <textarea rows="5" onChange={handleChange}/>
         <input type="submit" value="Enviar" />
       </form>
     </div>
