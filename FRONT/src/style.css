@@ -881,9 +881,12 @@ li{
   width: fill-available;
 }
 #component-servicesId-conversations > .conversations{
-  flex:4;
+ /* flex:4;*/
   background-color: greenyellow;
+  overflow-y: scroll;
+  height: 200px;
   /*margin: var(--margin-defalut);*/
+  
 }
 #component-servicesId-conversations > .send{
   flex: 1;
