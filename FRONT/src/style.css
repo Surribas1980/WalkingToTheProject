@@ -856,12 +856,13 @@ li{
     padding: var(--padding-default);
     font-family: var(--font-family-default);
   }
-  .solution,.conversation{
+  .solution,.conversation-total{
     flex:1;
     /*height: 350px;*/
     border: 1px solid black;
     padding: var(--padding-default);
     margin: var(--margin-defalut);
+    display: flex;
   }
 
 
@@ -869,6 +870,36 @@ li{
 
 
 /*-----------------------*/
+
+
+#component-servicesId-conversations{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: var(--padding-default);
+  width: -webkit-fill-available;
+  width: fill-available;
+}
+#component-servicesId-conversations > .conversations{
+  flex:4;
+  background-color: greenyellow;
+  /*margin: var(--margin-defalut);*/
+}
+#component-servicesId-conversations > .send{
+  flex: 1;
+  /*background-color: #2e86c1;*/
+  background-color: rgb(255, 238, 0);
+  /*margin: var(--margin-defalut);*/
+}
+
+#personal-response-wrapper{
+  margin: var(--margin-defalut);
+  height: 50px;/*será eliminado xa que estará o componente*/
+  border: 1px solid black;
+  background-color: #d3e0e9;
+
+
+}
 @media (max-width: 600px) {
 
   .ocultarTitulos {
