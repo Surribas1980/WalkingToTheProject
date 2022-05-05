@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import Component_ServicesId_ServicesTasksId_ServicesTasksTaskId from "./Component-ServicesId-ServicesTasksTaskId";
 import Component_ServicesId_ServicesTasksId_ServicesFilesTasksId from "./Component-ServicesId-ServicesFilesTasksId";
 import SendMessageWithIcon from "../SendMessageWithIcon";
+import Component_ServicesId_Conversations from "./Conversations/Component-ServicesId-Conversations";
 function Component_ServicesId_ServicesTasksTaskId(props){
     let ele = props.taskId;
     console.log(ele[0]?.solutioned,ele)
@@ -33,7 +34,10 @@ function Component_ServicesId_ServicesTasksTaskId(props){
         </div>
         <div className="services-task-id-solution-conversation">
             <div className="solution">Solution</div>
-            <div className="conversation">Conversation</div>
+            <div className="conversation-total"> 
+                
+                <Component_ServicesId_Conversations></Component_ServicesId_Conversations>
+            </div>
         </div>
     </div>
     );
