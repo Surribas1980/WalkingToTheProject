@@ -886,7 +886,7 @@ li{
   overflow-y: scroll;
   height: 200px;
   /*margin: var(--margin-defalut);*/
-  
+  max-width: 500px;
 }
 #component-servicesId-conversations > .send{
   flex: 1;
