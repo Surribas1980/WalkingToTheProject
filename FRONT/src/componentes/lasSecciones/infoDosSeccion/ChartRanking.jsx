@@ -1,29 +1,60 @@
 import React from 'react';
-import {Line} from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+
+
 
 function ChartRanking(){
-
-    
-    return (<>
-    <h1>Ranking</h1>
-    <Line
-  datasetIdKey='id'
-  data={{
-    labels: ['Jun', 'Jul', 'Aug'],
+  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Chart.js Bar Chart',
+      },
+    },
+  };
+  const data = {
+    labels,
     datasets: [
       {
-        id: 1,
-        label: '',
-        data: [5, 6, 7],
+        label: 'Dataset 1',
+        data: [25,50,300,24,100,6,250],
+        backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
       {
-        id: 2,
-        label: '',
-        data: [3, 2, 1],
+        label: 'Dataset 2',
+        data: [25,50,300,24,100,6,250],
+        backgroundColor: 'rgba(53, 162, 235, 0.5)',
       },
     ],
-  }}
-/>
+  };
+    
+    return (<>
+      <Bar options={options} data={data} />
     </>);
 }
 
