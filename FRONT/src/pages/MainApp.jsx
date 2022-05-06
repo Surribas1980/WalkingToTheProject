@@ -20,7 +20,7 @@ function MainApp(){
       <Info />
     </UnaSeccion>
     <DosSeccion>
-     {/*<ChartRanking />*/}
+     <ChartRanking />
     </DosSeccion>
     <TresSeccion>
       el children desde MainApp en TresSeccion
