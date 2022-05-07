@@ -6,19 +6,11 @@ let direccionesImagenes = [
   'https://cdn.pixabay.com/photo/2021/02/18/12/03/people-6027028_960_720.jpg',
 ];
 
-export function getDireccionesImagenes() {
-  return direccionesImagenes;
-}
-
 let dirVistoError = [
   'https://cdn.pixabay.com/photo/2021/02/18/09/20/icon-6026642_960_720.png',
   'https://cdn.pixabay.com/photo/2017/02/12/21/29/false-2061132_960_720.png',
   'https://cdn.pixabay.com/photo/2021/02/18/09/20/icon-6026642_960_720.png',
 ];
-
-export function getDirVistoError() {
-  return dirVistoError;
-}
 
 let servicios = [
   {
@@ -199,6 +191,111 @@ let servicios = [
   }
 ];
 
+let conversacionesServicioId = [
+  {
+  titulo:"titulo 1",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"juan",
+  id:0,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 2",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"pepe",
+  solutioned:true,
+  id:0,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 3",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"mariano",
+  solutioned:false,
+  id:2,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 4",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"alex",
+  solutioned:true,
+  id:2,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 5",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"maria",
+  solutioned:false,
+  id:4,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 6",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"jacinta",
+  solutioned:false,
+  id:5,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 7",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"laura",
+  solutioned:false,
+  id:5,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 8",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"marisa",
+  solutioned:false,
+  id:7,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 9",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"juanita",
+  solutioned:true,
+  id:7,
+  conversation: true,
+  visto: false
+},
+{
+  titulo:"titulo 10",
+  descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+  usuario:"alejandra",
+  solutioned:true,
+  id:7,
+  conversation: true,
+  visto: false
+}]
+
+export function getConversacionesServicioId(){
+  return conversacionesServicioId;
+}
+
+export function getDirVistoError() {
+  return dirVistoError;
+}
+
+
 export function getAllServices(){
   return servicios;
+}
+
+
+export function getDireccionesImagenes() {
+  return direccionesImagenes;
 }
