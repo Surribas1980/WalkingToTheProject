@@ -24,11 +24,11 @@ console.log('services', elvector,solu,nosolu)
         <Component_Services_AllServices>
           <div className="show-services">
             <span name="titulo-show-services">Servicios Solucionados</span>
-            <Component_Services_ShowServices styleShowServices="services-solutionados" servicios={solu}/>
+            <Component_Services_ShowServices goTo="services" styleShowServices="services-solutionados" usuarios={solu}/>
           </div>
           <div className="show-services">
             <span name="titulo-show-services">Servicios No Solucionados</span>
-            <Component_Services_ShowServices styleShowServices="services-not-solutionados" servicios={nosolu}/>
+            <Component_Services_ShowServices goTo="services" styleShowServices="services-not-solutionados" usuarios={nosolu}/>
           </div>
         </Component_Services_AllServices>
     </div>
