@@ -6,10 +6,11 @@ import Component_ServicesId_Conversations from "./Conversations/Component-Servic
 import GenericFormTextArea from "../GenericFormTextArea";
 import Component_ServicesId_Conversations_ColectiveConversationsId from "./Conversations/ColectiveConversationsId/Component-ServicesId-Conversations-ColectiveConversationsId";
 import Page_Services from "../../pages/Services/Page-Services";
+import Auxiliary_Page_ServiceId_Conversations from '../../pages/Services/ServicesId-Conversations/Auxiliary_Page_ServiceId_Conversations-Page-Conversations-Of-MyServiceId';
 
 function Component_ServicesId_ServicesTasksTaskId(props){
     let ele = props.taskId;
-    console.log(ele[0]?.solutioned,ele)
+    console.log(ele[0]?.id,ele[0]?.solutioned,ele)
     let salida = props.taskId?.map((item,index)=>{
 
 
@@ -40,11 +41,11 @@ function Component_ServicesId_ServicesTasksTaskId(props){
             <div className="solution">Solution</div>
             <div className="solution">
                 <Component_ServicesId_Conversations dato={<GenericFormTextArea idDivForm="generic-form-text-area"/>}>
-                    <Page_Services />
+                    <Auxiliary_Page_ServiceId_Conversations elId={ele[0]?.id} />
                 </Component_ServicesId_Conversations>
             </div>
-            <div className="conversation-total"> 
-                
+            <div className="conversation-total">
+
                 <Component_ServicesId_Conversations dato={<GenericFormTextArea idDivForm="generic-form-text-area"/>}>
                     <Component_ServicesId_Conversations_ColectiveConversationsId />
                     <Component_ServicesId_Conversations_ColectiveConversationsId />
@@ -52,7 +53,7 @@ function Component_ServicesId_ServicesTasksTaskId(props){
                     <Component_ServicesId_Conversations_ColectiveConversationsId />
                     <Component_ServicesId_Conversations_ColectiveConversationsId />
                     <Component_ServicesId_Conversations_ColectiveConversationsId />
-                    
+
                 </Component_ServicesId_Conversations>
             </div>
         </div>
