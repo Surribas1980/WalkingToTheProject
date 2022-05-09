@@ -3,6 +3,7 @@ import Component_ServicesId_Conversations_PersonalConversationsId from '../../..
 import Component_Services_ShowServices from '../../../componentes/losServices/Component-Services-ShowServices.jsx'
 
 import { getConversacionesServicioId } from '../../../data.js';
+import Component_Personal_ConversationsId_Iframe from '../../../componentes/losServicesId/Conversations/PersonalConversationsId/Component-Personal-ConversationsId-Iframe';
 
 
 function Auxiliary_Page_ServiceId_Conversations(props){
@@ -17,7 +18,8 @@ console.log('Auxiliary_Page_ServiceId_Conversations: ',serviciosId,losServiciosI
     <>
       <Component_ServicesId_Conversations_PersonalConversationsId>
 
-        <Component_Services_ShowServices goTo="" styleShowServices="services-solutionados" usuarios={losServiciosId}/>
+        <Component_Personal_ConversationsId_Iframe usuarios={losServiciosId}/>
+        {/*<Component_Services_ShowServices goTo="services" styleShowServices="services-solutionados" usuarios={losServiciosId}/>*/}
       </Component_ServicesId_Conversations_PersonalConversationsId>
     </>)
 }
