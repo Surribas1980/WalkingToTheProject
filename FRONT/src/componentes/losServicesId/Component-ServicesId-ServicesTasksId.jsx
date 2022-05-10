@@ -40,7 +40,7 @@ function Component_ServicesId_ServicesTasksTaskId(props){
         <div className="services-task-id-solution-conversation">
             <div className="solution">Solution</div>
             <div className="solution">
-                <Component_ServicesId_Conversations dato={<GenericFormTextArea idDivForm="generic-form-text-area"/>}>
+                <Component_ServicesId_Conversations >
                     <Auxiliary_Page_ServiceId_Conversations elId={ele[0]?.id} />
                 </Component_ServicesId_Conversations>
             </div>
