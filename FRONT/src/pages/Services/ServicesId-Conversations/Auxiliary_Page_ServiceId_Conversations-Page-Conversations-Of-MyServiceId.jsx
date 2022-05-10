@@ -18,7 +18,7 @@ console.log('Auxiliary_Page_ServiceId_Conversations: ',serviciosId,losServiciosI
     <>
       <Component_ServicesId_Conversations_PersonalConversationsId>
 
-        <Component_Personal_ConversationsId_Iframe usuarios={losServiciosId}/>
+        <Component_Personal_ConversationsId_Iframe elservicio={props.elId} usuarios={losServiciosId}/>
         {/*<Component_Services_ShowServices goTo="services" styleShowServices="services-solutionados" usuarios={losServiciosId}/>*/}
       </Component_ServicesId_Conversations_PersonalConversationsId>
     </>)
