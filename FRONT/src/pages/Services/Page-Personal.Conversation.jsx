@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
 
 function Page_Personal_Conversation_Id(props){
     let usuparams = useParams();
@@ -7,8 +7,10 @@ function Page_Personal_Conversation_Id(props){
     console.log('usu: ',usuparams )
 
 
-    return (<>hola conversacion {usuparams.idUsuario}
-    <iframe src="services/2/conversation/mariano"></iframe></>)
+    return (<>
+    hola conversacion {usuparams.idUsuario}
+    {props.dato}
+   </>)
 }
 
 export default Page_Personal_Conversation_Id;
