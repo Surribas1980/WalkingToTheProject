@@ -7,6 +7,7 @@ import GenericFormTextArea from "../GenericFormTextArea";
 import Component_ServicesId_Conversations_ColectiveConversationsId from "./Conversations/ColectiveConversationsId/Component-ServicesId-Conversations-ColectiveConversationsId";
 import Page_Services from "../../pages/Services/Page-Services";
 import Auxiliary_Page_ServiceId_Conversations from '../../pages/Services/ServicesId-Conversations/Auxiliary_Page_ServiceId_Conversations-Page-Conversations-Of-MyServiceId';
+import Auxiliary_Page_ServiceId_Solved_Or_SendSolution from "../../pages/Services/ServicesId-Solved-Or-SendSolution/Auxiliary-Page-ServiceId-Solved-Or-SendSolution";
 
 function Component_ServicesId_ServicesTasksTaskId(props){
     let ele = props.taskId;
@@ -38,7 +39,9 @@ function Component_ServicesId_ServicesTasksTaskId(props){
 
         </div>
         <div className="services-task-id-solution-conversation">
-            <div className="solution">Solution</div>
+            <div className="solution">Solution
+                <Auxiliary_Page_ServiceId_Solved_Or_SendSolution />
+            </div>
             <div className="solution">
                 <Component_ServicesId_Conversations >
                     <Auxiliary_Page_ServiceId_Conversations elId={ele[0]?.id} />
