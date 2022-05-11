@@ -863,6 +863,7 @@ li{
     padding: var(--padding-default);
     margin: var(--margin-defalut);
     display: flex;
+    flex-direction: column;
   }
 
 
