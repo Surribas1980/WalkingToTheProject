@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
+import useAuth from '../shared/hooks/useAuth';
 import Usuarios from './Usuarios';
 
 import UnaSeccion from '../componentes/lasSecciones/UnaSeccion';
@@ -7,9 +8,14 @@ import TresSeccion from '../componentes/lasSecciones/TresSeccion';
 
 import Info from '../componentes/lasSecciones/infoUnaSecion/Info';
 import ChartRanking from '../componentes/lasSecciones/infoDosSeccion/ChartRanking';
+import Page_Services from './Services/Page-Services';
+
+import {myServices} from '../data.js'
+
 
 function MainApp(){
-
+  const { user } = useAuth('');
+  const [misServicios, setMisServicios] = useState(myServices())
 
   return (
     <>{console.time('loop')}
@@ -21,10 +27,11 @@ function MainApp(){
     </UnaSeccion>
     <DosSeccion>
      <ChartRanking />
+     <Usuarios />
     </DosSeccion>
     <TresSeccion>
-      el children desde MainApp en TresSeccion
-      <Usuarios />
+      <Page_Services usuario={user} misservicios={misServicios}/>
+      
     </TresSeccion>
 
 {console.timeEnd('loop')}
