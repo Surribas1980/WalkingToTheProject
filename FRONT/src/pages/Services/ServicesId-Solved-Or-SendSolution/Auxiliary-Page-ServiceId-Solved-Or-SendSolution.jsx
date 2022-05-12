@@ -3,14 +3,14 @@ import Component_ServiceId_SolvedoSS from "../../../componentes/losServicesId/So
 import Component_ServiceId_SoSendSolution from "../../../componentes/losServicesId/Solved-Or-SendSolution/Component-ServiceId-SoSendSolution";
 import Component_To_Show_Children_Solved_Or_SendSolution from "../../../componentes/losServicesId/Solved-Or-SendSolution/Component-To-Show-Children-Solved-Or-SendSolution";
 
-function Auxiliary_Page_ServiceId_Solved_Or_SendSolution(){
+function Auxiliary_Page_ServiceId_Solved_Or_SendSolution(props){
 
 
     return (
     <>
         <Component_To_Show_Children_Solved_Or_SendSolution>
-            <Component_ServiceId_SoSendSolution />
-            <Component_ServiceId_SolvedoSS />
+            { props.solved === true ? <Component_ServiceId_SolvedoSS ficheros = {props.solution} /> : <Component_ServiceId_SoSendSolution />}
+
         </Component_To_Show_Children_Solved_Or_SendSolution>
     </>)
 
