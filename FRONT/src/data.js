@@ -12,6 +12,207 @@ let dirVistoError = [
   'https://cdn.pixabay.com/photo/2021/02/18/09/20/icon-6026642_960_720.png',
 ];
 
+let misServicios = [
+  {
+    titulo:"titulo 1",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:true,
+    id:0,
+    tasks:{
+      task1 : "Primera tarea",
+      task : "Segunda tarea"
+    },
+    files:{},
+    conversation: true,
+    solution:{
+      file1: "doc1.docx",
+    }
+  },
+  {
+    titulo:"titulo 2",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:true,
+    id:1,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx"
+    },
+    conversation: true,
+    solution:{
+      file1: "doc1.docx",
+      file2: "doc1.xlsx",
+      file3: "doc1.pptx"
+    }
+  },
+  {
+    titulo:"titulo 3",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:false,
+    id:2,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    },
+    conversation: false,
+    solution:{}
+  },
+  {
+    titulo:"titulo 4",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:true,
+    id:3,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{},
+    conversation: true,
+    solution:{
+      file1: "doc1.docx",
+      file2: "doc1.xlsx"
+    }
+  },
+  {
+    titulo:"titulo 5",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:false,
+    id:4,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx"
+    },
+    conversation: false,
+  },
+  {
+    titulo:"titulo 6",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:false,
+    id:5,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    },
+    conversation: false,
+  },
+  {
+    titulo:"titulo 7",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:false,
+    id:6,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      pptx: "documento0.pptx"
+    },
+    conversation: true,
+  },
+  {
+    titulo:"titulo 8",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:false,
+    id:7,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{},
+    conversation: false,
+  },
+  {
+    titulo:"titulo 9",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:true,
+    id:8,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    },
+    conversation: true,
+    solution:{
+      file1: "doc1.docx",
+      file2: "doc1.xlsx",
+      file3: "doc1.pptx"
+    }
+  },
+  {
+    titulo:"titulo 10",
+    descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
+    usuario:"logeado",
+    solved:true,
+    id:9,
+    tasks:{
+      task1: "Primera tarea",
+      task2: "Segunda tarea",
+      task3: "Tercera tarea",
+      task4: "Cuarta tarea",
+      task5: "Quinta tarea"
+    },
+    files:{},
+    conversation:false,
+    solution:{
+      file1: "doc1.xlsx",
+      file2: "doc1.pptx"
+    }
+  }
+];
+
 let servicios = [
   {
     titulo:"titulo 1",
@@ -312,12 +513,16 @@ export function getDirVistoError() {
   return dirVistoError;
 }
 
+export function getDireccionesImagenes() {
+  return direccionesImagenes;
+}
 
 export function getAllServices(){
   return servicios;
 }
 
-
-export function getDireccionesImagenes() {
-  return direccionesImagenes;
+export function myServices(){
+  return misServicios;
 }
+
+
