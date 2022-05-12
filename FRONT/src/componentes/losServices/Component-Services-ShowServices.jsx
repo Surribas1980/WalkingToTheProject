@@ -3,7 +3,7 @@ import {Link,Outlet} from "react-router-dom";
 import imagen from '../../images/avatares/chico.png';
 function Component_Services_ShowServices(props){
 
-let salida = props.usuarios.map((item,index)=>{
+let salida = props.usuarios?.map((item,index)=>{
   let sortDescription = item.descripcion.slice(0,20);
   return (
     <Link name="service-defalut" to={`/${props.goTo}/${item.id}`} key={index}>
