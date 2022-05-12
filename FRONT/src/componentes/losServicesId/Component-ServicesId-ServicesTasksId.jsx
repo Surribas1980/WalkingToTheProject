@@ -11,7 +11,7 @@ import Auxiliary_Page_ServiceId_Solved_Or_SendSolution from "../../pages/Service
 
 function Component_ServicesId_ServicesTasksTaskId(props){
     let ele = props.taskId;
-    console.log(ele[0]?.id,ele[0]?.solutioned,ele)
+    console.log(ele[0]?.id,ele[0]?.solved,ele)
     let salida = props.taskId?.map((item,index)=>{
 
 
@@ -35,12 +35,12 @@ function Component_ServicesId_ServicesTasksTaskId(props){
 
             <Component_ServicesId_ServicesTasksId_ServicesFilesTasksId ficheros={props.taskId[0].files}/>
 
-            <SendMessageWithIcon solutioned = {ele[0]?.solutioned} conversation = {ele[0]?.conversation} />
+            <SendMessageWithIcon solved = {ele[0]?.solved} conversation = {ele[0]?.conversation} />
 
         </div>
         <div className="services-task-id-solution-conversation">
-            <div className="solution">Solution
-                <Auxiliary_Page_ServiceId_Solved_Or_SendSolution />
+            <div className="solution">
+                <Auxiliary_Page_ServiceId_Solved_Or_SendSolution solved = {ele[0]?.solved} solution = {ele[0]?.solution} />
             </div>
             <div className="solution">
                 <Component_ServicesId_Conversations >
