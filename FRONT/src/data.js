@@ -17,7 +17,7 @@ let servicios = [
     titulo:"titulo 1",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"juan",
-    solutioned:true,
+    solved:true,
     id:0,
     tasks:{
       task1 : "Primera tarea",
@@ -25,12 +25,15 @@ let servicios = [
     },
     files:{},
     conversation: true,
+    solution:{
+      file1: "doc1.docx",
+    }
   },
   {
     titulo:"titulo 2",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"pepe",
-    solutioned:true,
+    solved:true,
     id:1,
     tasks:{
       task1: "Primera tarea",
@@ -43,12 +46,17 @@ let servicios = [
       docx: "documento0.docx"
     },
     conversation: true,
+    solution:{
+      file1: "doc1.docx",
+      file2: "doc1.xlsx",
+      file3: "doc1.pptx"
+    }
   },
   {
     titulo:"titulo 3",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"mariano",
-    solutioned:false,
+    solved:false,
     id:2,
     tasks:{
       task1: "Primera tarea",
@@ -63,12 +71,13 @@ let servicios = [
       pptx: "documento0.pptx"
     },
     conversation: false,
+    solution:{}
   },
   {
     titulo:"titulo 4",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"alex",
-    solutioned:true,
+    solved:true,
     id:3,
     tasks:{
       task1: "Primera tarea",
@@ -79,12 +88,16 @@ let servicios = [
     },
     files:{},
     conversation: true,
+    solution:{
+      file1: "doc1.docx",
+      file2: "doc1.xlsx"
+    }
   },
   {
     titulo:"titulo 5",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"maria",
-    solutioned:false,
+    solved:false,
     id:4,
     tasks:{
       task1: "Primera tarea",
@@ -103,7 +116,7 @@ let servicios = [
     titulo:"titulo 6",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"jacinta",
-    solutioned:false,
+    solved:false,
     id:5,
     tasks:{
       task1: "Primera tarea",
@@ -122,7 +135,7 @@ let servicios = [
     titulo:"titulo 7",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"laura",
-    solutioned:false,
+    solved:false,
     id:6,
     tasks:{
       task1: "Primera tarea",
@@ -141,7 +154,7 @@ let servicios = [
     titulo:"titulo 8",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"marisa",
-    solutioned:false,
+    solved:false,
     id:7,
     tasks:{
       task1: "Primera tarea",
@@ -157,7 +170,7 @@ let servicios = [
     titulo:"titulo 9",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"juanita",
-    solutioned:true,
+    solved:true,
     id:8,
     tasks:{
       task1: "Primera tarea",
@@ -172,12 +185,17 @@ let servicios = [
       pptx: "documento0.pptx"
     },
     conversation: true,
+    solution:{
+      file1: "doc1.docx",
+      file2: "doc1.xlsx",
+      file3: "doc1.pptx"
+    }
   },
   {
     titulo:"titulo 10",
     descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
     usuario:"alejandra",
-    solutioned:true,
+    solved:true,
     id:9,
     tasks:{
       task1: "Primera tarea",
@@ -188,6 +206,10 @@ let servicios = [
     },
     files:{},
     conversation:false,
+    solution:{
+      file1: "doc1.xlsx",
+      file2: "doc1.pptx"
+    }
   }
 ];
 
@@ -204,7 +226,7 @@ let conversacionesServicioId = [
   titulo:"titulo 2",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"pepe",
-  solutioned:true,
+  solved:true,
   id:0,
   conversation: true,
   visto: false
@@ -213,7 +235,7 @@ let conversacionesServicioId = [
   titulo:"titulo 3",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"mariano",
-  solutioned:false,
+  solved:false,
   id:2,
   conversation: true,
   visto: false
@@ -222,7 +244,7 @@ let conversacionesServicioId = [
   titulo:"titulo 4",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"alex",
-  solutioned:true,
+  solved:true,
   id:2,
   conversation: true,
   visto: false
@@ -231,7 +253,7 @@ let conversacionesServicioId = [
   titulo:"titulo 5",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"maria",
-  solutioned:false,
+  solved:false,
   id:4,
   conversation: true,
   visto: false
@@ -240,7 +262,7 @@ let conversacionesServicioId = [
   titulo:"titulo 6",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"jacinta",
-  solutioned:false,
+  solved:false,
   id:5,
   conversation: true,
   visto: false
@@ -249,7 +271,7 @@ let conversacionesServicioId = [
   titulo:"titulo 7",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"laura",
-  solutioned:false,
+  solved:false,
   id:5,
   conversation: true,
   visto: false
@@ -258,7 +280,7 @@ let conversacionesServicioId = [
   titulo:"titulo 8",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"marisa",
-  solutioned:false,
+  solved:false,
   id:7,
   conversation: true,
   visto: false
@@ -267,7 +289,7 @@ let conversacionesServicioId = [
   titulo:"titulo 9",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"juanita",
-  solutioned:true,
+  solved:true,
   id:7,
   conversation: true,
   visto: false
@@ -276,7 +298,7 @@ let conversacionesServicioId = [
   titulo:"titulo 10",
   descripcion:"xxxxxxxxxxxxxxxxxxx xxxxxxxxxxx xxxxxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx",
   usuario:"alejandra",
-  solutioned:true,
+  solved:true,
   id:7,
   conversation: true,
   visto: false
