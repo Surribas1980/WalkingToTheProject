@@ -392,6 +392,21 @@ span[name="service-description-initial"]{
   padding: var(--padding-default);
 }
 /*--------------------------*/
+input[name="solution"]{
+  background-color: blue;
+  border: none;
+  color: white;
+}
+/*---Component-ServiceId-Solved-oSS---*/
+#solved{
+  display: flex;
+}
+#solved .son{
+  display: flex;
+flex-direction: column;
+flex-wrap:wrap;
+align-items: center;
+}
 /*--- WritingList ---*/
 #writinglist{
   background-color: orange;
@@ -486,6 +501,11 @@ button:hover{
   background-color: black;
   color:white;
   font-style: italic;
+}
+button[name="solution"]{
+  background-color: blue;
+  border: none;
+  color: white;
 }
 /*-----------*/
 /*--------*/
@@ -883,7 +903,7 @@ li{
   width: -moz-available;
 }
 #component-servicesId-conversations > .conversations{
- 
+
   background-color: greenyellow;
   overflow-y: scroll;
   height: 200px;
