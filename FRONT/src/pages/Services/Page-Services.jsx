@@ -9,14 +9,14 @@ function Page_Services(){
 
     let elvector = services?.map((item,index)=>{
         let elemento = {};
-        elemento.titulo = item.solutioned;
+        elemento.titulo = item.solved;
         return (elemento)
     })
     let solu = services?.filter((item)=>{
-        return (item.solutioned === true);
+        return (item.solved === true);
     })
     let nosolu = services?.filter((item)=>{
-        return (item.solutioned === false);
+        return (item.solved === false);
     })
 console.log('services', elvector,solu,nosolu)
     return(<>
