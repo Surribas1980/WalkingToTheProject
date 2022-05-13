@@ -4,20 +4,6 @@ import Component_Services_ShowServices from "../../componentes/losServices/Compo
 import { getAllServices } from "../../data.js";
 function Page_Services(props){
     const [services,setServices] = useState(getAllServices());
-    /*const [solucionados,setSolucionados] = useState([]);
-    const [noSolucionados,setNoSolucionados] = useState([]);*/
-
-    /*let elvector = services?.map((item,index)=>{
-        let elemento = {};
-        elemento.titulo = item.solved;
-        return (elemento)
-    })
-    let solu = services?.filter((item)=>{
-        return (item.solved === true);
-    })
-    let nosolu = services?.filter((item)=>{
-        return (item.solved === false);
-    })*/
 
     let elvector;
     let solu;
