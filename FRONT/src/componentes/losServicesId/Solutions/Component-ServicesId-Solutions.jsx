@@ -6,8 +6,11 @@ import {myPossiblePersonSolved} from '../../../data.js';
 function Component_ServicesId_SolutionsId(props){
 const [possibleSolved,setPossibleSolved] = useState(myPossiblePersonSolved())
 
-console.log('Component_ServicesId_SolutionsId: ',possibleSolved)
-    return(<><Component_ServicesId_To_Confirm_SolutionId solucionadores={possibleSolved}/></>)
+let losSolucionadores = possibleSolved?.filter((item)=>{
+    return (item.numservicio == props.theId)
+})
+
+    return(<><Component_ServicesId_To_Confirm_SolutionId solucionadores={losSolucionadores}/></>)
 }
 
 export default Component_ServicesId_SolutionsId;
