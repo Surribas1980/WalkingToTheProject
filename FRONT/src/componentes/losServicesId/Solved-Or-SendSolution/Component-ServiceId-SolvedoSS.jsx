@@ -36,7 +36,7 @@ function Component_ServiceId_SolvedoSS(props){
 console.log('la salida: ', props.ficheros)
     return (<>
 
-      Resuelto<div>Puntuación : </div>
+      {props.confirmar === false ? <>Resuelto<div>Puntuación : </div></> : ''}
         <div id='solved'>
 
         {salida}
