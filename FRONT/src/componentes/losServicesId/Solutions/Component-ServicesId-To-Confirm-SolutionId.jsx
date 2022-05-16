@@ -1,4 +1,8 @@
 import React,{useState} from "react";
+import imagen from '../../../images/avatares/chico.png';
+import Component_ServiceId_SolvedoSS from '../Solved-Or-SendSolution/Component-ServiceId-SolvedoSS';
+
+
 
 function Component_ServicesId_To_Confirm_SolutionId(props){
 
@@ -10,33 +14,44 @@ function Component_ServicesId_To_Confirm_SolutionId(props){
         setElIndex(index);
         setVer(!cambiarVer);
     }
-    console.log('los solucionadores: ',props.solucionadores)
-    /*let salida = props.solucionadores?.map((item,index)=>{
+   
+    let salida = props.solucionadores?.map((item,index)=>{
 
-        let ficheros;
+        {/*let ficheros;*/}
 
         return (
                     <div className="two-elements" onClick={()=>{miFun(ver,index)}}>
+                        
                         <div className="several-elements">
-                                    <img></img>
+                                <img id='icono' name="services" className="show-services-list-span" src={imagen}/>
                                 <div>
-                                    <span></span>
-                                    <span></span>
+                                    <span>{item.usuario}</span>
+                                    <span><Component_ServiceId_SolvedoSS confirmar={true} ficheros={item.files} /></span>
                                 </div>
-                                <div>
-                                        {ficheros}
-                                </div>
+                                
                         </div>
                         <div className="several-elements">
                             <div name={changeStyle}>
-
+                                <input type="checkbox" />
+                                <input type="text"/>
                             </div>
                         </div>
                     </div>
                 )
     })
-    return (<div id="wrapper-table-list">{salida}</div>)*/
-    return (<>hola solucionadores</>)
+    return (
+    <div id="component-servicesId-conversations">
+        <span name="titulo-lista-tareas">Posibles solucionadores</span>
+        <div className="conversations">
+            <div id="wrapper-table-list">
+                    {salida}
+            </div>
+
+        </div>
+    </div>
+    
+    )
+    /*return (<>hola solucionadores</>)*/
 }
 
 export default Component_ServicesId_To_Confirm_SolutionId;
