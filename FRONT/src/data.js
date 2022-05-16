@@ -505,6 +505,82 @@ let conversacionesServicioId = [
   visto: false
 }]
 
+
+let posiblesSolucionadores = [
+  {
+    usuario: "juan",
+    numservicio: 2,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+  {
+    usuario: "francisco",
+    numservicio: 2,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+  {
+    usuario: "alex",
+    numservicio: 2,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+  {
+    usuario: "juanillo",
+    numservicio: 3,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+  {
+    usuario: "noel",
+    numservicio: 3,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+  {
+    usuario: "diego",
+    numservicio: 4,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+  {
+    usuario: "xexus",
+    numservicio: 5,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+  {
+    usuario: "diego",
+    numservicio: 5,
+    files:{
+      docx: "documento0.docx",
+      xlsx: "documento1.xlsx",
+      pptx: "documento0.pptx"
+    }
+  },
+
+]
 export function getConversacionesServicioId(){
   return conversacionesServicioId;
 }
@@ -525,4 +601,6 @@ export function myServices(){
   return misServicios;
 }
 
-
+export function myPossiblePersonSolved(){
+  return posiblesSolucionadores;
+}
