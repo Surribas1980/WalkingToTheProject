@@ -6,6 +6,8 @@ import UnaSeccion from '../componentes/lasSecciones/UnaSeccion';
 import DosSeccion from '../componentes/lasSecciones/DosSeccion';
 import TresSeccion from '../componentes/lasSecciones/TresSeccion';
 
+import Page_MyServices from './Services/MyServices/Page-MyServices.jsx';
+
 import Info from '../componentes/lasSecciones/infoUnaSecion/Info';
 import ChartRanking from '../componentes/lasSecciones/infoDosSeccion/ChartRanking';
 import Page_Services from './Services/Page-Services';
@@ -19,7 +21,7 @@ function MainApp(){
 
   return (
     <>{console.time('loop')}
-   
+
 
     <UnaSeccion>
 
@@ -30,8 +32,8 @@ function MainApp(){
      <Usuarios />
     </DosSeccion>
     <TresSeccion>
-      <Page_Services usuario={user} misservicios={misServicios}/>
-      
+      {/*<Page_Services usuario={user} misservicios={misServicios}/>*/}
+      <Page_MyServices />
     </TresSeccion>
 
 {console.timeEnd('loop')}
