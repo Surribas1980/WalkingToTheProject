@@ -1,26 +1,22 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Routes, Route } from 'react-router-dom';
-import MainApp from '../../pages/MainApp';
-{/*import MyServicesM from '../../pages/MyServices/MyServicesM';*/}
-import Page_Services from '../../pages/Services/Page-Services';
-import Page_ServicesId from '../../pages/Services/Page-ServicesId';
-import Page_TaskList from '../../pages/Page-TaskList';
-import Page_Personal_Conversation_Id from '../../pages/Services/Page-Personal.Conversation';
-import GenericFormTextArea from '../GenericFormTextArea';
-{/*import Solutioned from '../../pages/MyServices/Solutioned';*/}
+
+import {ObjRutas} from './Function-Array-Pages';
+
 function RutasApp(){
+
+  const [objAddress,setObjAddress] = useState(ObjRutas());
+
     return (
     <Routes>
-        <Route path={'/mainapp'} element={<MainApp />}/>
-        {/*<Route path={'/myservices'} element={<MyServicesM />}/>*/}
-        <Route path={'/services'} element={<Page_Services />}/>
-        <Route path={'/services/:id'} element={<Page_ServicesId />}>
-            <Route path={'conversation/:idUsuario'} element={<Page_Personal_Conversation_Id dato={<GenericFormTextArea idDivForm="generic-form-text-area" />} />} />
+
+        <Route path={objAddress.servicios.path} element={objAddress.servicios.page}/>
+        <Route path={objAddress.serviciosId.path} element={objAddress.serviciosId.page}>
+            <Route path={objAddress.serviciosId.conversacion.path} element={objAddress.serviciosId.conversacion.page} />
         </Route>
-        {/*<Route path={'/services/:id'} element={<Page_ServicesId />} />
-        <Route path={'/services/:id/conversation/:idUsuario'} element={<Page_Personal_Conversation_Id />} />*/}
-        <Route path={'/tasklist'} element={<Page_TaskList />} />
-        {/*<Route path={'/myservicessolutioned'} element={<Solutioned />} />*/}
+        <Route path={objAddress.main.path} element={objAddress.main.page}/>
+        <Route path={objAddress.taskList.path} element={objAddress.taskList.page} />
+        <Route path={objAddress.myServicesId.path} element={objAddress.myServicesId.page} />
     </Routes>
     )
 }
