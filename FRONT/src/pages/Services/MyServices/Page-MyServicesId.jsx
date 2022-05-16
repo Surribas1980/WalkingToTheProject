@@ -16,7 +16,7 @@ function Page_MyServicesId(){
 
   return (
   <div>
-      <Component_ServicesId_ServicesTasksTaskId data={Component_ServicesId_SolutionsId} taskId={theTask} />
+      <Component_ServicesId_ServicesTasksTaskId visualizo={true} data={<Component_ServicesId_SolutionsId theId={params.id}/>} taskId={theTask} />
     </div>)
 }
 
