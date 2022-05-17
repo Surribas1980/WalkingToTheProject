@@ -25,7 +25,7 @@ function Component_ServiceId_SolvedoSS(props){
     let dir = urlstatic + `${item}`;
     let enlazar = dir.slice(14);
     return (<div className="son">
-      <img id="icono" src={thePath}/>
+      <img id="icono" name="docs" src={thePath}/>
       <a href={dir}>
         <span name="task">{item}</span>
       </a>
