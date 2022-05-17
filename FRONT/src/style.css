@@ -143,6 +143,21 @@ div[name |= "seccion"]{
 #icono[name="delete"]:hover{
   background-color: red;
 }
+#icono[name="solucionadores"] {
+  background-color: transparent;
+  border: unset;
+  width: 5vw;
+  flex: 0.2 1;
+  height: 5vh;
+  cursor: pointer;
+}
+#icono[name="docs"] {
+  width: 3vw;
+  background-color: unset;
+  border: unset;
+
+  margin: 3px;
+}
 /*------------*/
 /*---TaskList*/
 .tasklist{
@@ -356,7 +371,7 @@ span[name="service-description-initial"]{
 #services-task-id span[name="task"]{
   display: block;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: medium;
+  font-size: small;
   color: #15191a;
   background-color: #adc0b5;
   border: 1px solid transparent;
@@ -400,6 +415,7 @@ input[name="solution"]{
 /*---Component-ServiceId-Solved-oSS---*/
 #solved{
   display: flex;
+  flex-wrap: wrap;
 }
 #solved .son{
   display: flex;
@@ -945,30 +961,44 @@ li{
 #wrapper-table-list .two-elements .several-elements{
   display: flex;
   flex-direction: row;
+  align-items: center
 }
 
 #wrapper-table-list .two-elements .several-elements > [name="ver"]{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: inherit;
   /*width: 3rem;*/
 
 }
+#wrapper-table-list .two-elements .several-elements .solver-files{
+  display: inherit;
+  align-items: inherit;
+}
 input[name="puntuacion"]{
-width: 3rem;
-height: 3rem;
+width: 3vw;
 margin: var(--margin-defalut-min);
 }
-@media (max-width: 600px) {
+
+@media (max-width:800px) and (min-width:600px) {
+  #organized-services-task-id{
+    flex-direction: column;
+  }
+  #services-task-id{
+    width: unset;
+  }
+}
+@media (max-width: 800px){
   #wrapper-table-list .two-elements{
     flex-direction: column;
   }
-
   #wrapper-table-list .two-elements .several-elements > [name="ocultar"]{
     display: none;
     justify-content: center;
   }
+}
+@media (max-width: 600px) {
 
 
   .ocultarTitulos {
