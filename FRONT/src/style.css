@@ -933,6 +933,24 @@ li{
   /*margin: var(--margin-defalut);*/
 }
 
+.conversations-id{
+  margin: var(--margin-defalut);
+  height: 50px;/*será eliminado xa que estará o componente*/
+  border: 1px solid black;
+}
+.conversation-id .conversation-id-wrapper[name="left"]{
+  float: left;
+  width: 80%;
+  background-color: #2e86c1;
+  color: white;
+}
+.conversation-id .conversation-id-wrapper[name="right"]{
+  float: right;
+  width: 80%;
+  background-color: #2e86c1;
+  color: white;
+}
+
 .personal-response-wrapper{
   margin: var(--margin-defalut);
   height: 50px;/*será eliminado xa que estará o componente*/
@@ -953,11 +971,14 @@ li{
 .colocacion{
   display: flex;
   justify-content: flex-start;
-  
+
+}
+.colocacion-reverse{
+  flex-direction: row-reverse;
 }
 .conversation-colective:nth-child(2n+1) .personal-response-wrapper .colocacion{
   flex-direction: row-reverse;
-  
+
 }
 
 /*-- Table list--*/
