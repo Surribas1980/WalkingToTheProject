@@ -416,6 +416,7 @@ input[name="solution"]{
 #solved{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #solved .son{
   display: flex;
@@ -957,11 +958,12 @@ li{
   flex-direction: row;
   padding: inherit;
   margin: inherit;
+  justify-content: space-evenly;
 }
 #wrapper-table-list .two-elements .several-elements{
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
 }
 
 #wrapper-table-list .two-elements .several-elements > [name="ver"]{
@@ -988,18 +990,38 @@ margin: var(--margin-defalut-min);
   #services-task-id{
     width: unset;
   }
-}
-@media (max-width: 800px){
-  #wrapper-table-list .two-elements{
+  #wrapper-table-list .two-elements .several-elements .solver-files{
     flex-direction: column;
   }
+}
+@media (max-width: 800px){
+  button[name="solution"]{
+    display: block;
+  }
+  #wrapper-table-list .two-elements .several-elements .solver-files{
+    flex-direction: column;
+  }
+  /*#wrapper-table-list .two-elements{
+    flex-direction: row;
+  }*/
   #wrapper-table-list .two-elements .several-elements > [name="ocultar"]{
     display: none;
     justify-content: center;
   }
+  #wrapper-table-list .two-elements .several-elements{
+    justify-content: center;
+  }
+  #wrapper-table-list .two-elements .several-elements > [name="ver"]{
+    flex-direction: column;
+  }
 }
 @media (max-width: 600px) {
-
+  #wrapper-table-list .two-elements .several-elements > [name="ver"]{
+    flex-direction: column;
+  }
+  button[name="solution"]{
+    display: block;
+  }
 
   .ocultarTitulos {
     display: none;
