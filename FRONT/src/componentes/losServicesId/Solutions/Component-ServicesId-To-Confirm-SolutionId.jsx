@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 import imagen from '../../../images/avatares/chico.png';
 import Component_ServiceId_SolvedoSS from '../Solved-Or-SendSolution/Component-ServiceId-SolvedoSS';
-
+import SeveralInputButtonRef from '../../SeveralInputButtonRef';
 
 
 function Component_ServicesId_To_Confirm_SolutionId(props){
@@ -19,6 +19,11 @@ function Component_ServicesId_To_Confirm_SolutionId(props){
     }
 
 
+    const fun = (valor1,valor2)=>{
+      console.log('el valor1...: ',valor1,'  valor2 : ',valor2)
+
+    }
+
 
 
     let salida = props.solucionadores?.map((item,index)=>{
@@ -26,10 +31,10 @@ function Component_ServicesId_To_Confirm_SolutionId(props){
 
 
         return (
-                    <div className="two-elements" onClick={()=>{miFun(ver,index)}}>
+                    <div className="two-elements">
 
                         <div className="several-elements">
-                                <img id='icono' name="solucionadores" className="show-services-list-span" src={imagen}/>
+                                <img onClick={()=>{miFun(ver,index)}} id='icono' name="solucionadores" className="show-services-list-span" src={imagen}/>
                                 <div className="solver-files">
                                     <span>{item.usuario}</span>
                                     <span><Component_ServiceId_SolvedoSS confirmar={true} ficheros={item.files} /></span>
@@ -39,12 +44,9 @@ function Component_ServicesId_To_Confirm_SolutionId(props){
                         <div className="several-elements">
                         {elIndex === index ?
                           <div name={changeStyle}>
-                              <input type="checkbox" />
-                              <input name="puntuacion" type="text"/>
+                            <SeveralInputButtonRef funcion={fun}/>
                           </div> : <div name= "ocultar">
-                              <input type="checkbox" />
-
-                              <input name="puntuacion" type="text"/>
+                            <SeveralInputButtonRef funcion={fun}/>
                           </div>
                         }
 
