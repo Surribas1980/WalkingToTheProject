@@ -9,11 +9,10 @@ function Component_ServicesId_Conversations_ColectiveConversationsId(props){
                     imagen
                 </div>
                 <div>
-                    personal response wrapper 
+                    personal response wrapper
                 </div>
             </div>
-            {/*<div className="conversation-colective">
-            </div>*/}
+            
         </div>)
 }
 
