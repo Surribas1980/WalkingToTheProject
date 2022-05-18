@@ -507,10 +507,24 @@ let conversacionesServicioId = [
 
 let personalConversationsId = [
   {
+    idbbdd:3,
+    id:2,
+    usuario:"mariano",
+    usuarioDeConversacion: "logeado",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
     idbbdd:1,
     id:2,
     usuario:"logeado",
     usuarioDeConversacion: "mariano",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
+    idbbdd:8,
+    id:2,
+    usuario:"mariano",
+    usuarioDeConversacion: "logeado",
     respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
   },
   {
@@ -521,7 +535,7 @@ let personalConversationsId = [
     respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
   },
   {
-    idbbdd:3,
+    idbbdd:9,
     id:2,
     usuario:"logeado",
     usuarioDeConversacion: "mariano",
