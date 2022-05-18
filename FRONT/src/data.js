@@ -505,7 +505,57 @@ let conversacionesServicioId = [
   visto: false
 }]
 
-
+let personalConversationsId = [
+  {
+    idbbdd:1,
+    id:2,
+    usuario:"logeado",
+    usuarioDeConversacion: "mariano",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
+    idbbdd:2,
+    id:2,
+    usuario:"logeado",
+    usuarioDeConversacion: "mariano",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
+    idbbdd:3,
+    id:2,
+    usuario:"logeado",
+    usuarioDeConversacion: "mariano",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
+    idbbdd:4,
+    id:4,
+    usuario:"logeado",
+    usuarioDeConversacion: "maria",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
+    idbbdd:5,
+    id:4,
+    usuario:"logeado",
+    usuarioDeConversacion: "maria",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
+    idbbdd:6,
+    id:5,
+    usuario:"logeado",
+    usuarioDeConversacion: "jacinta",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+  {
+    idbbdd:7,
+    id:5,
+    usuario:"logeado",
+    usuarioDeConversacion: "jacinta",
+    respuesta: "xxxxx dddddd rrrrr yyyyy hhhhh uuuuuu"
+  },
+]
 let posiblesSolucionadores = [
   {
     usuario: "juan",
@@ -581,6 +631,11 @@ let posiblesSolucionadores = [
   },
 
 ]
+
+export function getPersonalConversationsId(){
+  return personalConversationsId;
+}
+
 export function getConversacionesServicioId(){
   return conversacionesServicioId;
 }
