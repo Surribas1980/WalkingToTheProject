@@ -933,13 +933,31 @@ li{
   /*margin: var(--margin-defalut);*/
 }
 
-#personal-response-wrapper{
+.personal-response-wrapper{
   margin: var(--margin-defalut);
   height: 50px;/*será eliminado xa que estará o componente*/
   border: 1px solid black;
-  background-color: #d3e0e9;
+}
 
-
+.conversation-colective:nth-child(2n) .personal-response-wrapper{
+  float: left;
+  width: 80%;
+  background-color: #2e86c1;
+  color: white;
+}
+.conversation-colective:nth-child(2n+1) .personal-response-wrapper{
+  float: right;
+  width: 80%;
+  background-color: #58d68d;
+}
+.colocacion{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.conversation-colective:nth-child(2n+1) .personal-response-wrapper .colocacion{
+  flex-direction: row-reverse;
+  
 }
 
 /*-- Table list--*/
