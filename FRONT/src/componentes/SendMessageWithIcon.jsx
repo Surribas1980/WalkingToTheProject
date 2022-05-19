@@ -5,14 +5,25 @@ import Conversacion from '../images/conversacion.png';
 import Solucionado from '../images/think.png';
 import GenericBoton from './GenericBoton';
 import Charla from '../images/charla0.png';
+import Auxiliary_Page_ServiceId_Solved_Or_SendSolution from '../pages/Services/ServicesId-Solved-Or-SendSolution/Auxiliary-Page-ServiceId-Solved-Or-SendSolution';
 function SendMessageWithIcon(props){
-const [ver,setVer] = useState(false);
-const [anchura,setAnchura] = useState(false);
+  const [ver,setVer] = useState(false);
+  const [anchura,setAnchura] = useState(false);
+  const [enviarSendSolved,setSendSolved] = useState(false);
+  const [conversa,setConversa] = useState(false);
 
-/*let formulario = <GenericFormTextArea idDivForm="generic-form-text-area" />;*/
 const changedVer = ()=>{
   let valor = ver;
   setVer(!valor)
+}
+const Solve = () =>{
+  let valor = enviarSendSolved;
+  setSendSolved(!valor);
+}
+const Conversation = ()=>{
+  let valor = conversa;
+  setConversa(!valor);
+  console.log('props: ',conversa,props)
 }
 console.log('screen.width',screen.width)
 useEffect(()=>{
@@ -23,28 +34,26 @@ useEffect(()=>{
 },[screen.width])
   return (
     <>
+      
       <>
-      {
-        ver === false ? 
-                        <div className="services-task-id-group">
-                          {
+        <div className="services-task-id-group">
+                            {
+                              props.solutioned === true ? <GenericBoton styleDiv="services-button"  texto="Ver solución"/> : <GenericImageOnClick idDivImg="generic-image-on-click"  srcImg={Solucionado} functionImg={Solve} />
+                            }
 
-                            props.solutioned === true ? <GenericBoton styleDiv="services-button"  texto="Ver solución"/> : <GenericImageOnClick idDivImg="generic-image-on-click"  srcImg={Solucionado} functionImg={changedVer} />
-                          }
-
-                          {
-                            anchura === false ?  <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Conversacion} functionImg={changedVer} /> : ''
-                          }
-                          {
-                            (props.conversation === true) ? <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Charla} functionImg={changedVer} /> : ''
-                          }
-
-                        </div> : ''
-      }
+                            {
+                              anchura === false ?  <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Conversacion} functionImg={changedVer} /> : ''
+                            }
+                            
+                          <GenericImageOnClick idDivImg="generic-image-on-click" srcImg={Charla} functionImg={Conversation} />
+        </div>
       </>
      <div>
 
       {ver === true ? <GenericFormTextArea idDivForm="generic-form-text-area" /> : ''}
+      {enviarSendSolved === true ? '' : <Auxiliary_Page_ServiceId_Solved_Or_SendSolution />}
+      {conversa === true ? <>{props.conversas}</> : ''}
+      
      </div>
     </>
   )
