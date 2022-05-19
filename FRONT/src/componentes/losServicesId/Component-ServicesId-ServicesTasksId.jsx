@@ -4,13 +4,13 @@ import Component_ServicesId_ServicesTasksId_ServicesFilesTasksId from "./Compone
 
 import Component_ServicesId_Conversations from "./Conversations/Component-ServicesId-Conversations";
 import GenericFormTextArea from "../GenericFormTextArea";
-import Component_ServicesId_Conversations_ColectiveConversationsId from "./Conversations/ColectiveConversationsId/Component-ServicesId-Conversations-ColectiveConversationsId";
-import Auxiliary_Page_ServiceId_Conversations from '../../pages/Services/ServicesId-Conversations/Auxiliary_Page_ServiceId_Conversations-Page-Conversations-Of-MyServiceId';
+
 import Auxiliary_Page_ServiceId_Solved_Or_SendSolution from "../../pages/Services/ServicesId-Solved-Or-SendSolution/Auxiliary-Page-ServiceId-Solved-Or-SendSolution";
 
 import Component_ServicesId_ConversationsId from './Conversations/Component-ServicesId-ConversationsId';
 
 import {getPersonalConversationsId} from '../../data.js';
+import SendMessageWithIcon from "../SendMessageWithIcon";
 
 function Component_ServicesId_ServicesTasksTaskId(props){
     const [conversationId,setConversationId] = useState(getPersonalConversationsId());
@@ -29,15 +29,12 @@ function Component_ServicesId_ServicesTasksTaskId(props){
      ;
     let personalConversations = <div className="solution">
     <Component_ServicesId_Conversations >
-        {/*<Auxiliary_Page_ServiceId_Conversations elId={ele[0]?.id} />*/}
-        <Component_ServicesId_ConversationsId ConversationsId={lasConversationsIdOrdenadas} />
+        <Component_ServicesId_ConversationsId ConversationsId={lasConversationsIdOrdenadas} />  
     </Component_ServicesId_Conversations>
+    <GenericFormTextArea idDivForm="generic-form-text-area"/>
 </div>;
 
     let salida = props.taskId?.map((item,index)=>{
-
-
-
         return(
         <>
             <span name="service-titulo">Título: {item.titulo}</span>
@@ -56,11 +53,10 @@ function Component_ServicesId_ServicesTasksTaskId(props){
             <div name="titulo-lista-tareas">Tareas</div>
 
             <Component_ServicesId_ServicesTasksId_ServicesTasksTaskId task={props.taskId[0].tasks}/>
-
             <Component_ServicesId_ServicesTasksId_ServicesFilesTasksId ficheros={props.taskId[0].files}/>
-
-
+            <SendMessageWithIcon conversas={<Component_ServicesId_ConversationsId ConversationsId={lasConversationsIdOrdenadas} />} solved = {ele[0]?.solved} conversation = {ele[0]?.conversation} />
             {props.visualizo === true ? props.data : ''}
+
         </div>
         <div className="services-task-id-solution-conversation">
 
@@ -69,19 +65,7 @@ function Component_ServicesId_ServicesTasksTaskId(props){
             <div className="conversation-total">
 
                 <Component_ServicesId_Conversations dato={<GenericFormTextArea idDivForm="generic-form-text-area"/>}>
-                    <div className="conversation-colective">
-                        <Component_ServicesId_Conversations_ColectiveConversationsId />
-                    </div>
-                    <div className="conversation-colective">
-                        <Component_ServicesId_Conversations_ColectiveConversationsId />
-                    </div>
-                    <div className="conversation-colective">
-                        <Component_ServicesId_Conversations_ColectiveConversationsId />
-                    </div>
-                    <div className="conversation-colective">
-                        <Component_ServicesId_Conversations_ColectiveConversationsId />
-                    </div>
-
+                    <Component_ServicesId_ConversationsId ConversationsId={lasConversationsIdOrdenadas} />
                 </Component_ServicesId_Conversations>
             </div>
         </div>
