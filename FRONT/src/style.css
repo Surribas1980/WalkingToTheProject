@@ -936,19 +936,24 @@ li{
 .conversations-id{
   margin: var(--margin-defalut);
   height: 50px;/*será eliminado xa que estará o componente*/
-  border: 1px solid black;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: var(--padding-default);
+}
+.conversations-id[name="left"]{
+  background-color: #2e86c1;
+  color:white;
+  
+}
+.conversations-id[name="right"]{
+  background-color: #88d6d2;
+  
 }
 .conversation-id .conversation-id-wrapper[name="left"]{
   float: left;
-  width: 80%;
-  background-color: #2e86c1;
-  color: white;
 }
 .conversation-id .conversation-id-wrapper[name="right"]{
   float: right;
-  width: 80%;
-  background-color: #2e86c1;
-  color: white;
 }
 
 .personal-response-wrapper{
@@ -971,7 +976,7 @@ li{
 .colocacion{
   display: flex;
   justify-content: flex-start;
-
+  /*height: 50px;*/
 }
 .colocacion-reverse{
   flex-direction: row-reverse;
