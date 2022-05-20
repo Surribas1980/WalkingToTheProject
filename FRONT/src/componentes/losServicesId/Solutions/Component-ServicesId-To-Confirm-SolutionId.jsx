@@ -34,9 +34,11 @@ function Component_ServicesId_To_Confirm_SolutionId(props){
                     <div className="two-elements">
 
                         <div className="several-elements">
-                                <img onClick={()=>{miFun(ver,index)}} id='icono' name="solucionadores" className="show-services-list-span" src={imagen}/>
+                                <div name="img-user">
+                                  <img onClick={()=>{miFun(ver,index)}} id='icono' name="solucionadores" className="show-services-list-span" src={imagen}/>
+                                  <span>{item.usuario}</span>
+                                </div>
                                 <div className="solver-files">
-                                    <span>{item.usuario}</span>
                                     <span><Component_ServiceId_SolvedoSS confirmar={true} ficheros={item.files} /></span>
                                 </div>
 
