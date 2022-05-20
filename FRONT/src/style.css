@@ -144,6 +144,7 @@ div[name |= "seccion"]{
   background-color: red;
 }
 #icono[name="solucionadores"] {
+  display: inline-block;
   background-color: transparent;
   border: unset;
   width: 5vw;
@@ -152,7 +153,7 @@ div[name |= "seccion"]{
   cursor: pointer;
 }
 #icono[name="docs"] {
-  width: 3vw;
+  width: 10vw;
   background-color: unset;
   border: unset;
 
@@ -395,9 +396,12 @@ span[name="service-description-initial"]{
   align-items: center;
   flex:1;
 }
+
+
 #services-task-id .services-task-id-group{
-  display: flex;
-  flex-direction: row;
+  display: none;
+  /*display: flex;
+  flex-direction: row;*/
 }
 #services-task-id .services-task-id-group .services-button{
   background-color: #2e86c1;
@@ -1009,7 +1013,11 @@ li{
   flex-direction: row;
   align-items: center;
 }
-
+[name="img-user"]{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #wrapper-table-list .two-elements .several-elements > [name="ver"]{
   display: flex;
   flex-direction: row;
@@ -1028,6 +1036,7 @@ margin: var(--margin-defalut-min);
 }
 
 @media (max-width:800px) and (min-width:600px) {
+ 
   #organized-services-task-id{
     flex-direction: column;
   }
@@ -1039,6 +1048,7 @@ margin: var(--margin-defalut-min);
   }
 }
 @media (max-width: 800px){
+  
   button[name="solution"]{
     display: block;
   }
@@ -1060,6 +1070,22 @@ margin: var(--margin-defalut-min);
   }
 }
 @media (max-width: 600px) {
+  input[name="puntuacion"]{
+    width: 6vw;}
+ /* #services-task-id{
+    width: 3vw;
+  }*/
+  #services-task-id .services-task-id-group{
+    display: flex;
+    flex-direction: row;
+  }
+  #services-task-id .services-task-id-group .services-button{
+    background-color: #2e86c1;
+    margin:2px;
+    color: white;
+    display: flex;
+    padding: var(--padding-default);
+  }
   #wrapper-table-list .two-elements .several-elements > [name="ver"]{
     flex-direction: column;
   }
