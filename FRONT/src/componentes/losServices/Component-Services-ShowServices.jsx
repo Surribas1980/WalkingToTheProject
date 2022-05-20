@@ -1,6 +1,8 @@
 import React from "react";
 import {Link,Outlet} from "react-router-dom";
 import imagen from '../../images/avatares/chico.png';
+import myProbe from '../../data.js';
+
 function Component_Services_ShowServices(props){
 
 let salida = props.usuarios?.map((item,index)=>{
@@ -19,6 +21,9 @@ let salida = props.usuarios?.map((item,index)=>{
     </Link>
   )
 })
+
+/*let salida = props.usuarios?.map((item,index)=>{myProbe(props,imagen,item,index)});
+console.log('salida desde componente', salida)*/
 
     return(
         <>
