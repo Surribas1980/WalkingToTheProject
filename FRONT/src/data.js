@@ -1,3 +1,6 @@
+import React from "react";
+import {Link} from "react-router-dom";
+
 let direccionesImagenes = [
   'https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_960_720.jpg',
   'https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_960_720.jpg',
@@ -672,4 +675,25 @@ export function myServices(){
 
 export function myPossiblePersonSolved(){
   return posiblesSolucionadores;
+}
+
+
+export default function myProbe(props,imagen,item,index){
+
+  console.log('desde myProbe: ',item.titulo,index)
+  let sortDescription = item.descripcion.slice(0,20);
+
+  let salida = <Link name="service-defalut" to={`/${props.goTo}/${item.id}`} key={index}>
+  <div className={props.styleShowServices}>
+    <img id='icono' name="services" className="show-services-list-span" src={imagen}/>
+    <div className="show-services-list-span">
+      <span name="service-titulo">Titulo: {item.titulo}</span>
+      <span name="service-usuario">Usuario: {item.usuario}</span>
+      <span name="service-description-initial">Descripción: {sortDescription}(...)</span>
+    </div>
+
+  </div>
+</Link>;
+
+  return (<>{salida}</>);
 }
