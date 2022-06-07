@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../shared/hooks/useAuth';
+import { theFormData } from '../helpers/misHelpers';
+import { envioWithFiles, envioDatos } from '../http/api';
+
 export default function Login() {
   const { register, handleSubmit } = useForm();
   const [data, setData] = useState('');
@@ -8,7 +11,6 @@ export default function Login() {
   const onSubmit = (data) => {
     setData(JSON.stringify(data));
     sigIn( data.mail, data.pwd);
-    
   };
 
   return (
@@ -21,6 +23,7 @@ export default function Login() {
           placeholder="Introduce password"
           type="password"
         />
+
         <input type="submit" />
       </form>
     </div>
