@@ -44,7 +44,7 @@ function Component_TaskList_PaintList(props){
         }
 
         let texto;
-        console.log('tasks...',item.task,item)
+        /*console.log('tasks...',item.task,item)*/
         if(item.task){
             texto = <>
 
