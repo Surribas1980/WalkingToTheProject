@@ -10,6 +10,7 @@ import Component_TaskList_WritenTitleOrList from "../componentes/laTaskList/Comp
 function Page_TaskList(){
 
     const [lista,setLista] = useState([]);
+    const [theFiles,setTheFiles] = useState(null);
     let [titleListTask , setTitleListTask ] = useState("Lista de tareas")
     let [descriptionTask, setDescriptionTask] = useState("Sin descripcion");
     let [elFile,setFile]= useState();
@@ -40,20 +41,26 @@ function Page_TaskList(){
     },[lista]);
 
     const SaveFile = useCallback (()=>{
-      /*setFile(valueFile.current.files[1].name);*/
+
         let valor = valueFile.current.files;
 
 
         for (let i = 0 ; i < valor.length ; i++){
+
             setFile(valueFile.current.files[i].name);
             let novoObj = new Object();
             novoObj.fichero = valueFile.current.files[i].name;
             lista.push(novoObj);
+            let proba = new Object();
+
+
+
         }
 
-        setThereFiles(true);
-        console.log('la lista: ',lista)
 
+        setThereFiles(true);
+        console.log('ficheros ?: ',valor)
+        setTheFiles(valueFile.current.files)
     },[lista])
 
     const SaveTitleList = useCallback ((titulo) =>{
@@ -99,7 +106,7 @@ function Page_TaskList(){
         <Component_TaskList_WritenTitleOrList eltype = "textarea" elspan="Descripcion" inputref={valueDescription} laFun={SaveDescriptionList} elplace="Introduce Descripcion"/>
     </Component_TaskList_InsertList>
 
-    <Component_TaskList_SendList list={lista} />
+    <Component_TaskList_SendList ficheros={theFiles} list={lista} />
     </>)
 }
 
