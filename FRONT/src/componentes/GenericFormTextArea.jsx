@@ -4,14 +4,23 @@ function GenericFormTextArea(props){
   const [textarea, setTextarea] = useState(
      "Escribe el mensaje que deseas mandar"
    );
-
+   console.log('props en GenericFormTextArea : ',props);
    const handleChange = (event) => {
      setTextarea(event.target.value)
    }
 
-   const handleSubmit = (event) => {
+   const handleSubmit = async (event) => {
        event.preventDefault();
 
+       const datos = {
+         endpoint: props.endpoint,
+         method: props.method,
+         textarea,
+         id:props.id
+       }
+       console.log('datos en el handleSubmit ',datos)
+       const valor = await props.settingsSendFunction(datos,'message');
+       console.log('valor  en handleSubmit ', valor)
      }
 
   return(
