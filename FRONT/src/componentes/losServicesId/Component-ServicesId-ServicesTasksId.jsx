@@ -1,20 +1,33 @@
 import React,{useState} from "react";
+
+/*--- Components ---*/
 import Component_ServicesId_ServicesTasksId_ServicesTasksTaskId from "./Component-ServicesId-ServicesTasksTaskId";
 import Component_ServicesId_ServicesTasksId_ServicesFilesTasksId from "./Component-ServicesId-ServicesFilesTasksId";
-
 import Component_ServicesId_Conversations from "./Conversations/Component-ServicesId-Conversations";
 import GenericFormTextArea from "../GenericFormTextArea";
-
 import Auxiliary_Page_ServiceId_Solved_Or_SendSolution from "../../pages/Services/ServicesId-Solved-Or-SendSolution/Auxiliary-Page-ServiceId-Solved-Or-SendSolution";
-
 import Component_ServicesId_ConversationsId from './Conversations/Component-ServicesId-ConversationsId';
-
-import {getPersonalConversationsId} from '../../data.js';
 import SendMessageWithIcon from "../SendMessageWithIcon";
+
+
+/*--- endpoints ---*/
+import { endpoints } from '../../http/endpoints';
+import { method } from '../../http/method';
+/*--- helpers ---*/
+import {settingsFunction} from '../../helpers/misHelpers';
+/*--- api ---*/
+import { envioDatos } from '../../http/api';
+/*--Not necessary--*/
+import {getPersonalConversationsId} from '../../data.js';
+
 
 function Component_ServicesId_ServicesTasksTaskId(props){
     const [conversationId,setConversationId] = useState(getPersonalConversationsId());
-    let ele = props.taskId
+    const [settings,setSettings] = useState();
+    const [ele,setId] = useState(props.taskId)
+    //let ele = props.taskId;
+
+
 
     const lasConversationsIdOrdenadas = conversationId?.filter((item)=>{
       return ele[0]?.id == item.id;
@@ -24,14 +37,14 @@ function Component_ServicesId_ServicesTasksTaskId(props){
 
     let enviarSolution =
             <div className="solution">
-                <Auxiliary_Page_ServiceId_Solved_Or_SendSolution solved = {ele[0]?.solved} solution = {ele[0]?.solution} />
+                <Auxiliary_Page_ServiceId_Solved_Or_SendSolution id={ele[0]?.id} solved = {ele[0]?.solved} solution = {ele[0]?.solution} />
             </div>
      ;
     let personalConversations = <div className="solution">
     <Component_ServicesId_Conversations >
-        <Component_ServicesId_ConversationsId ConversationsId={lasConversationsIdOrdenadas} />  
+        <Component_ServicesId_ConversationsId ConversationsId={lasConversationsIdOrdenadas} />
     </Component_ServicesId_Conversations>
-    <GenericFormTextArea idDivForm="generic-form-text-area"/>
+    <GenericFormTextArea settingsSendFunction={envioDatos} method={method.post} id={ele[0]?.id} endpoint={endpoints.insertComentarioPersonalService} idDivForm="generic-form-text-area"/>
 </div>;
 
     let salida = props.taskId?.map((item,index)=>{
@@ -64,7 +77,7 @@ function Component_ServicesId_ServicesTasksTaskId(props){
             {personalConversations}
             <div className="conversation-total">
 
-                <Component_ServicesId_Conversations dato={<GenericFormTextArea idDivForm="generic-form-text-area"/>}>
+                <Component_ServicesId_Conversations dato={<GenericFormTextArea id={ele[0]?.id} settingsSendFunction={envioDatos} method={method.post} endpoint={endpoints.insertComentarioColectiveService} idDivForm="generic-form-text-area"/>}>
                     <Component_ServicesId_ConversationsId ConversationsId={lasConversationsIdOrdenadas} />
                 </Component_ServicesId_Conversations>
             </div>
