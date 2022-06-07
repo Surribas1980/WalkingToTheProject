@@ -1,30 +1,54 @@
-const apiUrl = 'http://localhost:4000';
-/*
-const requestMethods = { post: 'POST', get: 'GET', delete: 'DELETE' , put: 'PUT'};
-const endpoints = {
-  login: '/users/login/',
-  userInsert : '/users/insert/' ,
-  services: '/services/',
-  deleteServices: '/services/delete/',
-  insertComentario:'/users/insert/comentario/',
-  readComentarios: '/users/read/allcomments/'
-};
-*/
-
-/*--- Datos FormData ---*/
-
-export default function envioForm(){
-  return SendDatas();
+import { urls } from './uris'
+const withForm = (datos)=>{
+  return ({
+    method: datos.method,
+    body: datos.form
+  })
 }
 
-/*--- Datos sin FormData ---*/
+const withMessage = (datos) =>{
+  const datoaenvi = {
+    "body":"prueba de otro comentario 2"
+  }
+  const headers = new Headers({ 'Content-Type': 'application/json' });
+  const elbody = {
+    body: datos.textarea
+  }
+  console.log('withMessage: ',datoaenvi,elbody,'JSON.stringify(elbody) :',JSON.stringify(elbody),'JSON.stringify(datoaenvi) ',JSON.stringify(datoaenvi))
+  const envio = {
+    headers,
+    method: datos.method,
+    body: JSON.stringify(elbody)
+  }
+  //console.log('...,withMessage: ',envio)
+  return envio;
+}
+async function envioDatos(datasToSend,like){
+  let datosAenviar = {};
+  let url;
 
-export default function envioDatas(){
-  return SendDatas();
+  like === 'form' ? datosAenviar = withForm(datasToSend) : datosAenviar = withMessage(datasToSend) ;
+
+  if(datasToSend.id != undefined){
+    console.log('id: ',datasToSend.id);
+    url = `${urls.localhost}${datasToSend.endpoint}${datasToSend.id}`;
+    console.log('`${urls.localhost}${datasToSend.endpoint}${datasToSend.id}`',url)
+  }else{
+    console.log('sin id')
+    url = `${urls.localhost}${datasToSend.endpoint}`;
+    console.log('${urls.localhost}${datasToSend.endpoint}',url)
+  }
+
+  //console.log('datosAenviar ',datosAenviar)
+  /*const envio = {
+    "body":"prueba de otro comentario 3"
+}*/
+  //const headers = new Headers({ 'Content-Type': 'application/json' });
+  //const request = await fetch(`${urls.localhost}${datasToSend.endpoint}`, { headers , method: datasToSend.method , body: JSON.stringify(envio) });
+  const request = await fetch(url, datosAenviar);
+  const respuesta = await request;
+  let rp = respuesta.statusText;
+  return rp;
 }
 
-/*--- El fetch ---*/
-
-function SendDatas(endpoint,metodo,datos){
-
-}
+export { envioDatos }
