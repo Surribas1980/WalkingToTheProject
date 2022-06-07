@@ -5,11 +5,11 @@ import Component_To_Show_Children_Solved_Or_SendSolution from "../../../componen
 
 function Auxiliary_Page_ServiceId_Solved_Or_SendSolution(props){
 
-
+    console.log('Auxiliary_Page_ServiceId_Solved_Or_SendSolution : ', props)
     return (
     <>
         <Component_To_Show_Children_Solved_Or_SendSolution>
-            { props.solved === true ? <Component_ServiceId_SolvedoSS ficheros = {props.solution} /> : <Component_ServiceId_SoSendSolution />}
+            { props.solved === true ? <Component_ServiceId_SolvedoSS ficheros = {props.solution} /> : <Component_ServiceId_SoSendSolution id={props.id}/>}
 
         </Component_To_Show_Children_Solved_Or_SendSolution>
     </>)
