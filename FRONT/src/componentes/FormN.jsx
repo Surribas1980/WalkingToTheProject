@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
-function FormN({ setRes, setBoton }) {
+function FormN(props) {
   const { register, handleSubmit } = useForm();
+/*  const { register, handleSubmit } = useForm();
   const [datos, setDatos] = useState({});
 
   const onSubmit = (data) => {
@@ -15,14 +16,14 @@ function FormN({ setRes, setBoton }) {
     }
     setBoton(true);
   };
-
+*/
   return (
     <div className="vh50">
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register('unnombre')} placeholder="Introduce un Nombre" />
+      <form onSubmit={handleSubmit(props.elSubmit)}>
+        <input {...register('email')} placeholder="Introduce un email" />
         <input
-          {...register('unprimerApellido')}
-          placeholder="Introduce un primer apellido"
+          {...register('pwd')}
+          placeholder="Introduce un pwd"
           type="text"
         />
         <input type="submit" />
