@@ -1,27 +1,11 @@
 import React, {useState,useRef, useCallback} from "react";
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
+
 import { getAnalytics } from "firebase/analytics";
 import { getStorage, ref, uploadBytes,uploadString } from "firebase/storage"
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: ,
-  authDomain: ,
-  databaseURL: ,
-  projectId: ,
-  storageBucket: ,
-  messagingSenderId: ,
-  appId: ,
-  measurementId: 
-};
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
 
 /**
  * 
@@ -47,7 +31,7 @@ function Page_TaskList(){
     const valueTitle = useRef("");
     const valueDescription = useRef("");
     const storage = getStorage();
-    const storageRef = ref(storage, 'some');
+    
     
 
     const SaveList = useCallback ((dato)=>{
@@ -72,9 +56,6 @@ function Page_TaskList(){
 
         let valor = valueFile.current.files;
 
-        uploadBytes(storageRef, valueFile.current.files[0]).then((snapshot) => {
-            console.log('Uploaded a blob or file!');
-          });
         for (let i = 0 ; i < valor.length ; i++){
 
             setFile(valueFile.current.files[i].name);
@@ -82,7 +63,10 @@ function Page_TaskList(){
             novoObj.fichero = valueFile.current.files[i].name;
             lista.push(novoObj);
             let proba = new Object();
-
+            let storageRef = ref(storage, `${valueFile.current.files[i].name}`);
+            uploadBytes(storageRef, valueFile.current.files[i]).then((snapshot) => {
+            console.log('Uploaded a blob or file!');
+          });
 
 
         }
@@ -100,12 +84,12 @@ function Page_TaskList(){
         let novoObj = new Object();
         novoObj.title = titulo;
         lista.push(novoObj);
-                const bytes = new Uint8Array([0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x2c, 0x20, 0x77, 0x6f, 0x72, 0x6c, 0x64, 0x21]);
+                /*const bytes = new Uint8Array([0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x2c, 0x20, 0x77, 0x6f, 0x72, 0x6c, 0x64, 0x21]);
                 uploadBytes(storageRef, bytes).then((snapshot) => {
                 console.log('Uploaded an array!');
                 });
             // Base64 formatted string
-            const message2 = 'Q2FkZW5hIGEgY29kaWZpY2Fy';
+            /*const message2 = 'Q2FkZW5hIGEgY29kaWZpY2Fy';
             uploadString(storageRef, message2, 'base64').then((snapshot) => {
             console.log('Uploaded a base64 string!');
             });

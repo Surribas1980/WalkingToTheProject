@@ -1,0 +1,137 @@
+[debug] [2022-06-28T16:38:59.826Z] ----------------------------------------------------------------------
+[debug] [2022-06-28T16:38:59.829Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Laurisas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-28T16:38:59.830Z] CLI Version:   11.1.0
+[debug] [2022-06-28T16:38:59.830Z] Platform:      win32
+[debug] [2022-06-28T16:38:59.830Z] Node Version:  v16.14.2
+[debug] [2022-06-28T16:38:59.831Z] Time:          Tue Jun 28 2022 18:38:59 GMT+0200 (hora de verano de Europa central)
+[debug] [2022-06-28T16:38:59.832Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-28T16:38:59.916Z] Object ".emulators.storage" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2022-06-28T16:38:59.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-28T16:38:59.923Z] > authorizing via signed-in user (issupl@gmail.com)
+[debug] [2022-06-28T16:39:00.529Z] java version "15.0.2" 2021-01-19
+
+[debug] [2022-06-28T16:39:00.530Z] Java(TM) SE Runtime Environment (build 15.0.2+7-27)
+Java HotSpot(TM) 64-Bit Server VM (build 15.0.2+7-27, mixed mode, sharing)
+
+[debug] [2022-06-28T16:39:00.542Z] Parsed Java major version: 15
+[info] i  emulators: Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, database, hosting, pubsub, storage"}}
+[debug] [2022-06-28T16:39:01.565Z] [hub] writing locator at C:\Users\Laurisas\AppData\Local\Temp\hub-proba0-bc33f.json
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-06-28T16:39:02.618Z] defaultcredentials: writing to file C:\Users\Laurisas\AppData\Roaming\firebase\issupl_gmail_com_application_default_credentials.json
+[debug] [2022-06-28T16:39:02.620Z] Setting GAC to C:\Users\Laurisas\AppData\Roaming\firebase\issupl_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Laurisas\\AppData\\Roaming\\firebase\\issupl_gmail_com_application_default_credentials.json"}}
+[debug] [2022-06-28T16:39:02.622Z] > refreshing access token with scopes: []
+[debug] [2022-06-28T16:39:02.626Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-06-28T16:39:02.626Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-06-28T16:39:02.904Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-06-28T16:39:02.904Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-06-28T16:39:02.930Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/adminSdkConfig [none]
+[debug] [2022-06-28T16:39:03.388Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/adminSdkConfig 200
+[debug] [2022-06-28T16:39:03.388Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/adminSdkConfig {"projectId":"proba0-bc33f","databaseURL":"https://proba0-bc33f-default-rtdb.firebaseio.com","storageBucket":"proba0-bc33f.appspot.com","locationId":"europe-west"}
+[warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2022-06-28T16:39:04.415Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-06-28T16:39:04.415Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-28T16:39:04.416Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\Laurisas\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Laurisas\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-06-28T16:39:07.696Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f [none]
+[debug] [2022-06-28T16:39:08.034Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f 200
+[debug] [2022-06-28T16:39:08.035Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f {"projectId":"proba0-bc33f","projectNumber":"220664389556","displayName":"proba0","name":"projects/proba0-bc33f","resources":{"hostingSite":"proba0-bc33f","realtimeDatabaseInstance":"proba0-bc33f-default-rtdb","storageBucket":"proba0-bc33f.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-06-28T16:39:08.035Z] database rules config:  [{"instance":"proba0-bc33f-default-rtdb","rules":"C:\\Users\\Laurisas\\Documents\\Israel\\EjerSepe\\WalkingToTheProject\\FRONT\\database.rules.json"}]
+[debug] [2022-06-28T16:39:08.039Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-06-28T16:39:08.040Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-28T16:39:08.040Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-06-28T16:39:08.040Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\Laurisas\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.8.0.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\Laurisas\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.8.0.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-06-28T16:39:23.413Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-06-28T16:39:23.414Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"pubsub"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-28T16:39:23.414Z] Starting Pub/Sub Emulator with command {"binary":"C:\\Users\\Laurisas\\.cache\\firebase\\emulators\\pubsub-emulator-0.1.0\\pubsub-emulator\\bin\\cloud-pubsub-emulator.bat","args":["--host=localhost","--port=8085"],"optionalArgs":["port","host"],"joinArgs":true} {"metadata":{"emulator":{"name":"pubsub"},"message":"Starting Pub/Sub Emulator with command {\"binary\":\"C:\\\\Users\\\\Laurisas\\\\.cache\\\\firebase\\\\emulators\\\\pubsub-emulator-0.1.0\\\\pubsub-emulator\\\\bin\\\\cloud-pubsub-emulator.bat\",\"args\":[\"--host=localhost\",\"--port=8085\"],\"optionalArgs\":[\"port\",\"host\"],\"joinArgs\":true}"}}
+[info] i  pubsub: Pub/Sub Emulator logging to pubsub-debug.log {"metadata":{"emulator":{"name":"pubsub"},"message":"Pub/Sub Emulator logging to \u001b[1mpubsub-debug.log\u001b[22m"}}
+[debug] [2022-06-28T16:39:26.225Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-28T16:39:27.828Z] Temp file directory for storage emulator: C:\Users\Laurisas\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\Laurisas\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-06-28T16:39:28.835Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/proba0-bc33f/sites 
+[debug] [2022-06-28T16:39:30.067Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/proba0-bc33f/sites 200
+[debug] [2022-06-28T16:39:30.067Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/proba0-bc33f/sites {"sites":[{"name":"projects/proba0-bc33f/sites/proba0-bc33f","defaultUrl":"https://proba0-bc33f.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-06-28T16:39:30.067Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/webApps/-/config [none]
+[debug] [2022-06-28T16:39:30.869Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/webApps/-/config 200
+[debug] [2022-06-28T16:39:30.869Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/webApps/-/config {"projectId":"proba0-bc33f","appId":"1:220664389556:web:8a607945979f353510dce1","databaseURL":"https://proba0-bc33f-default-rtdb.firebaseio.com","storageBucket":"proba0-bc33f.appspot.com","locationId":"europe-west","apiKey":"AIzaSyB-JFk-0O3oVUZZbhj-sEkk1w2WwznfLv4","authDomain":"proba0-bc33f.firebaseapp.com","messagingSenderId":"220664389556","measurementId":"G-SM3FBZYJLP"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5033 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5033\u001b[22m\u001b[24m"}}
+[debug] [2022-06-28T16:39:32.952Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-28T16:39:32.952Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-28T16:39:32.953Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\Laurisas\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\Laurisas\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-28T16:39:33.455Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\Laurisas\Documents\Israel\EjerSepe\WalkingToTheProject\FRONT\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Laurisas\\Documents\\Israel\\EjerSepe\\WalkingToTheProject\\FRONT\\functions\" for Cloud Functions..."}}
+[debug] [2022-06-28T16:39:33.727Z] Validating nodejs source
+[debug] [2022-06-28T16:39:39.515Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-28T16:39:39.516Z] Building nodejs source
+[debug] [2022-06-28T16:39:39.516Z] Analyzing nodejs backend spec
+[debug] [2022-06-28T16:39:39.518Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-28T16:39:40.254Z] Serving at port 9005
+
+[debug] [2022-06-28T16:39:40.839Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-28T16:39:40.855Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-06-28T16:39:40.870Z] >>> [apiv2][query] PUT http://localhost:9000/.settings/rules.json ns=proba0-bc33f-default-rtdb
+[debug] [2022-06-28T16:39:40.870Z] >>> [apiv2][body] PUT http://localhost:9000/.settings/rules.json "{\n  \"rules\": {\n    \".read\": \"now < 1657576800000\",  // 2022-7-12\n    \".write\": \"now < 1657576800000\",  // 2022-7-12\n  }\n}"
+[debug] [2022-06-28T16:39:41.598Z] <<< [apiv2][status] PUT http://localhost:9000/.settings/rules.json 200
+[debug] [2022-06-28T16:39:41.598Z] <<< [apiv2][body] PUT http://localhost:9000/.settings/rules.json {"status":"ok"}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Database       │ localhost:9000 │ http://localhost:4000/database  │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5033 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Pub/Sub        │ localhost:8085 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [28/Jun/2022:16:40:20 +0000] "GET / HTTP/1.1" 200 375 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Jun/2022:16:40:20 +0000] \"GET / HTTP/1.1\" 200 375 \"-\" \"Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Jun/2022:16:40:20 +0000] "GET /static/css/main.655a69c5.css HTTP/1.1" 200 16539 "http://localhost:5033/" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Jun/2022:16:40:20 +0000] \"GET /static/css/main.655a69c5.css HTTP/1.1\" 200 16539 \"http://localhost:5033/\" \"Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Jun/2022:16:40:20 +0000] "GET /static/js/main.540faf62.js HTTP/1.1" 200 618370 "http://localhost:5033/" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Jun/2022:16:40:20 +0000] \"GET /static/js/main.540faf62.js HTTP/1.1\" 200 618370 \"http://localhost:5033/\" \"Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0\""}}
+[info] i  hosting: 127.0.0.1 - - [28/Jun/2022:16:40:22 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:5033/" "Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [28/Jun/2022:16:40:22 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:5033/\" \"Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0\""}}
+[debug] [2022-06-28T16:41:23.282Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/adminSdkConfig [none]
+[debug] [2022-06-28T16:41:23.632Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/adminSdkConfig 200
+[debug] [2022-06-28T16:41:23.633Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proba0-bc33f/adminSdkConfig {"projectId":"proba0-bc33f","databaseURL":"https://proba0-bc33f-default-rtdb.firebaseio.com","storageBucket":"proba0-bc33f.appspot.com","locationId":"europe-west"}

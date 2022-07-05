@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.655a69c5.css",
+    "main.js": "/static/js/main.540faf62.js",
+    "static/media/think.png": "/static/media/think.1d3250a526bd1c4adead.png",
+    "static/media/chico.png": "/static/media/chico.cce5bd6ad4af30c22c2b.png",
+    "static/media/folder.png": "/static/media/folder.cf476616743bd4a50d38.png",
+    "static/media/grupo-de-usuarios.png": "/static/media/grupo-de-usuarios.eec0eca8b817f632d89c.png",
+    "static/media/archivo-xlsx.png": "/static/media/archivo-xlsx.444f29e29a654bfe3691.png",
+    "static/media/docsOk.png": "/static/media/docsOk.4a5c1daa4d80892872e4.png",
+    "static/media/lista-de-tareas.png": "/static/media/lista-de-tareas.53a7f755216e42184670.png",
+    "static/media/hogar.png": "/static/media/hogar.7e47bd64dcc12a746690.png",
+    "static/media/salida.png": "/static/media/salida.2d4604cd8eda39e14f62.png",
+    "static/media/perfil.png": "/static/media/perfil.a771da345d144107a8a6.png",
+    "static/media/archivo-powerpoint.png": "/static/media/archivo-powerpoint.5778f1c036e5ffd793e8.png",
+    "static/media/campana.png": "/static/media/campana.5846d4b1994ad4088108.png",
+    "static/media/archivo-word.png": "/static/media/archivo-word.3d8749011f937ec505bf.png",
+    "index.html": "/index.html",
+    "main.655a69c5.css.map": "/static/css/main.655a69c5.css.map",
+    "main.540faf62.js.map": "/static/js/main.540faf62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.655a69c5.css",
+    "static/js/main.540faf62.js"
+  ]
+}
